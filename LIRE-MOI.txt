@@ -1,0 +1,3 @@
+Ouvrez Cartes-a-pince-Studio.html dans votre navigateur.
+Le générateur fonctionne hors connexion.
+Pour charger les 95 fiches, cliquez sur Ouvrir puis sélectionnez Exercices-Logico-cartes-a-pince.json.

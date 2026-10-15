@@ -1,0 +1,8503 @@
+{
+  "version": 1,
+  "format": 1,
+  "fontSize": 14,
+  "guides": true,
+  "active": 0,
+  "startNumber": 1,
+  "generator": {
+    "mode": "ulis",
+    "sheetCount": 1,
+    "seed": 2,
+    "tense": "present",
+    "verbGroups": [
+      "group1"
+    ],
+    "tables": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "additionAdds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "additionMax": 20,
+    "complementTargets": [
+      10
+    ],
+    "moneyDenoms": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      50,
+      100,
+      200,
+      500,
+      1000,
+      2000
+    ],
+    "timePrecision": "quarter",
+    "timePeriod": "mixed",
+    "ulisDomain": "numeration",
+    "ulisLevel": "green",
+    "ulisExercise": "num_read",
+    "ulisExercises": [
+      "num_read",
+      "num_before",
+      "num_after",
+      "num_compare",
+      "num_decompose"
+    ],
+    "ulisCopiesPerExercise": 1,
+    "rowCount": 10
+  },
+  "cards": [
+    {
+      "id": "mv9c7gye8ehte",
+      "title": "Écrire les nombres jusqu’à 10 en chiffres · Vert",
+      "instruction": "Écris le nombre en chiffres.",
+      "rows": [
+        {
+          "q": "dix",
+          "a": "10",
+          "color": "#E32636"
+        },
+        {
+          "q": "cinq",
+          "a": "5",
+          "color": "#1769D2"
+        },
+        {
+          "q": "trois",
+          "a": "3",
+          "color": "#FFD900"
+        },
+        {
+          "q": "quatre",
+          "a": "4",
+          "color": "#159447"
+        },
+        {
+          "q": "neuf",
+          "a": "9",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "sept",
+          "a": "7",
+          "color": "#803EAA"
+        },
+        {
+          "q": "un",
+          "a": "1",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "six",
+          "a": "6",
+          "color": "#8B4513"
+        },
+        {
+          "q": "deux",
+          "a": "2",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "zéro",
+          "a": "0",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "5",
+        "0",
+        "2",
+        "9",
+        "3",
+        "7",
+        "1",
+        "10",
+        "6",
+        "4"
+      ]
+    },
+    {
+      "id": "mv9c7gyf8ok4m",
+      "title": "Nombre juste avant · Vert",
+      "instruction": "Trouve le nombre juste avant.",
+      "rows": [
+        {
+          "q": "… est juste avant 3",
+          "a": "2",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste avant 9",
+          "a": "8",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste avant 10",
+          "a": "9",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste avant 5",
+          "a": "4",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste avant 1",
+          "a": "0",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste avant 7",
+          "a": "6",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste avant 6",
+          "a": "5",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste avant 4",
+          "a": "3",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste avant 8",
+          "a": "7",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste avant 2",
+          "a": "1",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "3",
+        "7",
+        "4",
+        "1",
+        "6",
+        "9",
+        "0",
+        "5",
+        "8",
+        "2"
+      ]
+    },
+    {
+      "id": "mv9c7gyfgaz5a",
+      "title": "Nombre juste après · Vert",
+      "instruction": "Trouve le nombre juste après.",
+      "rows": [
+        {
+          "q": "… est juste après 6",
+          "a": "7",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste après 7",
+          "a": "8",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste après 8",
+          "a": "9",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste après 1",
+          "a": "2",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste après 2",
+          "a": "3",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste après 5",
+          "a": "6",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste après 3",
+          "a": "4",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste après 4",
+          "a": "5",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste après 0",
+          "a": "1",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste après 9",
+          "a": "10",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "6",
+        "3",
+        "1",
+        "5",
+        "2",
+        "8",
+        "9",
+        "7",
+        "4",
+        "10"
+      ]
+    },
+    {
+      "id": "mv9c7gygr8dn0",
+      "title": "Comparer deux nombres · Vert",
+      "instruction": "Trouve le plus grand nombre.",
+      "rows": [
+        {
+          "q": "Le plus grand : 9 ou 4 ?",
+          "a": "9",
+          "color": "#E32636",
+          "choices": [
+            "9",
+            "4"
+          ]
+        },
+        {
+          "q": "Le plus grand : 2 ou 6 ?",
+          "a": "6",
+          "color": "#1769D2",
+          "choices": [
+            "2",
+            "6"
+          ]
+        },
+        {
+          "q": "Le plus grand : 7 ou 0 ?",
+          "a": "7",
+          "color": "#FFD900",
+          "choices": [
+            "7",
+            "0"
+          ]
+        },
+        {
+          "q": "Le plus grand : 3 ou 8 ?",
+          "a": "8",
+          "color": "#159447",
+          "choices": [
+            "3",
+            "8"
+          ]
+        },
+        {
+          "q": "Le plus grand : 10 ou 4 ?",
+          "a": "10",
+          "color": "#FF8A00",
+          "choices": [
+            "10",
+            "4"
+          ]
+        },
+        {
+          "q": "Le plus grand : 0 ou 1 ?",
+          "a": "1",
+          "color": "#803EAA",
+          "choices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "q": "Le plus grand : 3 ou 2 ?",
+          "a": "3",
+          "color": "#F56BAD",
+          "choices": [
+            "3",
+            "2"
+          ]
+        },
+        {
+          "q": "Le plus grand : 3 ou 4 ?",
+          "a": "4",
+          "color": "#8B4513",
+          "choices": [
+            "3",
+            "4"
+          ]
+        },
+        {
+          "q": "Le plus grand : 5 ou 4 ?",
+          "a": "5",
+          "color": "#1B1B1B",
+          "choices": [
+            "5",
+            "4"
+          ]
+        },
+        {
+          "q": "Le plus grand : 0 ou 2 ?",
+          "a": "2",
+          "color": "#FFFFFF",
+          "choices": [
+            "0",
+            "2"
+          ]
+        }
+      ],
+      "order": [
+        "5",
+        "9",
+        "3",
+        "0",
+        "6",
+        "2",
+        "10",
+        "7",
+        "1",
+        "8",
+        "4"
+      ]
+    },
+    {
+      "id": "mv9c7gygip8op",
+      "title": "Décomposer un nombre · Vert",
+      "instruction": "Recompose le nombre.",
+      "rows": [
+        {
+          "q": "1 × 1 = …",
+          "a": "1",
+          "color": "#E32636"
+        },
+        {
+          "q": "7 × 1 = …",
+          "a": "7",
+          "color": "#1769D2"
+        },
+        {
+          "q": "4 × 1 = …",
+          "a": "4",
+          "color": "#FFD900"
+        },
+        {
+          "q": "1 × 10 = …",
+          "a": "10",
+          "color": "#159447"
+        },
+        {
+          "q": "9 × 1 = …",
+          "a": "9",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "3 × 1 = …",
+          "a": "3",
+          "color": "#803EAA"
+        },
+        {
+          "q": "2 × 1 = …",
+          "a": "2",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "6 × 1 = …",
+          "a": "6",
+          "color": "#8B4513"
+        },
+        {
+          "q": "8 × 1 = …",
+          "a": "8",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "5 × 1 = …",
+          "a": "5",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "5",
+        "10",
+        "9",
+        "8",
+        "1",
+        "4",
+        "2",
+        "7",
+        "6",
+        "3"
+      ]
+    },
+    {
+      "id": "mv9c7gygzcmjn",
+      "title": "Écrire les nombres jusqu’à 30 en chiffres · Jaune",
+      "instruction": "Écris le nombre en chiffres.",
+      "rows": [
+        {
+          "q": "treize",
+          "a": "13",
+          "color": "#E32636"
+        },
+        {
+          "q": "zéro",
+          "a": "0",
+          "color": "#1769D2"
+        },
+        {
+          "q": "vingt-trois",
+          "a": "23",
+          "color": "#FFD900"
+        },
+        {
+          "q": "seize",
+          "a": "16",
+          "color": "#159447"
+        },
+        {
+          "q": "vingt-sept",
+          "a": "27",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "huit",
+          "a": "8",
+          "color": "#803EAA"
+        },
+        {
+          "q": "deux",
+          "a": "2",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "quinze",
+          "a": "15",
+          "color": "#8B4513"
+        },
+        {
+          "q": "quatre",
+          "a": "4",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "vingt et un",
+          "a": "21",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "13",
+        "8",
+        "2",
+        "23",
+        "21",
+        "16",
+        "0",
+        "15",
+        "27",
+        "4"
+      ]
+    },
+    {
+      "id": "mv9c7gyg3m8f7",
+      "title": "Nombre juste avant · Jaune",
+      "instruction": "Trouve le nombre juste avant.",
+      "rows": [
+        {
+          "q": "… est juste avant 15",
+          "a": "14",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste avant 21",
+          "a": "20",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste avant 1",
+          "a": "0",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste avant 28",
+          "a": "27",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste avant 17",
+          "a": "16",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste avant 19",
+          "a": "18",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste avant 8",
+          "a": "7",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste avant 29",
+          "a": "28",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste avant 13",
+          "a": "12",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste avant 27",
+          "a": "26",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "28",
+        "0",
+        "7",
+        "12",
+        "20",
+        "26",
+        "18",
+        "27",
+        "14",
+        "16"
+      ]
+    },
+    {
+      "id": "mv9c7gygk58sn",
+      "title": "Nombre juste après · Jaune",
+      "instruction": "Trouve le nombre juste après.",
+      "rows": [
+        {
+          "q": "… est juste après 2",
+          "a": "3",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste après 12",
+          "a": "13",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste après 26",
+          "a": "27",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste après 11",
+          "a": "12",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste après 0",
+          "a": "1",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste après 13",
+          "a": "14",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste après 22",
+          "a": "23",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste après 15",
+          "a": "16",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste après 29",
+          "a": "30",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste après 3",
+          "a": "4",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "12",
+        "4",
+        "1",
+        "30",
+        "27",
+        "23",
+        "3",
+        "13",
+        "14",
+        "16"
+      ]
+    },
+    {
+      "id": "mv9c7gygphkfv",
+      "title": "Comparer deux nombres · Jaune",
+      "instruction": "Trouve le plus grand nombre.",
+      "rows": [
+        {
+          "q": "Le plus grand : 8 ou 11 ?",
+          "a": "11",
+          "color": "#E32636",
+          "choices": [
+            "8",
+            "11"
+          ]
+        },
+        {
+          "q": "Le plus grand : 13 ou 28 ?",
+          "a": "28",
+          "color": "#1769D2",
+          "choices": [
+            "13",
+            "28"
+          ]
+        },
+        {
+          "q": "Le plus grand : 16 ou 24 ?",
+          "a": "24",
+          "color": "#FFD900",
+          "choices": [
+            "16",
+            "24"
+          ]
+        },
+        {
+          "q": "Le plus grand : 19 ou 2 ?",
+          "a": "19",
+          "color": "#159447",
+          "choices": [
+            "19",
+            "2"
+          ]
+        },
+        {
+          "q": "Le plus grand : 5 ou 16 ?",
+          "a": "16",
+          "color": "#FF8A00",
+          "choices": [
+            "5",
+            "16"
+          ]
+        },
+        {
+          "q": "Le plus grand : 12 ou 2 ?",
+          "a": "12",
+          "color": "#803EAA",
+          "choices": [
+            "12",
+            "2"
+          ]
+        },
+        {
+          "q": "Le plus grand : 6 ou 18 ?",
+          "a": "18",
+          "color": "#F56BAD",
+          "choices": [
+            "6",
+            "18"
+          ]
+        },
+        {
+          "q": "Le plus grand : 17 ou 7 ?",
+          "a": "17",
+          "color": "#8B4513",
+          "choices": [
+            "17",
+            "7"
+          ]
+        },
+        {
+          "q": "Le plus grand : 21 ou 3 ?",
+          "a": "21",
+          "color": "#1B1B1B",
+          "choices": [
+            "21",
+            "3"
+          ]
+        },
+        {
+          "q": "Le plus grand : 17 ou 29 ?",
+          "a": "29",
+          "color": "#FFFFFF",
+          "choices": [
+            "17",
+            "29"
+          ]
+        }
+      ],
+      "order": [
+        "11",
+        "3",
+        "7",
+        "16",
+        "5",
+        "18",
+        "13",
+        "28",
+        "17",
+        "29",
+        "21",
+        "19",
+        "24",
+        "12",
+        "8",
+        "2",
+        "6"
+      ]
+    },
+    {
+      "id": "mv9c7gyg9r0kz",
+      "title": "Décomposer un nombre · Jaune",
+      "instruction": "Recompose le nombre.",
+      "rows": [
+        {
+          "q": "2 × 10 + 4 × 1 = …",
+          "a": "24",
+          "color": "#E32636"
+        },
+        {
+          "q": "1 × 10 + 1 × 1 = …",
+          "a": "11",
+          "color": "#1769D2"
+        },
+        {
+          "q": "6 × 1 = …",
+          "a": "6",
+          "color": "#FFD900"
+        },
+        {
+          "q": "2 × 10 + 9 × 1 = …",
+          "a": "29",
+          "color": "#159447"
+        },
+        {
+          "q": "1 × 10 + 6 × 1 = …",
+          "a": "16",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "1 × 10 + 8 × 1 = …",
+          "a": "18",
+          "color": "#803EAA"
+        },
+        {
+          "q": "9 × 1 = …",
+          "a": "9",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "2 × 10 + 6 × 1 = …",
+          "a": "26",
+          "color": "#8B4513"
+        },
+        {
+          "q": "1 × 10 + 7 × 1 = …",
+          "a": "17",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "4 × 1 = …",
+          "a": "4",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "4",
+        "11",
+        "17",
+        "26",
+        "6",
+        "24",
+        "18",
+        "29",
+        "16",
+        "9"
+      ]
+    },
+    {
+      "id": "mv9c7gyih5cdc",
+      "title": "Écrire les nombres jusqu’à 60 en chiffres · Rouge",
+      "instruction": "Écris le nombre en chiffres.",
+      "rows": [
+        {
+          "q": "quarante-quatre",
+          "a": "44",
+          "color": "#E32636"
+        },
+        {
+          "q": "quatre",
+          "a": "4",
+          "color": "#1769D2"
+        },
+        {
+          "q": "cinquante-sept",
+          "a": "57",
+          "color": "#FFD900"
+        },
+        {
+          "q": "quinze",
+          "a": "15",
+          "color": "#159447"
+        },
+        {
+          "q": "dix-huit",
+          "a": "18",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "dix",
+          "a": "10",
+          "color": "#803EAA"
+        },
+        {
+          "q": "zéro",
+          "a": "0",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "quatorze",
+          "a": "14",
+          "color": "#8B4513"
+        },
+        {
+          "q": "cinquante-quatre",
+          "a": "54",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "trente-six",
+          "a": "36",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "14",
+        "36",
+        "0",
+        "57",
+        "54",
+        "15",
+        "10",
+        "44",
+        "4",
+        "18"
+      ]
+    },
+    {
+      "id": "mv9c7gyiku6ki",
+      "title": "Nombre juste avant · Rouge",
+      "instruction": "Trouve le nombre juste avant.",
+      "rows": [
+        {
+          "q": "… est juste avant 6",
+          "a": "5",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste avant 10",
+          "a": "9",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste avant 30",
+          "a": "29",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste avant 1",
+          "a": "0",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste avant 43",
+          "a": "42",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste avant 16",
+          "a": "15",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste avant 60",
+          "a": "59",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste avant 18",
+          "a": "17",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste avant 13",
+          "a": "12",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste avant 58",
+          "a": "57",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "29",
+        "59",
+        "17",
+        "9",
+        "42",
+        "12",
+        "5",
+        "0",
+        "57",
+        "15"
+      ]
+    },
+    {
+      "id": "mv9c7gyinsyyq",
+      "title": "Nombre juste après · Rouge",
+      "instruction": "Trouve le nombre juste après.",
+      "rows": [
+        {
+          "q": "… est juste après 37",
+          "a": "38",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste après 44",
+          "a": "45",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste après 36",
+          "a": "37",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste après 47",
+          "a": "48",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste après 14",
+          "a": "15",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste après 12",
+          "a": "13",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste après 35",
+          "a": "36",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste après 6",
+          "a": "7",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste après 33",
+          "a": "34",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste après 40",
+          "a": "41",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "37",
+        "36",
+        "7",
+        "38",
+        "48",
+        "13",
+        "15",
+        "45",
+        "34",
+        "41"
+      ]
+    },
+    {
+      "id": "mv9c7gyif9o0l",
+      "title": "Comparer deux nombres · Rouge",
+      "instruction": "Trouve le plus grand nombre.",
+      "rows": [
+        {
+          "q": "Le plus grand : 44 ou 6 ?",
+          "a": "44",
+          "color": "#E32636",
+          "choices": [
+            "44",
+            "6"
+          ]
+        },
+        {
+          "q": "Le plus grand : 53 ou 14 ?",
+          "a": "53",
+          "color": "#1769D2",
+          "choices": [
+            "53",
+            "14"
+          ]
+        },
+        {
+          "q": "Le plus grand : 56 ou 38 ?",
+          "a": "56",
+          "color": "#FFD900",
+          "choices": [
+            "56",
+            "38"
+          ]
+        },
+        {
+          "q": "Le plus grand : 60 ou 2 ?",
+          "a": "60",
+          "color": "#159447",
+          "choices": [
+            "60",
+            "2"
+          ]
+        },
+        {
+          "q": "Le plus grand : 21 ou 31 ?",
+          "a": "31",
+          "color": "#FF8A00",
+          "choices": [
+            "21",
+            "31"
+          ]
+        },
+        {
+          "q": "Le plus grand : 9 ou 54 ?",
+          "a": "54",
+          "color": "#803EAA",
+          "choices": [
+            "9",
+            "54"
+          ]
+        },
+        {
+          "q": "Le plus grand : 46 ou 11 ?",
+          "a": "46",
+          "color": "#F56BAD",
+          "choices": [
+            "46",
+            "11"
+          ]
+        },
+        {
+          "q": "Le plus grand : 24 ou 33 ?",
+          "a": "33",
+          "color": "#8B4513",
+          "choices": [
+            "24",
+            "33"
+          ]
+        },
+        {
+          "q": "Le plus grand : 23 ou 10 ?",
+          "a": "23",
+          "color": "#1B1B1B",
+          "choices": [
+            "23",
+            "10"
+          ]
+        },
+        {
+          "q": "Le plus grand : 31 ou 45 ?",
+          "a": "45",
+          "color": "#FFFFFF",
+          "choices": [
+            "31",
+            "45"
+          ]
+        }
+      ],
+      "order": [
+        "9",
+        "31",
+        "45",
+        "44",
+        "53",
+        "23",
+        "38",
+        "2",
+        "56",
+        "11",
+        "6",
+        "46",
+        "21",
+        "60",
+        "24",
+        "14",
+        "10",
+        "54",
+        "33"
+      ]
+    },
+    {
+      "id": "mv9c7gyi58o3z",
+      "title": "Décomposer un nombre · Rouge",
+      "instruction": "Recompose le nombre.",
+      "rows": [
+        {
+          "q": "3 × 10 + 4 × 1 = …",
+          "a": "34",
+          "color": "#E32636"
+        },
+        {
+          "q": "1 × 10 = …",
+          "a": "10",
+          "color": "#1769D2"
+        },
+        {
+          "q": "3 × 10 + 6 × 1 = …",
+          "a": "36",
+          "color": "#FFD900"
+        },
+        {
+          "q": "1 × 10 + 5 × 1 = …",
+          "a": "15",
+          "color": "#159447"
+        },
+        {
+          "q": "1 × 10 + 8 × 1 = …",
+          "a": "18",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "2 × 10 + 2 × 1 = …",
+          "a": "22",
+          "color": "#803EAA"
+        },
+        {
+          "q": "2 × 10 + 4 × 1 = …",
+          "a": "24",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "2 × 10 + 7 × 1 = …",
+          "a": "27",
+          "color": "#8B4513"
+        },
+        {
+          "q": "2 × 10 + 6 × 1 = …",
+          "a": "26",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "5 × 10 + 5 × 1 = …",
+          "a": "55",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "10",
+        "36",
+        "34",
+        "18",
+        "22",
+        "24",
+        "15",
+        "27",
+        "55",
+        "26"
+      ]
+    },
+    {
+      "id": "mv9c7gyimn1tp",
+      "title": "Écrire les nombres jusqu’à 100 en chiffres · Rose",
+      "instruction": "Écris le nombre en chiffres.",
+      "rows": [
+        {
+          "q": "soixante-deux",
+          "a": "62",
+          "color": "#E32636"
+        },
+        {
+          "q": "soixante-quatorze",
+          "a": "74",
+          "color": "#1769D2"
+        },
+        {
+          "q": "quarante-sept",
+          "a": "47",
+          "color": "#FFD900"
+        },
+        {
+          "q": "dix-huit",
+          "a": "18",
+          "color": "#159447"
+        },
+        {
+          "q": "quatre-vingt-dix",
+          "a": "90",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "soixante-trois",
+          "a": "63",
+          "color": "#803EAA"
+        },
+        {
+          "q": "onze",
+          "a": "11",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "vingt et un",
+          "a": "21",
+          "color": "#8B4513"
+        },
+        {
+          "q": "soixante-six",
+          "a": "66",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "quatre-vingt-dix-huit",
+          "a": "98",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "98",
+        "21",
+        "47",
+        "63",
+        "74",
+        "11",
+        "18",
+        "90",
+        "66",
+        "62"
+      ]
+    },
+    {
+      "id": "mv9c7gyi0kga1",
+      "title": "Nombre juste avant · Rose",
+      "instruction": "Trouve le nombre juste avant.",
+      "rows": [
+        {
+          "q": "… est juste avant 68",
+          "a": "67",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste avant 6",
+          "a": "5",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste avant 3",
+          "a": "2",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste avant 25",
+          "a": "24",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste avant 52",
+          "a": "51",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste avant 63",
+          "a": "62",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste avant 74",
+          "a": "73",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste avant 86",
+          "a": "85",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste avant 24",
+          "a": "23",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste avant 48",
+          "a": "47",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "62",
+        "85",
+        "47",
+        "51",
+        "73",
+        "23",
+        "5",
+        "67",
+        "2",
+        "24"
+      ]
+    },
+    {
+      "id": "mv9c7gyiufa4g",
+      "title": "Nombre juste après · Rose",
+      "instruction": "Trouve le nombre juste après.",
+      "rows": [
+        {
+          "q": "… est juste après 61",
+          "a": "62",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste après 79",
+          "a": "80",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste après 53",
+          "a": "54",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste après 34",
+          "a": "35",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste après 63",
+          "a": "64",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste après 39",
+          "a": "40",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste après 51",
+          "a": "52",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste après 99",
+          "a": "100",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste après 59",
+          "a": "60",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste après 3",
+          "a": "4",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "40",
+        "62",
+        "60",
+        "64",
+        "52",
+        "80",
+        "54",
+        "35",
+        "100",
+        "4"
+      ]
+    },
+    {
+      "id": "mv9c7gyiskqij",
+      "title": "Comparer deux nombres · Rose",
+      "instruction": "Trouve le plus grand nombre.",
+      "rows": [
+        {
+          "q": "Le plus grand : 55 ou 87 ?",
+          "a": "87",
+          "color": "#E32636",
+          "choices": [
+            "55",
+            "87"
+          ]
+        },
+        {
+          "q": "Le plus grand : 76 ou 18 ?",
+          "a": "76",
+          "color": "#1769D2",
+          "choices": [
+            "76",
+            "18"
+          ]
+        },
+        {
+          "q": "Le plus grand : 89 ou 3 ?",
+          "a": "89",
+          "color": "#FFD900",
+          "choices": [
+            "89",
+            "3"
+          ]
+        },
+        {
+          "q": "Le plus grand : 57 ou 48 ?",
+          "a": "57",
+          "color": "#159447",
+          "choices": [
+            "57",
+            "48"
+          ]
+        },
+        {
+          "q": "Le plus grand : 75 ou 65 ?",
+          "a": "75",
+          "color": "#FF8A00",
+          "choices": [
+            "75",
+            "65"
+          ]
+        },
+        {
+          "q": "Le plus grand : 5 ou 23 ?",
+          "a": "23",
+          "color": "#803EAA",
+          "choices": [
+            "5",
+            "23"
+          ]
+        },
+        {
+          "q": "Le plus grand : 4 ou 26 ?",
+          "a": "26",
+          "color": "#F56BAD",
+          "choices": [
+            "4",
+            "26"
+          ]
+        },
+        {
+          "q": "Le plus grand : 11 ou 50 ?",
+          "a": "50",
+          "color": "#8B4513",
+          "choices": [
+            "11",
+            "50"
+          ]
+        },
+        {
+          "q": "Le plus grand : 46 ou 92 ?",
+          "a": "92",
+          "color": "#1B1B1B",
+          "choices": [
+            "46",
+            "92"
+          ]
+        },
+        {
+          "q": "Le plus grand : 96 ou 12 ?",
+          "a": "96",
+          "color": "#FFFFFF",
+          "choices": [
+            "96",
+            "12"
+          ]
+        }
+      ],
+      "order": [
+        "26",
+        "87",
+        "12",
+        "48",
+        "50",
+        "75",
+        "3",
+        "89",
+        "23",
+        "11",
+        "46",
+        "18",
+        "65",
+        "55",
+        "76",
+        "57",
+        "5",
+        "92",
+        "4",
+        "96"
+      ]
+    },
+    {
+      "id": "mv9c7gyigrfdq",
+      "title": "Décomposer un nombre · Rose",
+      "instruction": "Recompose le nombre.",
+      "rows": [
+        {
+          "q": "5 × 10 + 5 × 1 = …",
+          "a": "55",
+          "color": "#E32636"
+        },
+        {
+          "q": "6 × 10 = …",
+          "a": "60",
+          "color": "#1769D2"
+        },
+        {
+          "q": "8 × 10 + 4 × 1 = …",
+          "a": "84",
+          "color": "#FFD900"
+        },
+        {
+          "q": "6 × 1 = …",
+          "a": "6",
+          "color": "#159447"
+        },
+        {
+          "q": "1 × 10 + 7 × 1 = …",
+          "a": "17",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "5 × 10 + 3 × 1 = …",
+          "a": "53",
+          "color": "#803EAA"
+        },
+        {
+          "q": "4 × 10 + 3 × 1 = …",
+          "a": "43",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "5 × 10 = …",
+          "a": "50",
+          "color": "#8B4513"
+        },
+        {
+          "q": "7 × 10 = …",
+          "a": "70",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "1 × 10 + 6 × 1 = …",
+          "a": "16",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "60",
+        "43",
+        "53",
+        "50",
+        "55",
+        "70",
+        "16",
+        "6",
+        "84",
+        "17"
+      ]
+    },
+    {
+      "id": "mv9c7gyjl14q8",
+      "title": "Écrire les nombres jusqu’à 1 000 en chiffres · Violet",
+      "instruction": "Écris le nombre en chiffres.",
+      "rows": [
+        {
+          "q": "neuf cent vingt-cinq",
+          "a": "925",
+          "color": "#E32636"
+        },
+        {
+          "q": "trois cent quatre-vingt-treize",
+          "a": "393",
+          "color": "#1769D2"
+        },
+        {
+          "q": "huit cent quarante-deux",
+          "a": "842",
+          "color": "#FFD900"
+        },
+        {
+          "q": "cent soixante-neuf",
+          "a": "169",
+          "color": "#159447"
+        },
+        {
+          "q": "sept cents",
+          "a": "700",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "cent quatre-vingt-quatre",
+          "a": "184",
+          "color": "#803EAA"
+        },
+        {
+          "q": "quarante-cinq",
+          "a": "45",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "deux cent seize",
+          "a": "216",
+          "color": "#8B4513"
+        },
+        {
+          "q": "deux cent dix",
+          "a": "210",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "trois cent quatre-vingt-dix",
+          "a": "390",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "184",
+        "842",
+        "925",
+        "700",
+        "210",
+        "216",
+        "45",
+        "393",
+        "390",
+        "169"
+      ]
+    },
+    {
+      "id": "mv9c7gykveweq",
+      "title": "Nombre juste avant · Violet",
+      "instruction": "Trouve le nombre juste avant.",
+      "rows": [
+        {
+          "q": "… est juste avant 623",
+          "a": "622",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste avant 903",
+          "a": "902",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste avant 378",
+          "a": "377",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste avant 886",
+          "a": "885",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste avant 470",
+          "a": "469",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste avant 212",
+          "a": "211",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste avant 325",
+          "a": "324",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste avant 612",
+          "a": "611",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste avant 498",
+          "a": "497",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste avant 867",
+          "a": "866",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "497",
+        "622",
+        "211",
+        "324",
+        "885",
+        "377",
+        "902",
+        "611",
+        "866",
+        "469"
+      ]
+    },
+    {
+      "id": "mv9c7gyk67oj6",
+      "title": "Nombre juste après · Violet",
+      "instruction": "Trouve le nombre juste après.",
+      "rows": [
+        {
+          "q": "… est juste après 512",
+          "a": "513",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste après 608",
+          "a": "609",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste après 693",
+          "a": "694",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste après 330",
+          "a": "331",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste après 711",
+          "a": "712",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste après 76",
+          "a": "77",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste après 184",
+          "a": "185",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste après 70",
+          "a": "71",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste après 181",
+          "a": "182",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste après 407",
+          "a": "408",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "609",
+        "185",
+        "712",
+        "71",
+        "182",
+        "408",
+        "513",
+        "77",
+        "694",
+        "331"
+      ]
+    },
+    {
+      "id": "mv9c7gykhr993",
+      "title": "Comparer deux nombres · Violet",
+      "instruction": "Trouve le plus grand nombre.",
+      "rows": [
+        {
+          "q": "Le plus grand : 291 ou 406 ?",
+          "a": "406",
+          "color": "#E32636",
+          "choices": [
+            "291",
+            "406"
+          ]
+        },
+        {
+          "q": "Le plus grand : 713 ou 686 ?",
+          "a": "713",
+          "color": "#1769D2",
+          "choices": [
+            "713",
+            "686"
+          ]
+        },
+        {
+          "q": "Le plus grand : 144 ou 978 ?",
+          "a": "978",
+          "color": "#FFD900",
+          "choices": [
+            "144",
+            "978"
+          ]
+        },
+        {
+          "q": "Le plus grand : 809 ou 283 ?",
+          "a": "809",
+          "color": "#159447",
+          "choices": [
+            "809",
+            "283"
+          ]
+        },
+        {
+          "q": "Le plus grand : 164 ou 982 ?",
+          "a": "982",
+          "color": "#FF8A00",
+          "choices": [
+            "164",
+            "982"
+          ]
+        },
+        {
+          "q": "Le plus grand : 977 ou 533 ?",
+          "a": "977",
+          "color": "#803EAA",
+          "choices": [
+            "977",
+            "533"
+          ]
+        },
+        {
+          "q": "Le plus grand : 699 ou 388 ?",
+          "a": "699",
+          "color": "#F56BAD",
+          "choices": [
+            "699",
+            "388"
+          ]
+        },
+        {
+          "q": "Le plus grand : 849 ou 984 ?",
+          "a": "984",
+          "color": "#8B4513",
+          "choices": [
+            "849",
+            "984"
+          ]
+        },
+        {
+          "q": "Le plus grand : 124 ou 394 ?",
+          "a": "394",
+          "color": "#1B1B1B",
+          "choices": [
+            "124",
+            "394"
+          ]
+        },
+        {
+          "q": "Le plus grand : 988 ou 370 ?",
+          "a": "988",
+          "color": "#FFFFFF",
+          "choices": [
+            "988",
+            "370"
+          ]
+        }
+      ],
+      "order": [
+        "977",
+        "124",
+        "370",
+        "809",
+        "533",
+        "982",
+        "978",
+        "164",
+        "388",
+        "699",
+        "713",
+        "686",
+        "849",
+        "984",
+        "144",
+        "406",
+        "988",
+        "394",
+        "283",
+        "291"
+      ]
+    },
+    {
+      "id": "mv9c7gykak7k8",
+      "title": "Décomposer un nombre · Violet",
+      "instruction": "Recompose le nombre.",
+      "rows": [
+        {
+          "q": "7 × 100 + 6 × 10 + 7 × 1 = …",
+          "a": "767",
+          "color": "#E32636"
+        },
+        {
+          "q": "3 × 100 + 6 × 10 + 8 × 1 = …",
+          "a": "368",
+          "color": "#1769D2"
+        },
+        {
+          "q": "1 × 100 + 7 × 10 + 3 × 1 = …",
+          "a": "173",
+          "color": "#FFD900"
+        },
+        {
+          "q": "9 × 1 = …",
+          "a": "9",
+          "color": "#159447"
+        },
+        {
+          "q": "2 × 100 + 1 × 1 = …",
+          "a": "201",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "4 × 100 + 4 × 10 + 6 × 1 = …",
+          "a": "446",
+          "color": "#803EAA"
+        },
+        {
+          "q": "7 × 100 + 7 × 10 + 4 × 1 = …",
+          "a": "774",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "2 × 100 + 4 × 10 = …",
+          "a": "240",
+          "color": "#8B4513"
+        },
+        {
+          "q": "8 × 100 + 1 × 1 = …",
+          "a": "801",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "9 × 100 + 4 × 10 = …",
+          "a": "940",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "201",
+        "446",
+        "368",
+        "9",
+        "801",
+        "767",
+        "774",
+        "240",
+        "940",
+        "173"
+      ]
+    },
+    {
+      "id": "mv9c7gykxz7vl",
+      "title": "Écrire les nombres jusqu’à 10 000 en chiffres · Bleu",
+      "instruction": "Écris le nombre en chiffres.",
+      "rows": [
+        {
+          "q": "huit mille six cent quarante et un",
+          "a": "8641",
+          "color": "#E32636"
+        },
+        {
+          "q": "mille soixante-dix-neuf",
+          "a": "1079",
+          "color": "#1769D2"
+        },
+        {
+          "q": "six mille deux cent vingt-quatre",
+          "a": "6224",
+          "color": "#FFD900"
+        },
+        {
+          "q": "huit mille quatre cent quatre-vingt-sept",
+          "a": "8487",
+          "color": "#159447"
+        },
+        {
+          "q": "mille cent soixante-seize",
+          "a": "1176",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "cinq mille cinq cent soixante-dix-huit",
+          "a": "5578",
+          "color": "#803EAA"
+        },
+        {
+          "q": "quatre cent huit",
+          "a": "408",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "deux mille trois cent vingt-trois",
+          "a": "2323",
+          "color": "#8B4513"
+        },
+        {
+          "q": "huit mille cinq cent cinquante-huit",
+          "a": "8558",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "mille quatre cent vingt",
+          "a": "1420",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "1176",
+        "8641",
+        "8558",
+        "2323",
+        "1420",
+        "5578",
+        "1079",
+        "8487",
+        "6224",
+        "408"
+      ]
+    },
+    {
+      "id": "mv9c7gyki41yv",
+      "title": "Nombre juste avant · Bleu",
+      "instruction": "Trouve le nombre juste avant.",
+      "rows": [
+        {
+          "q": "… est juste avant 7219",
+          "a": "7218",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste avant 6763",
+          "a": "6762",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste avant 9142",
+          "a": "9141",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste avant 6263",
+          "a": "6262",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste avant 7716",
+          "a": "7715",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste avant 1801",
+          "a": "1800",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste avant 4046",
+          "a": "4045",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste avant 1359",
+          "a": "1358",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste avant 5870",
+          "a": "5869",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste avant 2704",
+          "a": "2703",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "4045",
+        "6262",
+        "1800",
+        "7715",
+        "7218",
+        "1358",
+        "9141",
+        "6762",
+        "2703",
+        "5869"
+      ]
+    },
+    {
+      "id": "mv9c7gykofhhs",
+      "title": "Nombre juste après · Bleu",
+      "instruction": "Trouve le nombre juste après.",
+      "rows": [
+        {
+          "q": "… est juste après 8653",
+          "a": "8654",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste après 819",
+          "a": "820",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste après 2724",
+          "a": "2725",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste après 5872",
+          "a": "5873",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste après 4520",
+          "a": "4521",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste après 3761",
+          "a": "3762",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste après 8355",
+          "a": "8356",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste après 1725",
+          "a": "1726",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste après 2188",
+          "a": "2189",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste après 2352",
+          "a": "2353",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "5873",
+        "820",
+        "2353",
+        "1726",
+        "3762",
+        "2189",
+        "8654",
+        "4521",
+        "8356",
+        "2725"
+      ]
+    },
+    {
+      "id": "mv9c7gyk49xqf",
+      "title": "Comparer deux nombres · Bleu",
+      "instruction": "Trouve le plus grand nombre.",
+      "rows": [
+        {
+          "q": "Le plus grand : 8630 ou 961 ?",
+          "a": "8630",
+          "color": "#E32636",
+          "choices": [
+            "8630",
+            "961"
+          ]
+        },
+        {
+          "q": "Le plus grand : 6534 ou 9420 ?",
+          "a": "9420",
+          "color": "#1769D2",
+          "choices": [
+            "6534",
+            "9420"
+          ]
+        },
+        {
+          "q": "Le plus grand : 2609 ou 8961 ?",
+          "a": "8961",
+          "color": "#FFD900",
+          "choices": [
+            "2609",
+            "8961"
+          ]
+        },
+        {
+          "q": "Le plus grand : 7928 ou 5072 ?",
+          "a": "7928",
+          "color": "#159447",
+          "choices": [
+            "7928",
+            "5072"
+          ]
+        },
+        {
+          "q": "Le plus grand : 3016 ou 2633 ?",
+          "a": "3016",
+          "color": "#FF8A00",
+          "choices": [
+            "3016",
+            "2633"
+          ]
+        },
+        {
+          "q": "Le plus grand : 2867 ou 8519 ?",
+          "a": "8519",
+          "color": "#803EAA",
+          "choices": [
+            "2867",
+            "8519"
+          ]
+        },
+        {
+          "q": "Le plus grand : 4773 ou 3276 ?",
+          "a": "4773",
+          "color": "#F56BAD",
+          "choices": [
+            "4773",
+            "3276"
+          ]
+        },
+        {
+          "q": "Le plus grand : 7583 ou 8847 ?",
+          "a": "8847",
+          "color": "#8B4513",
+          "choices": [
+            "7583",
+            "8847"
+          ]
+        },
+        {
+          "q": "Le plus grand : 1181 ou 4250 ?",
+          "a": "4250",
+          "color": "#1B1B1B",
+          "choices": [
+            "1181",
+            "4250"
+          ]
+        },
+        {
+          "q": "Le plus grand : 2487 ou 9075 ?",
+          "a": "9075",
+          "color": "#FFFFFF",
+          "choices": [
+            "2487",
+            "9075"
+          ]
+        }
+      ],
+      "order": [
+        "7928",
+        "8847",
+        "4773",
+        "961",
+        "9420",
+        "6534",
+        "3276",
+        "9075",
+        "3016",
+        "1181",
+        "8519",
+        "2609",
+        "2487",
+        "8630",
+        "5072",
+        "7583",
+        "8961",
+        "2867",
+        "4250",
+        "2633"
+      ]
+    },
+    {
+      "id": "mv9c7gykx2t1r",
+      "title": "Décomposer un nombre · Bleu",
+      "instruction": "Recompose le nombre.",
+      "rows": [
+        {
+          "q": "5 × 1000 + 8 × 100 + 2 × 10 + 6 × 1 = …",
+          "a": "5826",
+          "color": "#E32636"
+        },
+        {
+          "q": "6 × 1000 + 7 × 100 + 1 × 10 + 9 × 1 = …",
+          "a": "6719",
+          "color": "#1769D2"
+        },
+        {
+          "q": "5 × 1000 + 4 × 100 + 7 × 10 + 7 × 1 = …",
+          "a": "5477",
+          "color": "#FFD900"
+        },
+        {
+          "q": "7 × 1000 + 9 × 100 + 3 × 1 = …",
+          "a": "7903",
+          "color": "#159447"
+        },
+        {
+          "q": "2 × 1000 + 2 × 100 + 7 × 10 = …",
+          "a": "2270",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "9 × 1000 + 9 × 100 + 8 × 10 + 2 × 1 = …",
+          "a": "9982",
+          "color": "#803EAA"
+        },
+        {
+          "q": "5 × 1000 + 2 × 100 + 3 × 1 = …",
+          "a": "5203",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "6 × 1000 + 4 × 100 + 2 × 10 + 9 × 1 = …",
+          "a": "6429",
+          "color": "#8B4513"
+        },
+        {
+          "q": "3 × 1000 + 9 × 100 + 3 × 10 + 6 × 1 = …",
+          "a": "3936",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "5 × 1000 + 2 × 100 + 2 × 10 = …",
+          "a": "5220",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "5203",
+        "6429",
+        "5826",
+        "5477",
+        "5220",
+        "9982",
+        "6719",
+        "3936",
+        "7903",
+        "2270"
+      ]
+    },
+    {
+      "id": "mv9c7gyln4c90",
+      "title": "Écrire les nombres jusqu’à 100 000 en chiffres · Noir",
+      "instruction": "Écris le nombre en chiffres.",
+      "rows": [
+        {
+          "q": "quatre-vingt-quinze mille cinq cent quatre-vingt-seize",
+          "a": "95596",
+          "color": "#E32636"
+        },
+        {
+          "q": "dix-huit mille trois cent huit",
+          "a": "18308",
+          "color": "#1769D2"
+        },
+        {
+          "q": "onze mille huit cent dix-sept",
+          "a": "11817",
+          "color": "#FFD900"
+        },
+        {
+          "q": "vingt-trois mille trois cent vingt-huit",
+          "a": "23328",
+          "color": "#159447"
+        },
+        {
+          "q": "trente-huit mille vingt-six",
+          "a": "38026",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "vingt-quatre mille quatre cent deux",
+          "a": "24402",
+          "color": "#803EAA"
+        },
+        {
+          "q": "cinquante-quatre mille neuf cent vingt et un",
+          "a": "54921",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "quinze mille trois cent quatre-vingt-six",
+          "a": "15386",
+          "color": "#8B4513"
+        },
+        {
+          "q": "dix-sept mille sept cent vingt-quatre",
+          "a": "17724",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "quarante-quatre mille quatre-vingts",
+          "a": "44080",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "54921",
+        "95596",
+        "17724",
+        "24402",
+        "11817",
+        "18308",
+        "44080",
+        "38026",
+        "23328",
+        "15386"
+      ]
+    },
+    {
+      "id": "mv9c7gylrvhv2",
+      "title": "Nombre juste avant · Noir",
+      "instruction": "Trouve le nombre juste avant.",
+      "rows": [
+        {
+          "q": "… est juste avant 66511",
+          "a": "66510",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste avant 68576",
+          "a": "68575",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste avant 41192",
+          "a": "41191",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste avant 39368",
+          "a": "39367",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste avant 83374",
+          "a": "83373",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste avant 8791",
+          "a": "8790",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste avant 16411",
+          "a": "16410",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste avant 57519",
+          "a": "57518",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste avant 27792",
+          "a": "27791",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste avant 35260",
+          "a": "35259",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "83373",
+        "8790",
+        "39367",
+        "57518",
+        "35259",
+        "27791",
+        "16410",
+        "68575",
+        "66510",
+        "41191"
+      ]
+    },
+    {
+      "id": "mv9c7gyl95q3a",
+      "title": "Nombre juste après · Noir",
+      "instruction": "Trouve le nombre juste après.",
+      "rows": [
+        {
+          "q": "… est juste après 61960",
+          "a": "61961",
+          "color": "#E32636"
+        },
+        {
+          "q": "… est juste après 94294",
+          "a": "94295",
+          "color": "#1769D2"
+        },
+        {
+          "q": "… est juste après 80613",
+          "a": "80614",
+          "color": "#FFD900"
+        },
+        {
+          "q": "… est juste après 99712",
+          "a": "99713",
+          "color": "#159447"
+        },
+        {
+          "q": "… est juste après 73664",
+          "a": "73665",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "… est juste après 63962",
+          "a": "63963",
+          "color": "#803EAA"
+        },
+        {
+          "q": "… est juste après 79555",
+          "a": "79556",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "… est juste après 61705",
+          "a": "61706",
+          "color": "#8B4513"
+        },
+        {
+          "q": "… est juste après 40829",
+          "a": "40830",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "… est juste après 91592",
+          "a": "91593",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "61706",
+        "63963",
+        "79556",
+        "40830",
+        "94295",
+        "80614",
+        "73665",
+        "61961",
+        "91593",
+        "99713"
+      ]
+    },
+    {
+      "id": "mv9c7gyl9pc7y",
+      "title": "Comparer deux nombres · Noir",
+      "instruction": "Trouve le plus grand nombre.",
+      "rows": [
+        {
+          "q": "Le plus grand : 41473 ou 30260 ?",
+          "a": "41473",
+          "color": "#E32636",
+          "choices": [
+            "41473",
+            "30260"
+          ]
+        },
+        {
+          "q": "Le plus grand : 83450 ou 85855 ?",
+          "a": "85855",
+          "color": "#1769D2",
+          "choices": [
+            "83450",
+            "85855"
+          ]
+        },
+        {
+          "q": "Le plus grand : 82851 ou 67275 ?",
+          "a": "82851",
+          "color": "#FFD900",
+          "choices": [
+            "82851",
+            "67275"
+          ]
+        },
+        {
+          "q": "Le plus grand : 51933 ou 38822 ?",
+          "a": "51933",
+          "color": "#159447",
+          "choices": [
+            "51933",
+            "38822"
+          ]
+        },
+        {
+          "q": "Le plus grand : 98287 ou 76361 ?",
+          "a": "98287",
+          "color": "#FF8A00",
+          "choices": [
+            "98287",
+            "76361"
+          ]
+        },
+        {
+          "q": "Le plus grand : 81470 ou 51100 ?",
+          "a": "81470",
+          "color": "#803EAA",
+          "choices": [
+            "81470",
+            "51100"
+          ]
+        },
+        {
+          "q": "Le plus grand : 9990 ou 70715 ?",
+          "a": "70715",
+          "color": "#F56BAD",
+          "choices": [
+            "9990",
+            "70715"
+          ]
+        },
+        {
+          "q": "Le plus grand : 72164 ou 71053 ?",
+          "a": "72164",
+          "color": "#8B4513",
+          "choices": [
+            "72164",
+            "71053"
+          ]
+        },
+        {
+          "q": "Le plus grand : 20974 ou 97567 ?",
+          "a": "97567",
+          "color": "#1B1B1B",
+          "choices": [
+            "20974",
+            "97567"
+          ]
+        },
+        {
+          "q": "Le plus grand : 67585 ou 38708 ?",
+          "a": "67585",
+          "color": "#FFFFFF",
+          "choices": [
+            "67585",
+            "38708"
+          ]
+        }
+      ],
+      "order": [
+        "67275",
+        "71053",
+        "83450",
+        "51100",
+        "85855",
+        "9990",
+        "81470",
+        "67585",
+        "98287",
+        "20974",
+        "30260",
+        "97567",
+        "51933",
+        "38708",
+        "70715",
+        "38822",
+        "76361",
+        "41473",
+        "82851",
+        "72164"
+      ]
+    },
+    {
+      "id": "mv9c7gylrfe38",
+      "title": "Décomposer un nombre · Noir",
+      "instruction": "Recompose le nombre.",
+      "rows": [
+        {
+          "q": "67 × 1000 + 8 × 100 + 3 × 10 + 5 × 1 = …",
+          "a": "67835",
+          "color": "#E32636"
+        },
+        {
+          "q": "68 × 1000 + 4 × 100 + 5 × 10 + 8 × 1 = …",
+          "a": "68458",
+          "color": "#1769D2"
+        },
+        {
+          "q": "42 × 1000 + 9 × 100 + 2 × 10 + 2 × 1 = …",
+          "a": "42922",
+          "color": "#FFD900"
+        },
+        {
+          "q": "64 × 1000 + 9 × 100 + 3 × 10 + 8 × 1 = …",
+          "a": "64938",
+          "color": "#159447"
+        },
+        {
+          "q": "31 × 1000 + 3 × 10 + 1 × 1 = …",
+          "a": "31031",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "35 × 1000 + 3 × 100 + 4 × 10 + 6 × 1 = …",
+          "a": "35346",
+          "color": "#803EAA"
+        },
+        {
+          "q": "93 × 1000 + 3 × 1 = …",
+          "a": "93003",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "2 × 1000 + 3 × 100 + 9 × 10 + 1 × 1 = …",
+          "a": "2391",
+          "color": "#8B4513"
+        },
+        {
+          "q": "8 × 100 + 9 × 10 + 2 × 1 = …",
+          "a": "892",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "23 × 1000 + 1 × 100 + 5 × 10 + 3 × 1 = …",
+          "a": "23153",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "31031",
+        "35346",
+        "42922",
+        "892",
+        "67835",
+        "93003",
+        "23153",
+        "64938",
+        "68458",
+        "2391"
+      ]
+    },
+    {
+      "id": "mv9c7gylzurwi",
+      "title": "Présent des verbes en -er · Jaune",
+      "instruction": "Conjugue le verbe au présent.",
+      "rows": [
+        {
+          "q": "Nous — passer",
+          "a": "passons",
+          "color": "#E32636"
+        },
+        {
+          "q": "Vous — travailler",
+          "a": "travaillez",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Ils — passer",
+          "a": "passent",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Il — parler",
+          "a": "parle",
+          "color": "#159447"
+        },
+        {
+          "q": "Tu — passer",
+          "a": "passes",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Ils — donner",
+          "a": "donnent",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Vous — jouer",
+          "a": "jouez",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Vous — regarder",
+          "a": "regardez",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Je — passer",
+          "a": "passe",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Vous — parler",
+          "a": "parlez",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "passent",
+        "parlez",
+        "jouez",
+        "donnent",
+        "passes",
+        "passe",
+        "passons",
+        "parle",
+        "travaillez",
+        "regardez"
+      ]
+    },
+    {
+      "id": "mv9c7gymivkcj",
+      "title": "Présent : être et avoir · Rouge",
+      "instruction": "Conjugue être ou avoir au présent.",
+      "rows": [
+        {
+          "q": "Tu — avoir",
+          "a": "as",
+          "color": "#E32636"
+        },
+        {
+          "q": "Ils — être",
+          "a": "sont",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Tu — être",
+          "a": "es",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Ils — avoir",
+          "a": "ont",
+          "color": "#159447"
+        },
+        {
+          "q": "Il — avoir",
+          "a": "a",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Je — être",
+          "a": "suis",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Nous — avoir",
+          "a": "avons",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Vous — avoir",
+          "a": "avez",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Il — être",
+          "a": "est",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Je — avoir",
+          "a": "ai",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "es",
+        "as",
+        "avez",
+        "a",
+        "suis",
+        "sont",
+        "ont",
+        "avons",
+        "est",
+        "ai"
+      ]
+    },
+    {
+      "id": "mv9c7gymt6zjd",
+      "title": "Trouver l’infinitif · Rouge",
+      "instruction": "Trouve l’infinitif du verbe conjugué.",
+      "rows": [
+        {
+          "q": "pensez",
+          "a": "penser",
+          "color": "#E32636"
+        },
+        {
+          "q": "remplissons",
+          "a": "remplir",
+          "color": "#1769D2"
+        },
+        {
+          "q": "reste",
+          "a": "rester",
+          "color": "#FFD900"
+        },
+        {
+          "q": "passe",
+          "a": "passer",
+          "color": "#159447"
+        },
+        {
+          "q": "travailles",
+          "a": "travailler",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "allez",
+          "a": "aller",
+          "color": "#803EAA"
+        },
+        {
+          "q": "ont",
+          "a": "avoir",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "demandent",
+          "a": "demander",
+          "color": "#8B4513"
+        },
+        {
+          "q": "aime",
+          "a": "aimer",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "peux",
+          "a": "pouvoir",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "travailler",
+        "aimer",
+        "penser",
+        "remplir",
+        "demander",
+        "rester",
+        "passer",
+        "avoir",
+        "pouvoir",
+        "aller"
+      ]
+    },
+    {
+      "id": "mv9c7gym6tupy",
+      "title": "Imparfait : verbes réguliers, être et avoir · Rose",
+      "instruction": "Conjugue le verbe à l’imparfait.",
+      "rows": [
+        {
+          "q": "Je — remplir",
+          "a": "remplissais",
+          "color": "#E32636"
+        },
+        {
+          "q": "Je — être",
+          "a": "étais",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Vous — demander",
+          "a": "demandiez",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Il — remplir",
+          "a": "remplissait",
+          "color": "#159447"
+        },
+        {
+          "q": "Nous — être",
+          "a": "étions",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Il — arriver",
+          "a": "arrivait",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Vous — porter",
+          "a": "portiez",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Ils — remplir",
+          "a": "remplissaient",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Nous — remplir",
+          "a": "remplissions",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Ils — grandir",
+          "a": "grandissaient",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "remplissions",
+        "remplissait",
+        "étions",
+        "portiez",
+        "grandissaient",
+        "étais",
+        "arrivait",
+        "remplissaient",
+        "demandiez",
+        "remplissais"
+      ]
+    },
+    {
+      "id": "mv9c7gymrhxiw",
+      "title": "Futur : verbes réguliers, être et avoir · Violet",
+      "instruction": "Conjugue le verbe au futur.",
+      "rows": [
+        {
+          "q": "Je — aimer",
+          "a": "aimerai",
+          "color": "#E32636"
+        },
+        {
+          "q": "Je — penser",
+          "a": "penserai",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Il — aimer",
+          "a": "aimera",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Ils — regarder",
+          "a": "regarderont",
+          "color": "#159447"
+        },
+        {
+          "q": "Vous — penser",
+          "a": "penserez",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Il — obéir",
+          "a": "obéira",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Tu — aimer",
+          "a": "aimeras",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Nous — rougir",
+          "a": "rougirons",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Il — réfléchir",
+          "a": "réfléchira",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Ils — rougir",
+          "a": "rougiront",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "aimerai",
+        "rougirons",
+        "regarderont",
+        "réfléchira",
+        "obéira",
+        "penserai",
+        "aimeras",
+        "penserez",
+        "rougiront",
+        "aimera"
+      ]
+    },
+    {
+      "id": "mv9c7gyng43at",
+      "title": "Présent des verbes courants irréguliers · Bleu",
+      "instruction": "Conjugue le verbe au présent.",
+      "rows": [
+        {
+          "q": "Il — prendre",
+          "a": "prend",
+          "color": "#E32636"
+        },
+        {
+          "q": "Il — voir",
+          "a": "voit",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Je — venir",
+          "a": "viens",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Je — prendre",
+          "a": "prends",
+          "color": "#159447"
+        },
+        {
+          "q": "Vous — aller",
+          "a": "allez",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Vous — voir",
+          "a": "voyez",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Nous — dire",
+          "a": "disons",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Nous — prendre",
+          "a": "prenons",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Je — vouloir",
+          "a": "veux",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Nous — aller",
+          "a": "allons",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "voyez",
+        "disons",
+        "voit",
+        "veux",
+        "allez",
+        "prends",
+        "allons",
+        "prenons",
+        "prend",
+        "viens"
+      ]
+    },
+    {
+      "id": "mv9c7gynpu6jv",
+      "title": "Passé composé avec avoir · Bleu",
+      "instruction": "Conjugue le verbe au passé composé.",
+      "rows": [
+        {
+          "q": "Vous — trouver",
+          "a": "avez trouvé",
+          "color": "#E32636"
+        },
+        {
+          "q": "Il — trouver",
+          "a": "a trouvé",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Il — donner",
+          "a": "a donné",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Tu — penser",
+          "a": "as pensé",
+          "color": "#159447"
+        },
+        {
+          "q": "Je — donner",
+          "a": "ai donné",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Tu — donner",
+          "a": "as donné",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Tu — pouvoir",
+          "a": "as pu",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Je — voir",
+          "a": "ai vu",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Ils — dire",
+          "a": "ont dit",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Nous — écouter",
+          "a": "avons écouté",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "ai vu",
+        "avez trouvé",
+        "ont dit",
+        "as pu",
+        "as donné",
+        "as pensé",
+        "avons écouté",
+        "ai donné",
+        "a trouvé",
+        "a donné"
+      ]
+    },
+    {
+      "id": "mv9c7gyn9tgea",
+      "title": "Formes irrégulières des verbes étudiés · Noir",
+      "instruction": "Trouve la forme verbale correcte.",
+      "rows": [
+        {
+          "q": "Tu — être (présent)",
+          "a": "es",
+          "color": "#E32636"
+        },
+        {
+          "q": "Je — avoir (imparfait)",
+          "a": "avais",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Nous — avoir (imparfait)",
+          "a": "avions",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Tu — être (futur)",
+          "a": "seras",
+          "color": "#159447"
+        },
+        {
+          "q": "Ils — aller (imparfait)",
+          "a": "allaient",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Je — être (futur)",
+          "a": "serai",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Il — avoir (imparfait)",
+          "a": "avait",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Vous — venir (futur)",
+          "a": "viendrez",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Il — avoir (futur)",
+          "a": "aura",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Je — avoir (futur)",
+          "a": "aurai",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "avais",
+        "viendrez",
+        "avait",
+        "es",
+        "seras",
+        "aura",
+        "avions",
+        "serai",
+        "allaient",
+        "aurai"
+      ]
+    },
+    {
+      "id": "mv9c7gynexugu",
+      "title": "Addition en ligne jusqu’à 10 · Vert",
+      "instruction": "Calcule l’addition.",
+      "rows": [
+        {
+          "q": "10 + 0 = …",
+          "a": "10",
+          "color": "#E32636"
+        },
+        {
+          "q": "6 + 1 = …",
+          "a": "7",
+          "color": "#1769D2"
+        },
+        {
+          "q": "2 + 2 = …",
+          "a": "4",
+          "color": "#FFD900"
+        },
+        {
+          "q": "0 + 3 = …",
+          "a": "3",
+          "color": "#159447"
+        },
+        {
+          "q": "6 + 3 = …",
+          "a": "9",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "0 + 5 = …",
+          "a": "5",
+          "color": "#803EAA"
+        },
+        {
+          "q": "0 + 0 = …",
+          "a": "0",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "1 + 7 = …",
+          "a": "8",
+          "color": "#8B4513"
+        },
+        {
+          "q": "0 + 6 = …",
+          "a": "6",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "1 + 0 = …",
+          "a": "1",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "6",
+        "9",
+        "7",
+        "0",
+        "4",
+        "1",
+        "10",
+        "8",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "id": "mv9c7gynp8mjo",
+      "title": "Addition sans retenue · Jaune",
+      "instruction": "Pose et calcule l’addition.",
+      "rows": [
+        {
+          "q": "Pose : 76 + 22",
+          "a": "98",
+          "color": "#E32636"
+        },
+        {
+          "q": "Pose : 43 + 34",
+          "a": "77",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Pose : 71 + 24",
+          "a": "95",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Pose : 10 + 27",
+          "a": "37",
+          "color": "#159447"
+        },
+        {
+          "q": "Pose : 11 + 56",
+          "a": "67",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Pose : 40 + 14",
+          "a": "54",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Pose : 22 + 77",
+          "a": "99",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Pose : 42 + 45",
+          "a": "87",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Pose : 63 + 11",
+          "a": "74",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Pose : 76 + 21",
+          "a": "97",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "87",
+        "97",
+        "37",
+        "99",
+        "74",
+        "98",
+        "95",
+        "67",
+        "54",
+        "77"
+      ]
+    },
+    {
+      "id": "mv9c7gyni8tyn",
+      "title": "Addition avec retenue · Rouge",
+      "instruction": "Pose et calcule l’addition.",
+      "rows": [
+        {
+          "q": "Pose : 47 + 26",
+          "a": "73",
+          "color": "#E32636"
+        },
+        {
+          "q": "Pose : 25 + 37",
+          "a": "62",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Pose : 38 + 47",
+          "a": "85",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Pose : 18 + 14",
+          "a": "32",
+          "color": "#159447"
+        },
+        {
+          "q": "Pose : 17 + 49",
+          "a": "66",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Pose : 28 + 25",
+          "a": "53",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Pose : 28 + 12",
+          "a": "40",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Pose : 44 + 46",
+          "a": "90",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Pose : 49 + 39",
+          "a": "88",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Pose : 49 + 35",
+          "a": "84",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "90",
+        "84",
+        "85",
+        "40",
+        "73",
+        "66",
+        "62",
+        "32",
+        "88",
+        "53"
+      ]
+    },
+    {
+      "id": "mv9c7gyn0vuea",
+      "title": "Soustraction sans retenue · Rose",
+      "instruction": "Pose et calcule la soustraction.",
+      "rows": [
+        {
+          "q": "Pose : 71 - 71",
+          "a": "0",
+          "color": "#E32636"
+        },
+        {
+          "q": "Pose : 87 - 15",
+          "a": "72",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Pose : 76 - 55",
+          "a": "21",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Pose : 98 - 75",
+          "a": "23",
+          "color": "#159447"
+        },
+        {
+          "q": "Pose : 86 - 36",
+          "a": "50",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Pose : 62 - 61",
+          "a": "1",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Pose : 89 - 46",
+          "a": "43",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Pose : 87 - 17",
+          "a": "70",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Pose : 77 - 24",
+          "a": "53",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Pose : 77 - 66",
+          "a": "11",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "11",
+        "70",
+        "50",
+        "1",
+        "72",
+        "23",
+        "53",
+        "21",
+        "43",
+        "0"
+      ]
+    },
+    {
+      "id": "mv9c7gynyxcup",
+      "title": "Soustraction avec retenue · Violet",
+      "instruction": "Pose et calcule la soustraction.",
+      "rows": [
+        {
+          "q": "Pose : 95 - 39",
+          "a": "56",
+          "color": "#E32636"
+        },
+        {
+          "q": "Pose : 85 - 76",
+          "a": "9",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Pose : 80 - 68",
+          "a": "12",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Pose : 73 - 54",
+          "a": "19",
+          "color": "#159447"
+        },
+        {
+          "q": "Pose : 64 - 49",
+          "a": "15",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Pose : 92 - 63",
+          "a": "29",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Pose : 70 - 67",
+          "a": "3",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Pose : 81 - 28",
+          "a": "53",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Pose : 70 - 36",
+          "a": "34",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Pose : 94 - 59",
+          "a": "35",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "19",
+        "15",
+        "9",
+        "3",
+        "53",
+        "29",
+        "35",
+        "12",
+        "34",
+        "56"
+      ]
+    },
+    {
+      "id": "mv9c7gynjnw91",
+      "title": "Multiplier par un chiffre · Bleu",
+      "instruction": "Pose et calcule la multiplication.",
+      "rows": [
+        {
+          "q": "Pose : 996 × 5",
+          "a": "4980",
+          "color": "#E32636"
+        },
+        {
+          "q": "Pose : 849 × 9",
+          "a": "7641",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Pose : 889 × 7",
+          "a": "6223",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Pose : 375 × 2",
+          "a": "750",
+          "color": "#159447"
+        },
+        {
+          "q": "Pose : 559 × 2",
+          "a": "1118",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Pose : 669 × 3",
+          "a": "2007",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Pose : 487 × 3",
+          "a": "1461",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Pose : 23 × 7",
+          "a": "161",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Pose : 833 × 6",
+          "a": "4998",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Pose : 955 × 6",
+          "a": "5730",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "5730",
+        "750",
+        "2007",
+        "4980",
+        "6223",
+        "1118",
+        "7641",
+        "161",
+        "1461",
+        "4998"
+      ]
+    },
+    {
+      "id": "mv9c7gyocou8z",
+      "title": "Multiplier par deux chiffres · Noir",
+      "instruction": "Pose et calcule la multiplication.",
+      "rows": [
+        {
+          "q": "Pose : 61 × 94",
+          "a": "5734",
+          "color": "#E32636"
+        },
+        {
+          "q": "Pose : 460 × 23",
+          "a": "10580",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Pose : 231 × 83",
+          "a": "19173",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Pose : 712 × 97",
+          "a": "69064",
+          "color": "#159447"
+        },
+        {
+          "q": "Pose : 916 × 37",
+          "a": "33892",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Pose : 983 × 90",
+          "a": "88470",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Pose : 710 × 32",
+          "a": "22720",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Pose : 606 × 86",
+          "a": "52116",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Pose : 336 × 61",
+          "a": "20496",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Pose : 973 × 20",
+          "a": "19460",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "22720",
+        "52116",
+        "88470",
+        "10580",
+        "69064",
+        "5734",
+        "19173",
+        "19460",
+        "20496",
+        "33892"
+      ]
+    },
+    {
+      "id": "mv9c7gypotjn2",
+      "title": "Division par un chiffre · Noir",
+      "instruction": "Pose et calcule la division.",
+      "rows": [
+        {
+          "q": "Pose : 1855 ÷ 5",
+          "a": "371",
+          "color": "#E32636"
+        },
+        {
+          "q": "Pose : 2060 ÷ 4",
+          "a": "515",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Pose : 3515 ÷ 5",
+          "a": "703",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Pose : 988 ÷ 4",
+          "a": "247",
+          "color": "#159447"
+        },
+        {
+          "q": "Pose : 5856 ÷ 6",
+          "a": "976",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Pose : 4564 ÷ 7",
+          "a": "652",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Pose : 6344 ÷ 8",
+          "a": "793",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Pose : 1190 ÷ 2",
+          "a": "595",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Pose : 141 ÷ 3",
+          "a": "47",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Pose : 4385 ÷ 5",
+          "a": "877",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "976",
+        "595",
+        "877",
+        "247",
+        "793",
+        "652",
+        "515",
+        "47",
+        "371",
+        "703"
+      ]
+    },
+    {
+      "id": "mv9c7gypur31m",
+      "title": "Lire les heures piles · Jaune",
+      "instruction": "Lis l’heure indiquée.",
+      "rows": [
+        {
+          "q": "matin",
+          "a": "5h",
+          "color": "#E32636",
+          "graphic": {
+            "type": "clock",
+            "hour": 5,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "17h",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "clock",
+            "hour": 5,
+            "minute": 0,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "20h",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "clock",
+            "hour": 8,
+            "minute": 0,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "22h",
+          "color": "#159447",
+          "graphic": {
+            "type": "clock",
+            "hour": 10,
+            "minute": 0,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "11h",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "clock",
+            "hour": 11,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "3h",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "7h",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "clock",
+            "hour": 7,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "10h",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "clock",
+            "hour": 10,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "21h",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 0,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "18h",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "clock",
+            "hour": 6,
+            "minute": 0,
+            "period": "evening"
+          }
+        }
+      ],
+      "order": [
+        "18h",
+        "11h",
+        "3h",
+        "22h",
+        "17h",
+        "20h",
+        "21h",
+        "5h",
+        "10h",
+        "7h"
+      ]
+    },
+    {
+      "id": "mv9c7gyp7yl38",
+      "title": "Choisir kg, m ou L · Jaune",
+      "instruction": "Choisis l’unité qui convient.",
+      "rows": [
+        {
+          "q": "La hauteur d’un immeuble est de 18 …\nkg / m / L",
+          "a": "m",
+          "color": "#E32636",
+          "choices": [
+            "kg",
+            "m",
+            "L"
+          ]
+        },
+        {
+          "q": "La hauteur d’une porte est de 2 …\nL / m / kg",
+          "a": "m",
+          "color": "#1769D2",
+          "choices": [
+            "L",
+            "m",
+            "kg"
+          ]
+        },
+        {
+          "q": "Un ruban mesure 3 …\nkg / L / m",
+          "a": "m",
+          "color": "#FFD900",
+          "choices": [
+            "kg",
+            "L",
+            "m"
+          ]
+        },
+        {
+          "q": "La longueur d’une classe est de 8 …\nkg / m / L",
+          "a": "m",
+          "color": "#159447",
+          "choices": [
+            "kg",
+            "m",
+            "L"
+          ]
+        },
+        {
+          "q": "La masse d’un cartable est de 4 …\nkg / m / L",
+          "a": "kg",
+          "color": "#FF8A00",
+          "choices": [
+            "kg",
+            "m",
+            "L"
+          ]
+        },
+        {
+          "q": "Un ruban mesure 3 …\nm / L / kg",
+          "a": "m",
+          "color": "#803EAA",
+          "choices": [
+            "m",
+            "L",
+            "kg"
+          ]
+        },
+        {
+          "q": "La longueur d’un terrain est de 100 …\nkg / m / L",
+          "a": "m",
+          "color": "#F56BAD",
+          "choices": [
+            "kg",
+            "m",
+            "L"
+          ]
+        },
+        {
+          "q": "La longueur d’une piscine est de 25 …\nkg / m / L",
+          "a": "m",
+          "color": "#8B4513",
+          "choices": [
+            "kg",
+            "m",
+            "L"
+          ]
+        },
+        {
+          "q": "La longueur d’une piscine est de 25 …\nkg / L / m",
+          "a": "m",
+          "color": "#1B1B1B",
+          "choices": [
+            "kg",
+            "L",
+            "m"
+          ]
+        },
+        {
+          "q": "La masse d’un cartable est de 4 …\nm / kg / L",
+          "a": "kg",
+          "color": "#FFFFFF",
+          "choices": [
+            "m",
+            "kg",
+            "L"
+          ]
+        }
+      ],
+      "order": [
+        "kg",
+        "m",
+        "L"
+      ]
+    },
+    {
+      "id": "mv9c7gyq2kgdy",
+      "title": "Pièces de 1 € et 2 € · Jaune",
+      "instruction": "Trouve la somme représentée.",
+      "rows": [
+        {
+          "q": "Monnaie",
+          "a": "6 €",
+          "color": "#E32636",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200,
+              200,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "5 €",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200,
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "1 €",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "money",
+            "values": [
+              100
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "2 €",
+          "color": "#159447",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "7 €",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200,
+              200,
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "3 €",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200,
+              100
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "8 €",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200,
+              200,
+              200,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "4 €",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "9 €",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200,
+              200,
+              200,
+              200,
+              100
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "10 €",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "money",
+            "values": [
+              200,
+              200,
+              200,
+              200,
+              200
+            ]
+          }
+        }
+      ],
+      "order": [
+        "2 €",
+        "9 €",
+        "10 €",
+        "8 €",
+        "7 €",
+        "4 €",
+        "1 €",
+        "5 €",
+        "6 €",
+        "3 €"
+      ]
+    },
+    {
+      "id": "mv9c7gyr21lq4",
+      "title": "Heures et demi-heures · Rouge",
+      "instruction": "Lis l’heure indiquée.",
+      "rows": [
+        {
+          "q": "matin",
+          "a": "7h",
+          "color": "#E32636",
+          "graphic": {
+            "type": "clock",
+            "hour": 7,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "22h30",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "clock",
+            "hour": 10,
+            "minute": 30,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "15h30",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 30,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "20h",
+          "color": "#159447",
+          "graphic": {
+            "type": "clock",
+            "hour": 8,
+            "minute": 0,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "10h",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "clock",
+            "hour": 10,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "14h",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "clock",
+            "hour": 2,
+            "minute": 0,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "2h",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "clock",
+            "hour": 2,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "3h",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "4h",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "clock",
+            "hour": 4,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "17h",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "clock",
+            "hour": 5,
+            "minute": 0,
+            "period": "afternoon"
+          }
+        }
+      ],
+      "order": [
+        "17h",
+        "7h",
+        "4h",
+        "10h",
+        "22h30",
+        "20h",
+        "3h",
+        "15h30",
+        "14h",
+        "2h"
+      ]
+    },
+    {
+      "id": "mv9c7gyraey94",
+      "title": "Choisir cm ou m · Rouge",
+      "instruction": "Choisis l’unité qui convient.",
+      "rows": [
+        {
+          "q": "La longueur d’un terrain est de 100 …\nm / cm",
+          "a": "m",
+          "color": "#E32636",
+          "choices": [
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "La longueur d’une gomme est de 4 …\nm / cm",
+          "a": "cm",
+          "color": "#1769D2",
+          "choices": [
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "La longueur d’une gomme est de 4 …\ncm / m",
+          "a": "cm",
+          "color": "#FFD900",
+          "choices": [
+            "cm",
+            "m"
+          ]
+        },
+        {
+          "q": "La largeur d’un cahier est de 21 …\nm / cm",
+          "a": "cm",
+          "color": "#159447",
+          "choices": [
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "La longueur d’un terrain est de 100 …\ncm / m",
+          "a": "m",
+          "color": "#FF8A00",
+          "choices": [
+            "cm",
+            "m"
+          ]
+        },
+        {
+          "q": "La longueur d’un crayon est de 15 …\nm / cm",
+          "a": "cm",
+          "color": "#803EAA",
+          "choices": [
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "La hauteur d’un immeuble est de 18 …\nm / cm",
+          "a": "m",
+          "color": "#F56BAD",
+          "choices": [
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "La longueur d’une classe est de 8 …\nm / cm",
+          "a": "m",
+          "color": "#8B4513",
+          "choices": [
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "Un ruban mesure 3 …\ncm / m",
+          "a": "m",
+          "color": "#1B1B1B",
+          "choices": [
+            "cm",
+            "m"
+          ]
+        },
+        {
+          "q": "La longueur d’un livre est de 24 …\nm / cm",
+          "a": "cm",
+          "color": "#FFFFFF",
+          "choices": [
+            "m",
+            "cm"
+          ]
+        }
+      ],
+      "order": [
+        "m",
+        "cm"
+      ]
+    },
+    {
+      "id": "mv9c7gyrwr7m1",
+      "title": "Billets de 5 € à 50 € · Rouge",
+      "instruction": "Trouve la somme représentée.",
+      "rows": [
+        {
+          "q": "Monnaie",
+          "a": "45 €",
+          "color": "#E32636",
+          "graphic": {
+            "type": "money",
+            "values": [
+              1000,
+              1000,
+              1000,
+              1000,
+              500
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "125 €",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "money",
+            "values": [
+              5000,
+              5000,
+              1000,
+              1000,
+              500
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "135 €",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "money",
+            "values": [
+              5000,
+              5000,
+              2000,
+              1000,
+              500
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "110 €",
+          "color": "#159447",
+          "graphic": {
+            "type": "money",
+            "values": [
+              5000,
+              2000,
+              2000,
+              1000,
+              1000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "5 €",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "money",
+            "values": [
+              500
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "100 €",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "money",
+            "values": [
+              5000,
+              5000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "30 €",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "money",
+            "values": [
+              2000,
+              1000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "220 €",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "money",
+            "values": [
+              5000,
+              5000,
+              5000,
+              5000,
+              2000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "50 €",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "money",
+            "values": [
+              5000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "10 €",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "money",
+            "values": [
+              1000
+            ]
+          }
+        }
+      ],
+      "order": [
+        "135 €",
+        "10 €",
+        "110 €",
+        "5 €",
+        "125 €",
+        "50 €",
+        "45 €",
+        "220 €",
+        "100 €",
+        "30 €"
+      ]
+    },
+    {
+      "id": "mv9c7gyrmh5p1",
+      "title": "Heures et quarts d’heure · Rose",
+      "instruction": "Lis l’heure indiquée.",
+      "rows": [
+        {
+          "q": "matin",
+          "a": "4h30",
+          "color": "#E32636",
+          "graphic": {
+            "type": "clock",
+            "hour": 4,
+            "minute": 30,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "18h30",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "clock",
+            "hour": 6,
+            "minute": 30,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "13h45",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "clock",
+            "hour": 1,
+            "minute": 45,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "14h45",
+          "color": "#159447",
+          "graphic": {
+            "type": "clock",
+            "hour": 2,
+            "minute": 45,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "3h",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "21h30",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 30,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "7h15",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "clock",
+            "hour": 7,
+            "minute": 15,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "18h15",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "clock",
+            "hour": 6,
+            "minute": 15,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "18h",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "clock",
+            "hour": 6,
+            "minute": 0,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "3h30",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 30,
+            "period": "morning"
+          }
+        }
+      ],
+      "order": [
+        "7h15",
+        "14h45",
+        "3h30",
+        "18h30",
+        "18h",
+        "13h45",
+        "21h30",
+        "3h",
+        "18h15",
+        "4h30"
+      ]
+    },
+    {
+      "id": "mv9c7gyrq7yyo",
+      "title": "Choisir cm, m ou km · Rose",
+      "instruction": "Choisis l’unité qui convient.",
+      "rows": [
+        {
+          "q": "La largeur d’un cahier est de 21 …\nkm / cm / m",
+          "a": "cm",
+          "color": "#E32636",
+          "choices": [
+            "km",
+            "cm",
+            "m"
+          ]
+        },
+        {
+          "q": "La hauteur d’une chaise est de 45 …\ncm / m / km",
+          "a": "cm",
+          "color": "#1769D2",
+          "choices": [
+            "cm",
+            "m",
+            "km"
+          ]
+        },
+        {
+          "q": "La hauteur d’un immeuble est de 18 …\nkm / m / cm",
+          "a": "m",
+          "color": "#FFD900",
+          "choices": [
+            "km",
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "La longueur d’un terrain est de 100 …\nm / cm / km",
+          "a": "m",
+          "color": "#159447",
+          "choices": [
+            "m",
+            "cm",
+            "km"
+          ]
+        },
+        {
+          "q": "La longueur d’une classe est de 8 …\nkm / m / cm",
+          "a": "m",
+          "color": "#FF8A00",
+          "choices": [
+            "km",
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "La longueur d’un livre est de 24 …\nkm / m / cm",
+          "a": "cm",
+          "color": "#803EAA",
+          "choices": [
+            "km",
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "q": "La longueur d’un pont est de 120 …\nm / cm / km",
+          "a": "m",
+          "color": "#F56BAD",
+          "choices": [
+            "m",
+            "cm",
+            "km"
+          ]
+        },
+        {
+          "q": "La longueur d’une gomme est de 4 …\nm / cm / km",
+          "a": "cm",
+          "color": "#8B4513",
+          "choices": [
+            "m",
+            "cm",
+            "km"
+          ]
+        },
+        {
+          "q": "La taille d’un élève est de 135 …\nm / km / cm",
+          "a": "cm",
+          "color": "#1B1B1B",
+          "choices": [
+            "m",
+            "km",
+            "cm"
+          ]
+        },
+        {
+          "q": "La hauteur d’un immeuble est de 18 …\ncm / m / km",
+          "a": "m",
+          "color": "#FFFFFF",
+          "choices": [
+            "cm",
+            "m",
+            "km"
+          ]
+        }
+      ],
+      "order": [
+        "km",
+        "cm",
+        "m"
+      ]
+    },
+    {
+      "id": "mv9c7gyr2ye4q",
+      "title": "Sommes de centimes · Rose",
+      "instruction": "Trouve la somme représentée.",
+      "rows": [
+        {
+          "q": "Monnaie",
+          "a": "0,30 €",
+          "color": "#E32636",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20,
+              10
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "0,01 €",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "money",
+            "values": [
+              1
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "0,51 €",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20,
+              20,
+              10,
+              1
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "0,20 €",
+          "color": "#159447",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "0,13 €",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "money",
+            "values": [
+              5,
+              5,
+              2,
+              1
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "0,15 €",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "money",
+            "values": [
+              10,
+              5
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "1,15 €",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "money",
+            "values": [
+              50,
+              50,
+              5,
+              5,
+              5
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "0,50 €",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "money",
+            "values": [
+              50
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "0,62 €",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "money",
+            "values": [
+              50,
+              5,
+              5,
+              2
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "0,02 €",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "money",
+            "values": [
+              2
+            ]
+          }
+        }
+      ],
+      "order": [
+        "0,30 €",
+        "0,01 €",
+        "0,02 €",
+        "0,62 €",
+        "0,15 €",
+        "0,20 €",
+        "0,51 €",
+        "0,13 €",
+        "1,15 €",
+        "0,50 €"
+      ]
+    },
+    {
+      "id": "mv9c7gysu7zlf",
+      "title": "Matin, après-midi et soir · Violet",
+      "instruction": "Lis l’heure et précise le moment.",
+      "rows": [
+        {
+          "q": "matin",
+          "a": "4h43",
+          "color": "#E32636",
+          "graphic": {
+            "type": "clock",
+            "hour": 4,
+            "minute": 43,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "9h25",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 25,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "21h55",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 55,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "19h22",
+          "color": "#159447",
+          "graphic": {
+            "type": "clock",
+            "hour": 7,
+            "minute": 22,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "21h35",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 35,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "17h36",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "clock",
+            "hour": 5,
+            "minute": 36,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "4h16",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "clock",
+            "hour": 4,
+            "minute": 16,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "14h09",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "clock",
+            "hour": 2,
+            "minute": 9,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "2h53",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "clock",
+            "hour": 2,
+            "minute": 53,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "22h37",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "clock",
+            "hour": 10,
+            "minute": 37,
+            "period": "evening"
+          }
+        }
+      ],
+      "order": [
+        "9h25",
+        "21h55",
+        "2h53",
+        "22h37",
+        "19h22",
+        "4h43",
+        "4h16",
+        "17h36",
+        "14h09",
+        "21h35"
+      ]
+    },
+    {
+      "id": "mv9c7gys3gdn3",
+      "title": "Comparer mm et cm · Violet",
+      "instruction": "Trouve la plus grande longueur.",
+      "rows": [
+        {
+          "q": "4 cm ou 184 mm ?",
+          "a": "184 mm",
+          "color": "#E32636",
+          "choices": [
+            "4 cm",
+            "184 mm"
+          ]
+        },
+        {
+          "q": "16 cm ou 465 mm ?",
+          "a": "465 mm",
+          "color": "#1769D2",
+          "choices": [
+            "16 cm",
+            "465 mm"
+          ]
+        },
+        {
+          "q": "48 cm ou 461 mm ?",
+          "a": "48 cm",
+          "color": "#FFD900",
+          "choices": [
+            "48 cm",
+            "461 mm"
+          ]
+        },
+        {
+          "q": "64 cm ou 983 mm ?",
+          "a": "983 mm",
+          "color": "#159447",
+          "choices": [
+            "64 cm",
+            "983 mm"
+          ]
+        },
+        {
+          "q": "68 cm ou 243 mm ?",
+          "a": "68 cm",
+          "color": "#FF8A00",
+          "choices": [
+            "68 cm",
+            "243 mm"
+          ]
+        },
+        {
+          "q": "35 cm ou 198 mm ?",
+          "a": "35 cm",
+          "color": "#803EAA",
+          "choices": [
+            "35 cm",
+            "198 mm"
+          ]
+        },
+        {
+          "q": "31 cm ou 757 mm ?",
+          "a": "757 mm",
+          "color": "#F56BAD",
+          "choices": [
+            "31 cm",
+            "757 mm"
+          ]
+        },
+        {
+          "q": "2 cm ou 370 mm ?",
+          "a": "370 mm",
+          "color": "#8B4513",
+          "choices": [
+            "2 cm",
+            "370 mm"
+          ]
+        },
+        {
+          "q": "50 cm ou 538 mm ?",
+          "a": "538 mm",
+          "color": "#1B1B1B",
+          "choices": [
+            "50 cm",
+            "538 mm"
+          ]
+        },
+        {
+          "q": "25 cm ou 758 mm ?",
+          "a": "758 mm",
+          "color": "#FFFFFF",
+          "choices": [
+            "25 cm",
+            "758 mm"
+          ]
+        }
+      ],
+      "order": [
+        "16 cm",
+        "50 cm",
+        "461 mm",
+        "4 cm",
+        "243 mm",
+        "370 mm",
+        "64 cm",
+        "184 mm",
+        "538 mm",
+        "757 mm",
+        "983 mm",
+        "48 cm",
+        "31 cm",
+        "758 mm",
+        "68 cm",
+        "35 cm",
+        "198 mm",
+        "2 cm",
+        "465 mm",
+        "25 cm"
+      ]
+    },
+    {
+      "id": "mv9c7gyt1gdi7",
+      "title": "Sommes supérieures à 100 € · Violet",
+      "instruction": "Trouve la somme représentée.",
+      "rows": [
+        {
+          "q": "Monnaie",
+          "a": "200 €",
+          "color": "#E32636",
+          "graphic": {
+            "type": "money",
+            "values": [
+              10000,
+              10000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "250 €",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20000,
+              5000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "400 €",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20000,
+              20000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "300 €",
+          "color": "#159447",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20000,
+              10000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "650 €",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20000,
+              20000,
+              10000,
+              10000,
+              5000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "550 €",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20000,
+              10000,
+              10000,
+              10000,
+              5000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "450 €",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20000,
+              10000,
+              10000,
+              5000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "100 €",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "money",
+            "values": [
+              5000,
+              5000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "500 €",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20000,
+              10000,
+              10000,
+              5000,
+              5000
+            ]
+          }
+        },
+        {
+          "q": "Monnaie",
+          "a": "600 €",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "money",
+            "values": [
+              20000,
+              20000,
+              20000
+            ]
+          }
+        }
+      ],
+      "order": [
+        "650 €",
+        "200 €",
+        "100 €",
+        "500 €",
+        "300 €",
+        "250 €",
+        "600 €",
+        "400 €",
+        "450 €",
+        "550 €"
+      ]
+    },
+    {
+      "id": "mv9c7gyt2z0no",
+      "title": "Lire l’heure à 5 minutes · Bleu",
+      "instruction": "Lis l’heure indiquée.",
+      "rows": [
+        {
+          "q": "après-midi",
+          "a": "15h15",
+          "color": "#E32636",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 15,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "9h45",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 45,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "21h25",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 25,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "4h25",
+          "color": "#159447",
+          "graphic": {
+            "type": "clock",
+            "hour": 4,
+            "minute": 25,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "5h30",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "clock",
+            "hour": 5,
+            "minute": 30,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "9h35",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 35,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "21h15",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 15,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "3h",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 0,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "20h40",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "clock",
+            "hour": 8,
+            "minute": 40,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "22h20",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "clock",
+            "hour": 10,
+            "minute": 20,
+            "period": "evening"
+          }
+        }
+      ],
+      "order": [
+        "4h25",
+        "5h30",
+        "21h25",
+        "20h40",
+        "21h15",
+        "9h45",
+        "15h15",
+        "22h20",
+        "3h",
+        "9h35"
+      ]
+    },
+    {
+      "id": "mv9c7gytdtxm9",
+      "title": "Comparer mm, cm et m · Bleu",
+      "instruction": "Trouve la plus grande longueur.",
+      "rows": [
+        {
+          "q": "1 m ou 636 cm ou 28 mm ?",
+          "a": "636 cm",
+          "color": "#E32636",
+          "choices": [
+            "1 m",
+            "636 cm",
+            "28 mm"
+          ]
+        },
+        {
+          "q": "2 m ou 673 cm ou 1944 mm ?",
+          "a": "673 cm",
+          "color": "#1769D2",
+          "choices": [
+            "2 m",
+            "673 cm",
+            "1944 mm"
+          ]
+        },
+        {
+          "q": "4 m ou 340 cm ou 2264 mm ?",
+          "a": "4 m",
+          "color": "#FFD900",
+          "choices": [
+            "4 m",
+            "340 cm",
+            "2264 mm"
+          ]
+        },
+        {
+          "q": "9 m ou 348 cm ou 743 mm ?",
+          "a": "9 m",
+          "color": "#159447",
+          "choices": [
+            "9 m",
+            "348 cm",
+            "743 mm"
+          ]
+        },
+        {
+          "q": "1 m ou 500 cm ou 1338 mm ?",
+          "a": "500 cm",
+          "color": "#FF8A00",
+          "choices": [
+            "1 m",
+            "500 cm",
+            "1338 mm"
+          ]
+        },
+        {
+          "q": "6 m ou 906 cm ou 1363 mm ?",
+          "a": "906 cm",
+          "color": "#803EAA",
+          "choices": [
+            "6 m",
+            "906 cm",
+            "1363 mm"
+          ]
+        },
+        {
+          "q": "8 m ou 851 cm ou 3314 mm ?",
+          "a": "851 cm",
+          "color": "#F56BAD",
+          "choices": [
+            "8 m",
+            "851 cm",
+            "3314 mm"
+          ]
+        },
+        {
+          "q": "4 m ou 789 cm ou 3016 mm ?",
+          "a": "789 cm",
+          "color": "#8B4513",
+          "choices": [
+            "4 m",
+            "789 cm",
+            "3016 mm"
+          ]
+        },
+        {
+          "q": "5 m ou 281 cm ou 5500 mm ?",
+          "a": "5500 mm",
+          "color": "#1B1B1B",
+          "choices": [
+            "5 m",
+            "281 cm",
+            "5500 mm"
+          ]
+        },
+        {
+          "q": "1 m ou 706 cm ou 957 mm ?",
+          "a": "706 cm",
+          "color": "#FFFFFF",
+          "choices": [
+            "1 m",
+            "706 cm",
+            "957 mm"
+          ]
+        }
+      ],
+      "order": [
+        "340 cm",
+        "4 m",
+        "851 cm",
+        "673 cm",
+        "2 m",
+        "789 cm",
+        "1363 mm",
+        "706 cm",
+        "2264 mm",
+        "6 m",
+        "3314 mm",
+        "636 cm",
+        "3016 mm",
+        "9 m",
+        "1944 mm",
+        "348 cm",
+        "8 m",
+        "281 cm",
+        "28 mm",
+        "1338 mm",
+        "5500 mm",
+        "500 cm",
+        "957 mm",
+        "743 mm",
+        "906 cm",
+        "5 m",
+        "1 m"
+      ]
+    },
+    {
+      "id": "mv9c7gyt8ga18",
+      "title": "Additionner des sommes · Bleu",
+      "instruction": "Calcule la somme d’argent.",
+      "rows": [
+        {
+          "q": "27,13 € + 76,69 €",
+          "a": "103,82 €",
+          "color": "#E32636"
+        },
+        {
+          "q": "89,60 € + 29,90 €",
+          "a": "119,50 €",
+          "color": "#1769D2"
+        },
+        {
+          "q": "97,77 € + 90,25 €",
+          "a": "188,02 €",
+          "color": "#FFD900"
+        },
+        {
+          "q": "73,87 € + 10,67 €",
+          "a": "84,54 €",
+          "color": "#159447"
+        },
+        {
+          "q": "76,93 € + 48,89 €",
+          "a": "125,82 €",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "30,28 € + 76,96 €",
+          "a": "107,24 €",
+          "color": "#803EAA"
+        },
+        {
+          "q": "10,08 € + 68,57 €",
+          "a": "78,65 €",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "19,08 € + 82,40 €",
+          "a": "101,48 €",
+          "color": "#8B4513"
+        },
+        {
+          "q": "15,96 € + 79,39 €",
+          "a": "95,35 €",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "73,68 € + 65,34 €",
+          "a": "139,02 €",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "103,82 €",
+        "188,02 €",
+        "125,82 €",
+        "78,65 €",
+        "84,54 €",
+        "139,02 €",
+        "95,35 €",
+        "107,24 €",
+        "119,50 €",
+        "101,48 €"
+      ]
+    },
+    {
+      "id": "mv9c7gyttdkno",
+      "title": "Lire l’heure à la minute · Noir",
+      "instruction": "Lis l’heure indiquée.",
+      "rows": [
+        {
+          "q": "soir",
+          "a": "21h40",
+          "color": "#E32636",
+          "graphic": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 40,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "10h44",
+          "color": "#1769D2",
+          "graphic": {
+            "type": "clock",
+            "hour": 10,
+            "minute": 44,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "3h51",
+          "color": "#FFD900",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 51,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "5h40",
+          "color": "#159447",
+          "graphic": {
+            "type": "clock",
+            "hour": 5,
+            "minute": 40,
+            "period": "morning"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "13h24",
+          "color": "#FF8A00",
+          "graphic": {
+            "type": "clock",
+            "hour": 1,
+            "minute": 24,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "18h51",
+          "color": "#803EAA",
+          "graphic": {
+            "type": "clock",
+            "hour": 6,
+            "minute": 51,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "18h25",
+          "color": "#F56BAD",
+          "graphic": {
+            "type": "clock",
+            "hour": 6,
+            "minute": 25,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "soir",
+          "a": "18h16",
+          "color": "#8B4513",
+          "graphic": {
+            "type": "clock",
+            "hour": 6,
+            "minute": 16,
+            "period": "evening"
+          }
+        },
+        {
+          "q": "après-midi",
+          "a": "15h47",
+          "color": "#1B1B1B",
+          "graphic": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 47,
+            "period": "afternoon"
+          }
+        },
+        {
+          "q": "matin",
+          "a": "8h57",
+          "color": "#FFFFFF",
+          "graphic": {
+            "type": "clock",
+            "hour": 8,
+            "minute": 57,
+            "period": "morning"
+          }
+        }
+      ],
+      "order": [
+        "8h57",
+        "18h51",
+        "18h16",
+        "3h51",
+        "21h40",
+        "15h47",
+        "18h25",
+        "10h44",
+        "5h40",
+        "13h24"
+      ]
+    },
+    {
+      "id": "mv9c7gyt3rk85",
+      "title": "Périmètre d’un polygone · Noir",
+      "instruction": "Calcule le périmètre.",
+      "rows": [
+        {
+          "q": "Périmètre : 14 cm × 19 cm",
+          "a": "66 cm",
+          "color": "#E32636"
+        },
+        {
+          "q": "Périmètre : 16 cm × 2 cm",
+          "a": "36 cm",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Périmètre : 7 cm × 14 cm",
+          "a": "42 cm",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Périmètre : 20 cm × 3 cm",
+          "a": "46 cm",
+          "color": "#159447"
+        },
+        {
+          "q": "Périmètre : 6 cm × 7 cm",
+          "a": "26 cm",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Périmètre : 10 cm × 15 cm",
+          "a": "50 cm",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Périmètre : 7 cm × 4 cm",
+          "a": "22 cm",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Périmètre : 5 cm × 7 cm",
+          "a": "24 cm",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Périmètre : 19 cm × 19 cm",
+          "a": "76 cm",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Périmètre : 10 cm × 9 cm",
+          "a": "38 cm",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "66 cm",
+        "24 cm",
+        "46 cm",
+        "50 cm",
+        "22 cm",
+        "36 cm",
+        "76 cm",
+        "42 cm",
+        "26 cm",
+        "38 cm"
+      ]
+    },
+    {
+      "id": "mv9c7gytuta2n",
+      "title": "Rendre la monnaie · Noir",
+      "instruction": "Calcule la monnaie rendue.",
+      "rows": [
+        {
+          "q": "Payé 50 € · prix 8,72 €",
+          "a": "41,28 €",
+          "color": "#E32636"
+        },
+        {
+          "q": "Payé 100 € · prix 1,61 €",
+          "a": "98,39 €",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Payé 50 € · prix 11,06 €",
+          "a": "38,94 €",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Payé 50 € · prix 8,58 €",
+          "a": "41,42 €",
+          "color": "#159447"
+        },
+        {
+          "q": "Payé 50 € · prix 14,95 €",
+          "a": "35,05 €",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Payé 20 € · prix 8,84 €",
+          "a": "11,16 €",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Payé 50 € · prix 15,64 €",
+          "a": "34,36 €",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Payé 50 € · prix 3,24 €",
+          "a": "46,76 €",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Payé 20 € · prix 4 €",
+          "a": "16 €",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Payé 100 € · prix 3,61 €",
+          "a": "96,39 €",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "38,94 €",
+        "11,16 €",
+        "41,28 €",
+        "35,05 €",
+        "98,39 €",
+        "46,76 €",
+        "41,42 €",
+        "34,36 €",
+        "16 €",
+        "96,39 €"
+      ]
+    },
+    {
+      "id": "mv9c7gytjvfdl",
+      "title": "Soustraire des sommes · Noir",
+      "instruction": "Calcule la différence.",
+      "rows": [
+        {
+          "q": "187,57 € - 75,61 €",
+          "a": "111,96 €",
+          "color": "#E32636"
+        },
+        {
+          "q": "145,50 € - 83,05 €",
+          "a": "62,45 €",
+          "color": "#1769D2"
+        },
+        {
+          "q": "74,70 € - 70,94 €",
+          "a": "3,76 €",
+          "color": "#FFD900"
+        },
+        {
+          "q": "124,10 € - 63,52 €",
+          "a": "60,58 €",
+          "color": "#159447"
+        },
+        {
+          "q": "118,09 € - 5,76 €",
+          "a": "112,33 €",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "181,42 € - 76,18 €",
+          "a": "105,24 €",
+          "color": "#803EAA"
+        },
+        {
+          "q": "124,42 € - 4,71 €",
+          "a": "119,71 €",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "96,94 € - 75,01 €",
+          "a": "21,93 €",
+          "color": "#8B4513"
+        },
+        {
+          "q": "89,55 € - 30,77 €",
+          "a": "58,78 €",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "48,73 € - 16,25 €",
+          "a": "32,48 €",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "60,58 €",
+        "58,78 €",
+        "119,71 €",
+        "112,33 €",
+        "105,24 €",
+        "3,76 €",
+        "111,96 €",
+        "32,48 €",
+        "21,93 €",
+        "62,45 €"
+      ]
+    },
+    {
+      "id": "mv9c7gyubv5qa",
+      "title": "Sommes jusqu’à 9 · Vert",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "8 + 1 = …",
+          "a": "9",
+          "color": "#E32636"
+        },
+        {
+          "q": "1 + 0 = …",
+          "a": "1",
+          "color": "#1769D2"
+        },
+        {
+          "q": "1 + 6 = …",
+          "a": "7",
+          "color": "#FFD900"
+        },
+        {
+          "q": "3 + 0 = …",
+          "a": "3",
+          "color": "#159447"
+        },
+        {
+          "q": "8 + 0 = …",
+          "a": "8",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "5 + 0 = …",
+          "a": "5",
+          "color": "#803EAA"
+        },
+        {
+          "q": "1 + 3 = …",
+          "a": "4",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "6 + 0 = …",
+          "a": "6",
+          "color": "#8B4513"
+        },
+        {
+          "q": "2 + 0 = …",
+          "a": "2",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "0 + 0 = …",
+          "a": "0",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "8",
+        "9",
+        "7",
+        "0",
+        "2",
+        "1",
+        "4",
+        "6",
+        "3",
+        "5"
+      ]
+    },
+    {
+      "id": "mv9c7gyu45y6u",
+      "title": "Enlever 1 ou 2 · Vert",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "6 - 2 = …",
+          "a": "4",
+          "color": "#E32636"
+        },
+        {
+          "q": "6 - 1 = …",
+          "a": "5",
+          "color": "#1769D2"
+        },
+        {
+          "q": "2 - 1 = …",
+          "a": "1",
+          "color": "#FFD900"
+        },
+        {
+          "q": "10 - 2 = …",
+          "a": "8",
+          "color": "#159447"
+        },
+        {
+          "q": "8 - 2 = …",
+          "a": "6",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "5 - 2 = …",
+          "a": "3",
+          "color": "#803EAA"
+        },
+        {
+          "q": "4 - 2 = …",
+          "a": "2",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "9 - 2 = …",
+          "a": "7",
+          "color": "#8B4513"
+        },
+        {
+          "q": "2 - 2 = …",
+          "a": "0",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "10 - 1 = …",
+          "a": "9",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "0",
+        "8",
+        "9",
+        "6",
+        "4",
+        "3",
+        "5",
+        "1",
+        "7",
+        "2"
+      ]
+    },
+    {
+      "id": "mv9c7gyvvftbi",
+      "title": "Doubles de 1 à 5 · Vert",
+      "instruction": "Trouve le double.",
+      "rows": [
+        {
+          "q": "Double de 3",
+          "a": "6",
+          "color": "#E32636"
+        },
+        {
+          "q": "Double de 4 €",
+          "a": "8 €",
+          "color": "#1769D2"
+        },
+        {
+          "q": "Double de 5",
+          "a": "10",
+          "color": "#FFD900"
+        },
+        {
+          "q": "Double de 2",
+          "a": "4",
+          "color": "#159447"
+        },
+        {
+          "q": "Double de 5 €",
+          "a": "10 €",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "Double de 3 €",
+          "a": "6 €",
+          "color": "#803EAA"
+        },
+        {
+          "q": "Double de 4",
+          "a": "8",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "Double de 2 €",
+          "a": "4 €",
+          "color": "#8B4513"
+        },
+        {
+          "q": "Double de 1 €",
+          "a": "2 €",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "Double de 1",
+          "a": "2",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "4 €",
+        "4",
+        "10 €",
+        "2 €",
+        "6",
+        "8",
+        "10",
+        "2",
+        "6 €",
+        "8 €"
+      ]
+    },
+    {
+      "id": "mv9c7gyvmokc4",
+      "title": "Ajouter un chiffre · Jaune",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "22 + 6 = …",
+          "a": "28",
+          "color": "#E32636"
+        },
+        {
+          "q": "19 + 4 = …",
+          "a": "23",
+          "color": "#1769D2"
+        },
+        {
+          "q": "14 + 2 = …",
+          "a": "16",
+          "color": "#FFD900"
+        },
+        {
+          "q": "23 + 6 = …",
+          "a": "29",
+          "color": "#159447"
+        },
+        {
+          "q": "21 + 5 = …",
+          "a": "26",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "10 + 2 = …",
+          "a": "12",
+          "color": "#803EAA"
+        },
+        {
+          "q": "16 + 1 = …",
+          "a": "17",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "29 + 2 = …",
+          "a": "31",
+          "color": "#8B4513"
+        },
+        {
+          "q": "18 + 3 = …",
+          "a": "21",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "26 + 1 = …",
+          "a": "27",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "23",
+        "21",
+        "26",
+        "28",
+        "12",
+        "31",
+        "27",
+        "17",
+        "16",
+        "29"
+      ]
+    },
+    {
+      "id": "mv9c7gyv0oq12",
+      "title": "Enlever un chiffre · Jaune",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "18 - 9 = …",
+          "a": "9",
+          "color": "#E32636"
+        },
+        {
+          "q": "21 - 3 = …",
+          "a": "18",
+          "color": "#1769D2"
+        },
+        {
+          "q": "20 - 4 = …",
+          "a": "16",
+          "color": "#FFD900"
+        },
+        {
+          "q": "25 - 3 = …",
+          "a": "22",
+          "color": "#159447"
+        },
+        {
+          "q": "25 - 2 = …",
+          "a": "23",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "12 - 9 = …",
+          "a": "3",
+          "color": "#803EAA"
+        },
+        {
+          "q": "25 - 8 = …",
+          "a": "17",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "15 - 1 = …",
+          "a": "14",
+          "color": "#8B4513"
+        },
+        {
+          "q": "14 - 6 = …",
+          "a": "8",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "11 - 5 = …",
+          "a": "6",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "18",
+        "23",
+        "9",
+        "3",
+        "17",
+        "6",
+        "22",
+        "14",
+        "16",
+        "8"
+      ]
+    },
+    {
+      "id": "mv9c7gyvbvgg5",
+      "title": "Tables de 0, 1 et 2 · Jaune",
+      "instruction": "Trouve le produit.",
+      "rows": [
+        {
+          "q": "0 × 10 = …",
+          "a": "0",
+          "color": "#E32636"
+        },
+        {
+          "q": "2 × 10 = …",
+          "a": "20",
+          "color": "#1769D2"
+        },
+        {
+          "q": "1 × 8 = …",
+          "a": "8",
+          "color": "#FFD900"
+        },
+        {
+          "q": "1 × 5 = …",
+          "a": "5",
+          "color": "#159447"
+        },
+        {
+          "q": "2 × 5 = …",
+          "a": "10",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "1 × 4 = …",
+          "a": "4",
+          "color": "#803EAA"
+        },
+        {
+          "q": "2 × 1 = …",
+          "a": "2",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "2 × 3 = …",
+          "a": "6",
+          "color": "#8B4513"
+        },
+        {
+          "q": "2 × 7 = …",
+          "a": "14",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "1 × 7 = …",
+          "a": "7",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "14",
+        "6",
+        "20",
+        "2",
+        "4",
+        "0",
+        "5",
+        "8",
+        "10",
+        "7"
+      ]
+    },
+    {
+      "id": "mv9c7gyvsalny",
+      "title": "Ajouter ou retirer des dizaines · Rouge",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "70 + 60 = …",
+          "a": "130",
+          "color": "#E32636"
+        },
+        {
+          "q": "40 - 20 = …",
+          "a": "20",
+          "color": "#1769D2"
+        },
+        {
+          "q": "60 + 80 = …",
+          "a": "140",
+          "color": "#FFD900"
+        },
+        {
+          "q": "90 - 80 = …",
+          "a": "10",
+          "color": "#159447"
+        },
+        {
+          "q": "20 + 50 = …",
+          "a": "70",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "70 - 20 = …",
+          "a": "50",
+          "color": "#803EAA"
+        },
+        {
+          "q": "80 - 20 = …",
+          "a": "60",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "10 + 20 = …",
+          "a": "30",
+          "color": "#8B4513"
+        },
+        {
+          "q": "90 + 30 = …",
+          "a": "120",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "70 + 80 = …",
+          "a": "150",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "10",
+        "140",
+        "20",
+        "50",
+        "130",
+        "150",
+        "120",
+        "70",
+        "30",
+        "60"
+      ]
+    },
+    {
+      "id": "mv9c7gyvht4co",
+      "title": "Tables de 5 et 10 · Rouge",
+      "instruction": "Trouve le produit.",
+      "rows": [
+        {
+          "q": "5 × 9 = …",
+          "a": "45",
+          "color": "#E32636"
+        },
+        {
+          "q": "5 × 7 = …",
+          "a": "35",
+          "color": "#1769D2"
+        },
+        {
+          "q": "5 × 3 = …",
+          "a": "15",
+          "color": "#FFD900"
+        },
+        {
+          "q": "10 × 2 = …",
+          "a": "20",
+          "color": "#159447"
+        },
+        {
+          "q": "10 × 10 = …",
+          "a": "100",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "10 × 7 = …",
+          "a": "70",
+          "color": "#803EAA"
+        },
+        {
+          "q": "5 × 6 = …",
+          "a": "30",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "10 × 1 = …",
+          "a": "10",
+          "color": "#8B4513"
+        },
+        {
+          "q": "10 × 5 = …",
+          "a": "50",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "10 × 6 = …",
+          "a": "60",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "70",
+        "50",
+        "45",
+        "35",
+        "20",
+        "60",
+        "100",
+        "30",
+        "15",
+        "10"
+      ]
+    },
+    {
+      "id": "mv9c7gyvzekcd",
+      "title": "Ajouter ou retirer un chiffre · Rose",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "608 + 6 = …",
+          "a": "614",
+          "color": "#E32636"
+        },
+        {
+          "q": "891 + 1 = …",
+          "a": "892",
+          "color": "#1769D2"
+        },
+        {
+          "q": "377 - 4 = …",
+          "a": "373",
+          "color": "#FFD900"
+        },
+        {
+          "q": "719 + 7 = …",
+          "a": "726",
+          "color": "#159447"
+        },
+        {
+          "q": "936 + 5 = …",
+          "a": "941",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "846 - 7 = …",
+          "a": "839",
+          "color": "#803EAA"
+        },
+        {
+          "q": "922 + 8 = …",
+          "a": "930",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "288 - 6 = …",
+          "a": "282",
+          "color": "#8B4513"
+        },
+        {
+          "q": "409 + 6 = …",
+          "a": "415",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "34 + 1 = …",
+          "a": "35",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "35",
+        "941",
+        "282",
+        "726",
+        "839",
+        "614",
+        "373",
+        "930",
+        "415",
+        "892"
+      ]
+    },
+    {
+      "id": "mv9c7gyvbpeb2",
+      "title": "Table de 3 · Rose",
+      "instruction": "Trouve le produit.",
+      "rows": [
+        {
+          "q": "3 × 5 = …",
+          "a": "15",
+          "color": "#E32636"
+        },
+        {
+          "q": "3 × 7 = …",
+          "a": "21",
+          "color": "#1769D2"
+        },
+        {
+          "q": "3 × 10 = …",
+          "a": "30",
+          "color": "#FFD900"
+        },
+        {
+          "q": "3 × 1 = …",
+          "a": "3",
+          "color": "#159447"
+        },
+        {
+          "q": "3 × 3 = …",
+          "a": "9",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "3 × 0 = …",
+          "a": "0",
+          "color": "#803EAA"
+        },
+        {
+          "q": "3 × 2 = …",
+          "a": "6",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "3 × 6 = …",
+          "a": "18",
+          "color": "#8B4513"
+        },
+        {
+          "q": "3 × 9 = …",
+          "a": "27",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "3 × 8 = …",
+          "a": "24",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "18",
+        "21",
+        "9",
+        "27",
+        "6",
+        "3",
+        "0",
+        "15",
+        "24",
+        "30"
+      ]
+    },
+    {
+      "id": "mv9c7gyw1gsjh",
+      "title": "Calculer avec les chiffres des unités · Violet",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "383 + 8 = …",
+          "a": "391",
+          "color": "#E32636"
+        },
+        {
+          "q": "73 + 1 = …",
+          "a": "74",
+          "color": "#1769D2"
+        },
+        {
+          "q": "713 - 7 = …",
+          "a": "706",
+          "color": "#FFD900"
+        },
+        {
+          "q": "455 - 7 = …",
+          "a": "448",
+          "color": "#159447"
+        },
+        {
+          "q": "729 - 5 = …",
+          "a": "724",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "461 - 5 = …",
+          "a": "456",
+          "color": "#803EAA"
+        },
+        {
+          "q": "533 + 8 = …",
+          "a": "541",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "748 - 5 = …",
+          "a": "743",
+          "color": "#8B4513"
+        },
+        {
+          "q": "211 + 2 = …",
+          "a": "213",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "70 - 3 = …",
+          "a": "67",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "456",
+        "541",
+        "74",
+        "706",
+        "724",
+        "391",
+        "213",
+        "448",
+        "67",
+        "743"
+      ]
+    },
+    {
+      "id": "mv9c7gywo8b4z",
+      "title": "Table de 4 · Violet",
+      "instruction": "Trouve le produit.",
+      "rows": [
+        {
+          "q": "4 × 5 = …",
+          "a": "20",
+          "color": "#E32636"
+        },
+        {
+          "q": "4 × 6 = …",
+          "a": "24",
+          "color": "#1769D2"
+        },
+        {
+          "q": "4 × 9 = …",
+          "a": "36",
+          "color": "#FFD900"
+        },
+        {
+          "q": "4 × 3 = …",
+          "a": "12",
+          "color": "#159447"
+        },
+        {
+          "q": "4 × 10 = …",
+          "a": "40",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "4 × 8 = …",
+          "a": "32",
+          "color": "#803EAA"
+        },
+        {
+          "q": "4 × 1 = …",
+          "a": "4",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "4 × 4 = …",
+          "a": "16",
+          "color": "#8B4513"
+        },
+        {
+          "q": "4 × 7 = …",
+          "a": "28",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "4 × 0 = …",
+          "a": "0",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "12",
+        "32",
+        "28",
+        "20",
+        "0",
+        "24",
+        "40",
+        "36",
+        "4",
+        "16"
+      ]
+    },
+    {
+      "id": "mv9c7gywh37g7",
+      "title": "Deux nombres à deux chiffres · Bleu",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "80 + 30 = …",
+          "a": "110",
+          "color": "#E32636"
+        },
+        {
+          "q": "55 + 19 = …",
+          "a": "74",
+          "color": "#1769D2"
+        },
+        {
+          "q": "98 + 40 = …",
+          "a": "138",
+          "color": "#FFD900"
+        },
+        {
+          "q": "79 - 12 = …",
+          "a": "67",
+          "color": "#159447"
+        },
+        {
+          "q": "47 + 10 = …",
+          "a": "57",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "43 + 17 = …",
+          "a": "60",
+          "color": "#803EAA"
+        },
+        {
+          "q": "70 - 58 = …",
+          "a": "12",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "18 - 14 = …",
+          "a": "4",
+          "color": "#8B4513"
+        },
+        {
+          "q": "31 + 28 = …",
+          "a": "59",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "76 + 50 = …",
+          "a": "126",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "57",
+        "110",
+        "126",
+        "138",
+        "74",
+        "4",
+        "12",
+        "67",
+        "59",
+        "60"
+      ]
+    },
+    {
+      "id": "mv9c7gyw5ya1w",
+      "title": "Tables de 6 et 7 · Bleu",
+      "instruction": "Trouve le produit.",
+      "rows": [
+        {
+          "q": "7 × 1 = …",
+          "a": "7",
+          "color": "#E32636"
+        },
+        {
+          "q": "6 × 3 = …",
+          "a": "18",
+          "color": "#1769D2"
+        },
+        {
+          "q": "6 × 6 = …",
+          "a": "36",
+          "color": "#FFD900"
+        },
+        {
+          "q": "7 × 2 = …",
+          "a": "14",
+          "color": "#159447"
+        },
+        {
+          "q": "7 × 7 = …",
+          "a": "49",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "7 × 5 = …",
+          "a": "35",
+          "color": "#803EAA"
+        },
+        {
+          "q": "7 × 9 = …",
+          "a": "63",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "6 × 9 = …",
+          "a": "54",
+          "color": "#8B4513"
+        },
+        {
+          "q": "7 × 3 = …",
+          "a": "21",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "7 × 6 = …",
+          "a": "42",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "54",
+        "7",
+        "49",
+        "21",
+        "35",
+        "18",
+        "14",
+        "36",
+        "63",
+        "42"
+      ]
+    },
+    {
+      "id": "mv9c7gywsi7v6",
+      "title": "Divisions par 2 à 7 · Bleu",
+      "instruction": "Trouve le quotient.",
+      "rows": [
+        {
+          "q": "36 ÷ 6 = …",
+          "a": "6",
+          "color": "#E32636"
+        },
+        {
+          "q": "16 ÷ 2 = …",
+          "a": "8",
+          "color": "#1769D2"
+        },
+        {
+          "q": "21 ÷ 3 = …",
+          "a": "7",
+          "color": "#FFD900"
+        },
+        {
+          "q": "9 ÷ 3 = …",
+          "a": "3",
+          "color": "#159447"
+        },
+        {
+          "q": "12 ÷ 3 = …",
+          "a": "4",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "25 ÷ 5 = …",
+          "a": "5",
+          "color": "#803EAA"
+        },
+        {
+          "q": "8 ÷ 4 = …",
+          "a": "2",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "60 ÷ 6 = …",
+          "a": "10",
+          "color": "#8B4513"
+        },
+        {
+          "q": "7 ÷ 7 = …",
+          "a": "1",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "63 ÷ 7 = …",
+          "a": "9",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "8",
+        "3",
+        "1",
+        "7",
+        "10",
+        "6",
+        "9",
+        "5",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "id": "mv9c7gyxcctvx",
+      "title": "Grands nombres sans retenue · Noir",
+      "instruction": "Calcule mentalement.",
+      "rows": [
+        {
+          "q": "84923 + 10010 = …",
+          "a": "94933",
+          "color": "#E32636"
+        },
+        {
+          "q": "63072 + 6305 = …",
+          "a": "69377",
+          "color": "#1769D2"
+        },
+        {
+          "q": "54541 - 42141 = …",
+          "a": "12400",
+          "color": "#FFD900"
+        },
+        {
+          "q": "64237 - 20112 = …",
+          "a": "44125",
+          "color": "#159447"
+        },
+        {
+          "q": "59958 + 40 = …",
+          "a": "59998",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "56902 - 54800 = …",
+          "a": "2102",
+          "color": "#803EAA"
+        },
+        {
+          "q": "42539 + 56250 = …",
+          "a": "98789",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "62614 - 31404 = …",
+          "a": "31210",
+          "color": "#8B4513"
+        },
+        {
+          "q": "68506 - 32505 = …",
+          "a": "36001",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "66813 + 12030 = …",
+          "a": "78843",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "2102",
+        "78843",
+        "36001",
+        "98789",
+        "31210",
+        "12400",
+        "59998",
+        "94933",
+        "44125",
+        "69377"
+      ]
+    },
+    {
+      "id": "mv9c7gyxmbip5",
+      "title": "Tables de 8 et 9 · Noir",
+      "instruction": "Trouve le produit.",
+      "rows": [
+        {
+          "q": "9 × 3 = …",
+          "a": "27",
+          "color": "#E32636"
+        },
+        {
+          "q": "8 × 0 = …",
+          "a": "0",
+          "color": "#1769D2"
+        },
+        {
+          "q": "9 × 10 = …",
+          "a": "90",
+          "color": "#FFD900"
+        },
+        {
+          "q": "9 × 4 = …",
+          "a": "36",
+          "color": "#159447"
+        },
+        {
+          "q": "8 × 6 = …",
+          "a": "48",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "8 × 3 = …",
+          "a": "24",
+          "color": "#803EAA"
+        },
+        {
+          "q": "9 × 6 = …",
+          "a": "54",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "8 × 10 = …",
+          "a": "80",
+          "color": "#8B4513"
+        },
+        {
+          "q": "9 × 5 = …",
+          "a": "45",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "9 × 9 = …",
+          "a": "81",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "81",
+        "48",
+        "36",
+        "24",
+        "45",
+        "0",
+        "90",
+        "80",
+        "54",
+        "27"
+      ]
+    },
+    {
+      "id": "mv9c7gyxgiltm",
+      "title": "Divisions par 2 à 9 · Noir",
+      "instruction": "Trouve le quotient.",
+      "rows": [
+        {
+          "q": "42 ÷ 6 = …",
+          "a": "7",
+          "color": "#E32636"
+        },
+        {
+          "q": "16 ÷ 4 = …",
+          "a": "4",
+          "color": "#1769D2"
+        },
+        {
+          "q": "20 ÷ 4 = …",
+          "a": "5",
+          "color": "#FFD900"
+        },
+        {
+          "q": "12 ÷ 2 = …",
+          "a": "6",
+          "color": "#159447"
+        },
+        {
+          "q": "12 ÷ 6 = …",
+          "a": "2",
+          "color": "#FF8A00"
+        },
+        {
+          "q": "4 ÷ 4 = …",
+          "a": "1",
+          "color": "#803EAA"
+        },
+        {
+          "q": "60 ÷ 6 = …",
+          "a": "10",
+          "color": "#F56BAD"
+        },
+        {
+          "q": "9 ÷ 3 = …",
+          "a": "3",
+          "color": "#8B4513"
+        },
+        {
+          "q": "40 ÷ 5 = …",
+          "a": "8",
+          "color": "#1B1B1B"
+        },
+        {
+          "q": "36 ÷ 4 = …",
+          "a": "9",
+          "color": "#FFFFFF"
+        }
+      ],
+      "order": [
+        "5",
+        "8",
+        "2",
+        "1",
+        "4",
+        "10",
+        "3",
+        "7",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "id": "mv9c7gyxkc7tu",
+      "title": "Trouver l’intrus · Vert",
+      "instruction": "Trouve le mot qui n’appartient pas à la même catégorie.",
+      "rows": [
+        {
+          "q": "rouge · table · bleu · vert",
+          "a": "table",
+          "color": "#E32636",
+          "choices": [
+            "rouge",
+            "bleu",
+            "vert",
+            "table"
+          ]
+        },
+        {
+          "q": "chaussure · banane · poire · pomme",
+          "a": "chaussure",
+          "color": "#1769D2",
+          "choices": [
+            "pomme",
+            "poire",
+            "banane",
+            "chaussure"
+          ]
+        },
+        {
+          "q": "main · nez · pied · ballon",
+          "a": "ballon",
+          "color": "#FFD900",
+          "choices": [
+            "main",
+            "pied",
+            "nez",
+            "ballon"
+          ]
+        },
+        {
+          "q": "vélo · canard · vache · poule",
+          "a": "vélo",
+          "color": "#159447",
+          "choices": [
+            "poule",
+            "canard",
+            "vache",
+            "vélo"
+          ]
+        },
+        {
+          "q": "armoire · lit · nuage · chaise",
+          "a": "nuage",
+          "color": "#FF8A00",
+          "choices": [
+            "lit",
+            "armoire",
+            "chaise",
+            "nuage"
+          ]
+        },
+        {
+          "q": "bus · train · fraise · voiture",
+          "a": "fraise",
+          "color": "#803EAA",
+          "choices": [
+            "bus",
+            "train",
+            "voiture",
+            "fraise"
+          ]
+        },
+        {
+          "q": "pantalon · bonnet · gâteau · manteau",
+          "a": "gâteau",
+          "color": "#F56BAD",
+          "choices": [
+            "manteau",
+            "pantalon",
+            "bonnet",
+            "gâteau"
+          ]
+        },
+        {
+          "q": "livre · cuillère · fourchette · couteau",
+          "a": "livre",
+          "color": "#8B4513",
+          "choices": [
+            "fourchette",
+            "cuillère",
+            "couteau",
+            "livre"
+          ]
+        },
+        {
+          "q": "crayon · pluie · neige · soleil",
+          "a": "crayon",
+          "color": "#1B1B1B",
+          "choices": [
+            "soleil",
+            "pluie",
+            "neige",
+            "crayon"
+          ]
+        },
+        {
+          "q": "lapin · chat · chien · voiture",
+          "a": "voiture",
+          "color": "#FFFFFF",
+          "choices": [
+            "chat",
+            "chien",
+            "lapin",
+            "voiture"
+          ]
+        }
+      ],
+      "order": [
+        "neige",
+        "table",
+        "pomme",
+        "fourchette",
+        "banane",
+        "nez",
+        "vert",
+        "poule",
+        "armoire",
+        "train",
+        "vélo",
+        "cuillère",
+        "chaussure",
+        "lit",
+        "soleil",
+        "gâteau",
+        "livre",
+        "chaise",
+        "fraise",
+        "couteau",
+        "pied",
+        "canard",
+        "bus",
+        "pantalon",
+        "nuage",
+        "ballon",
+        "main",
+        "vache",
+        "manteau",
+        "chat",
+        "pluie",
+        "lapin",
+        "crayon",
+        "bonnet",
+        "poire",
+        "bleu",
+        "chien",
+        "rouge",
+        "voiture"
+      ]
+    },
+    {
+      "id": "mv9c7gyxfrg9b",
+      "title": "Trouver l’intrus · Jaune",
+      "instruction": "Trouve le mot qui n’appartient pas à la même catégorie.",
+      "rows": [
+        {
+          "q": "Paris · France · Espagne · Italie",
+          "a": "Paris",
+          "color": "#E32636",
+          "choices": [
+            "France",
+            "Italie",
+            "Espagne",
+            "Paris"
+          ]
+        },
+        {
+          "q": "casserole · scie · marteau · tournevis",
+          "a": "casserole",
+          "color": "#1769D2",
+          "choices": [
+            "marteau",
+            "scie",
+            "tournevis",
+            "casserole"
+          ]
+        },
+        {
+          "q": "marguerite · chêne · rose · tulipe",
+          "a": "chêne",
+          "color": "#FFD900",
+          "choices": [
+            "rose",
+            "tulipe",
+            "marguerite",
+            "chêne"
+          ]
+        },
+        {
+          "q": "dauphin · panthère · tigre · lion",
+          "a": "dauphin",
+          "color": "#159447",
+          "choices": [
+            "lion",
+            "tigre",
+            "panthère",
+            "dauphin"
+          ]
+        },
+        {
+          "q": "salon · cuisine · jardinier · chambre",
+          "a": "jardinier",
+          "color": "#FF8A00",
+          "choices": [
+            "salon",
+            "chambre",
+            "cuisine",
+            "jardinier"
+          ]
+        },
+        {
+          "q": "dentiste · infirmier · médecin · boulangerie",
+          "a": "boulangerie",
+          "color": "#803EAA",
+          "choices": [
+            "médecin",
+            "infirmier",
+            "dentiste",
+            "boulangerie"
+          ]
+        },
+        {
+          "q": "assiette · chemise · pull · jupe",
+          "a": "assiette",
+          "color": "#F56BAD",
+          "choices": [
+            "chemise",
+            "pull",
+            "jupe",
+            "assiette"
+          ]
+        },
+        {
+          "q": "lézard · mouche · abeille · papillon",
+          "a": "lézard",
+          "color": "#8B4513",
+          "choices": [
+            "abeille",
+            "mouche",
+            "papillon",
+            "lézard"
+          ]
+        },
+        {
+          "q": "sauter · marcher · courir · orange",
+          "a": "orange",
+          "color": "#1B1B1B",
+          "choices": [
+            "courir",
+            "sauter",
+            "marcher",
+            "orange"
+          ]
+        },
+        {
+          "q": "mars · janvier · vendredi · avril",
+          "a": "vendredi",
+          "color": "#FFFFFF",
+          "choices": [
+            "janvier",
+            "mars",
+            "avril",
+            "vendredi"
+          ]
+        }
+      ],
+      "order": [
+        "salon",
+        "lion",
+        "mouche",
+        "assiette",
+        "infirmier",
+        "tournevis",
+        "lézard",
+        "dentiste",
+        "tigre",
+        "Paris",
+        "casserole",
+        "jardinier",
+        "mars",
+        "tulipe",
+        "boulangerie",
+        "abeille",
+        "avril",
+        "marcher",
+        "cuisine",
+        "sauter",
+        "Italie",
+        "panthère",
+        "marteau",
+        "France",
+        "pull",
+        "courir",
+        "Espagne",
+        "janvier",
+        "chemise",
+        "marguerite",
+        "papillon",
+        "chambre",
+        "dauphin",
+        "rose",
+        "médecin",
+        "vendredi",
+        "orange",
+        "jupe",
+        "chêne",
+        "scie"
+      ]
+    },
+    {
+      "id": "mv9c7gyy0fvrc",
+      "title": "Trouver l’intrus · Rouge",
+      "instruction": "Trouve le mot qui n’appartient pas à la même catégorie.",
+      "rows": [
+        {
+          "q": "portail · portable · porter · porteur",
+          "a": "portail",
+          "color": "#E32636",
+          "choices": [
+            "porter",
+            "porteur",
+            "portable",
+            "portail"
+          ]
+        },
+        {
+          "q": "chantier · chanter · chanteur · chanson",
+          "a": "chantier",
+          "color": "#1769D2",
+          "choices": [
+            "chanter",
+            "chanson",
+            "chanteur",
+            "chantier"
+          ]
+        },
+        {
+          "q": "dentiste · dentaire · dedans · dent",
+          "a": "dedans",
+          "color": "#FFD900",
+          "choices": [
+            "dent",
+            "dentiste",
+            "dentaire",
+            "dedans"
+          ]
+        },
+        {
+          "q": "laitier · lait · laitage · laid",
+          "a": "laid",
+          "color": "#159447",
+          "choices": [
+            "lait",
+            "laitage",
+            "laitier",
+            "laid"
+          ]
+        },
+        {
+          "q": "mer · mairie · marin · maritime",
+          "a": "mairie",
+          "color": "#FF8A00",
+          "choices": [
+            "mer",
+            "marin",
+            "maritime",
+            "mairie"
+          ]
+        },
+        {
+          "q": "courage · encourager · courageux · courir",
+          "a": "courir",
+          "color": "#803EAA",
+          "choices": [
+            "courage",
+            "courageux",
+            "encourager",
+            "courir"
+          ]
+        },
+        {
+          "q": "fleuve · floral · fleuriste · fleur",
+          "a": "fleuve",
+          "color": "#F56BAD",
+          "choices": [
+            "fleur",
+            "fleuriste",
+            "floral",
+            "fleuve"
+          ]
+        },
+        {
+          "q": "terre · terrible · terrier · terrain",
+          "a": "terrible",
+          "color": "#8B4513",
+          "choices": [
+            "terre",
+            "terrain",
+            "terrier",
+            "terrible"
+          ]
+        },
+        {
+          "q": "glace · glacé · classe · glacier",
+          "a": "classe",
+          "color": "#1B1B1B",
+          "choices": [
+            "glace",
+            "glacier",
+            "glacé",
+            "classe"
+          ]
+        },
+        {
+          "q": "journée · jour · journal · jouet",
+          "a": "jouet",
+          "color": "#FFFFFF",
+          "choices": [
+            "jour",
+            "journée",
+            "journal",
+            "jouet"
+          ]
+        }
+      ],
+      "order": [
+        "courage",
+        "journal",
+        "porteur",
+        "terrier",
+        "portable",
+        "laitage",
+        "terrible",
+        "dent",
+        "floral",
+        "courir",
+        "classe",
+        "terrain",
+        "mer",
+        "fleuve",
+        "fleuriste",
+        "portail",
+        "dentaire",
+        "laitier",
+        "chantier",
+        "dentiste",
+        "journée",
+        "marin",
+        "jouet",
+        "jour",
+        "maritime",
+        "courageux",
+        "lait",
+        "glace",
+        "porter",
+        "fleur",
+        "terre",
+        "laid",
+        "mairie",
+        "chanson",
+        "dedans",
+        "chanter",
+        "encourager",
+        "glacé",
+        "glacier",
+        "chanteur"
+      ]
+    },
+    {
+      "id": "mv9c7gyzcr04c",
+      "title": "Trouver l’intrus · Rose",
+      "instruction": "Trouve le mot qui n’appartient pas à la même catégorie.",
+      "rows": [
+        {
+          "q": "âgé · vieux · neuf · ancien",
+          "a": "neuf",
+          "color": "#E32636",
+          "choices": [
+            "ancien",
+            "vieux",
+            "âgé",
+            "neuf"
+          ]
+        },
+        {
+          "q": "tranquille · bruyant · calme · paisible",
+          "a": "bruyant",
+          "color": "#1769D2",
+          "choices": [
+            "calme",
+            "paisible",
+            "tranquille",
+            "bruyant"
+          ]
+        },
+        {
+          "q": "victoire · méprise · erreur · faute",
+          "a": "victoire",
+          "color": "#FFD900",
+          "choices": [
+            "erreur",
+            "faute",
+            "méprise",
+            "victoire"
+          ]
+        },
+        {
+          "q": "lourd · aisé · simple · facile",
+          "a": "lourd",
+          "color": "#159447",
+          "choices": [
+            "facile",
+            "simple",
+            "aisé",
+            "lourd"
+          ]
+        },
+        {
+          "q": "parler · dormir · dire · raconter",
+          "a": "dormir",
+          "color": "#FF8A00",
+          "choices": [
+            "parler",
+            "dire",
+            "raconter",
+            "dormir"
+          ]
+        },
+        {
+          "q": "fâché · heureux · joyeux · content",
+          "a": "fâché",
+          "color": "#803EAA",
+          "choices": [
+            "joyeux",
+            "heureux",
+            "content",
+            "fâché"
+          ]
+        },
+        {
+          "q": "commencement · arrivée · départ · début",
+          "a": "arrivée",
+          "color": "#F56BAD",
+          "choices": [
+            "début",
+            "commencement",
+            "départ",
+            "arrivée"
+          ]
+        },
+        {
+          "q": "vif · rapide · immobile · pressé",
+          "a": "immobile",
+          "color": "#8B4513",
+          "choices": [
+            "rapide",
+            "vif",
+            "pressé",
+            "immobile"
+          ]
+        },
+        {
+          "q": "crainte · plaisir · peur · frayeur",
+          "a": "plaisir",
+          "color": "#1B1B1B",
+          "choices": [
+            "peur",
+            "crainte",
+            "frayeur",
+            "plaisir"
+          ]
+        },
+        {
+          "q": "logement · chemin · demeure · maison",
+          "a": "chemin",
+          "color": "#FFFFFF",
+          "choices": [
+            "maison",
+            "demeure",
+            "logement",
+            "chemin"
+          ]
+        }
+      ],
+      "order": [
+        "logement",
+        "demeure",
+        "méprise",
+        "faute",
+        "vif",
+        "frayeur",
+        "maison",
+        "tranquille",
+        "joyeux",
+        "peur",
+        "plaisir",
+        "parler",
+        "rapide",
+        "erreur",
+        "victoire",
+        "dormir",
+        "heureux",
+        "fâché",
+        "neuf",
+        "content",
+        "dire",
+        "crainte",
+        "ancien",
+        "vieux",
+        "raconter",
+        "bruyant",
+        "facile",
+        "lourd",
+        "calme",
+        "immobile",
+        "paisible",
+        "âgé",
+        "départ",
+        "chemin",
+        "pressé",
+        "arrivée",
+        "aisé",
+        "commencement",
+        "simple",
+        "début"
+      ]
+    },
+    {
+      "id": "mv9c7gyz8ozrp",
+      "title": "Trouver l’intrus · Violet",
+      "instruction": "Trouve le mot qui n’appartient pas à la même catégorie.",
+      "rows": [
+        {
+          "q": "Atlantique · Afrique · Europe · Asie",
+          "a": "Atlantique",
+          "color": "#E32636",
+          "choices": [
+            "Europe",
+            "Afrique",
+            "Asie",
+            "Atlantique"
+          ]
+        },
+        {
+          "q": "numérateur · verbe · complément · sujet",
+          "a": "numérateur",
+          "color": "#1769D2",
+          "choices": [
+            "sujet",
+            "verbe",
+            "complément",
+            "numérateur"
+          ]
+        },
+        {
+          "q": "lumineux · solide · gazeux · liquide",
+          "a": "lumineux",
+          "color": "#FFD900",
+          "choices": [
+            "solide",
+            "liquide",
+            "gazeux",
+            "lumineux"
+          ]
+        },
+        {
+          "q": "sphère · triangle · carré · rectangle",
+          "a": "sphère",
+          "color": "#159447",
+          "choices": [
+            "triangle",
+            "rectangle",
+            "carré",
+            "sphère"
+          ]
+        },
+        {
+          "q": "digérer · circuler · respirer · conjuguer",
+          "a": "conjuguer",
+          "color": "#FF8A00",
+          "choices": [
+            "respirer",
+            "digérer",
+            "circuler",
+            "conjuguer"
+          ]
+        },
+        {
+          "q": "produit · grammaire · addition · quotient",
+          "a": "grammaire",
+          "color": "#803EAA",
+          "choices": [
+            "addition",
+            "produit",
+            "quotient",
+            "grammaire"
+          ]
+        },
+        {
+          "q": "hiver · printemps · décembre · été",
+          "a": "décembre",
+          "color": "#F56BAD",
+          "choices": [
+            "hiver",
+            "printemps",
+            "été",
+            "décembre"
+          ]
+        },
+        {
+          "q": "poésie · roman · dictionnaire · conte",
+          "a": "dictionnaire",
+          "color": "#8B4513",
+          "choices": [
+            "roman",
+            "conte",
+            "poésie",
+            "dictionnaire"
+          ]
+        },
+        {
+          "q": "fleuve · ruisseau · montagne · rivière",
+          "a": "montagne",
+          "color": "#1B1B1B",
+          "choices": [
+            "rivière",
+            "fleuve",
+            "ruisseau",
+            "montagne"
+          ]
+        },
+        {
+          "q": "règle · thermomètre · balance · calendrier",
+          "a": "calendrier",
+          "color": "#FFFFFF",
+          "choices": [
+            "thermomètre",
+            "balance",
+            "règle",
+            "calendrier"
+          ]
+        }
+      ],
+      "order": [
+        "Afrique",
+        "solide",
+        "décembre",
+        "rectangle",
+        "gazeux",
+        "Asie",
+        "complément",
+        "fleuve",
+        "quotient",
+        "numérateur",
+        "grammaire",
+        "carré",
+        "thermomètre",
+        "triangle",
+        "Europe",
+        "lumineux",
+        "hiver",
+        "dictionnaire",
+        "poésie",
+        "addition",
+        "été",
+        "ruisseau",
+        "calendrier",
+        "montagne",
+        "règle",
+        "verbe",
+        "conjuguer",
+        "roman",
+        "produit",
+        "printemps",
+        "conte",
+        "liquide",
+        "sphère",
+        "rivière",
+        "circuler",
+        "Atlantique",
+        "balance",
+        "sujet",
+        "respirer",
+        "digérer"
+      ]
+    },
+    {
+      "id": "mv9c7gyzzfgny",
+      "title": "Trouver l’intrus · Bleu",
+      "instruction": "Trouve le mot qui n’appartient pas à la même catégorie.",
+      "rows": [
+        {
+          "q": "estimer · admirer · apprécier · mépriser",
+          "a": "mépriser",
+          "color": "#E32636",
+          "choices": [
+            "admirer",
+            "estimer",
+            "apprécier",
+            "mépriser"
+          ]
+        },
+        {
+          "q": "parcimonieux · économe · généreux · avare",
+          "a": "généreux",
+          "color": "#1769D2",
+          "choices": [
+            "avare",
+            "économe",
+            "parcimonieux",
+            "généreux"
+          ]
+        },
+        {
+          "q": "recul · amélioration · avancée · progrès",
+          "a": "recul",
+          "color": "#FFD900",
+          "choices": [
+            "progrès",
+            "avancée",
+            "amélioration",
+            "recul"
+          ]
+        },
+        {
+          "q": "raison · cause · conséquence · origine",
+          "a": "conséquence",
+          "color": "#159447",
+          "choices": [
+            "cause",
+            "origine",
+            "raison",
+            "conséquence"
+          ]
+        },
+        {
+          "q": "vulnérable · robuste · fragile · délicat",
+          "a": "robuste",
+          "color": "#FF8A00",
+          "choices": [
+            "fragile",
+            "vulnérable",
+            "délicat",
+            "robuste"
+          ]
+        },
+        {
+          "q": "influencer · convaincre · hésiter · persuader",
+          "a": "hésiter",
+          "color": "#803EAA",
+          "choices": [
+            "convaincre",
+            "persuader",
+            "influencer",
+            "hésiter"
+          ]
+        },
+        {
+          "q": "insuffisant · nombreux · abondant · copieux",
+          "a": "insuffisant",
+          "color": "#F56BAD",
+          "choices": [
+            "abondant",
+            "nombreux",
+            "copieux",
+            "insuffisant"
+          ]
+        },
+        {
+          "q": "banal · inhabituel · exceptionnel · rare",
+          "a": "banal",
+          "color": "#8B4513",
+          "choices": [
+            "rare",
+            "inhabituel",
+            "exceptionnel",
+            "banal"
+          ]
+        },
+        {
+          "q": "ébauche · conclusion · esquisse · brouillon",
+          "a": "conclusion",
+          "color": "#1B1B1B",
+          "choices": [
+            "ébauche",
+            "brouillon",
+            "esquisse",
+            "conclusion"
+          ]
+        },
+        {
+          "q": "hypothèse · certitude · supposition · conjecture",
+          "a": "certitude",
+          "color": "#FFFFFF",
+          "choices": [
+            "hypothèse",
+            "supposition",
+            "conjecture",
+            "certitude"
+          ]
+        }
+      ],
+      "order": [
+        "robuste",
+        "inhabituel",
+        "cause",
+        "admirer",
+        "copieux",
+        "supposition",
+        "exceptionnel",
+        "progrès",
+        "délicat",
+        "conséquence",
+        "économe",
+        "parcimonieux",
+        "banal",
+        "mépriser",
+        "recul",
+        "vulnérable",
+        "ébauche",
+        "estimer",
+        "influencer",
+        "conclusion",
+        "certitude",
+        "esquisse",
+        "fragile",
+        "nombreux",
+        "amélioration",
+        "rare",
+        "brouillon",
+        "généreux",
+        "persuader",
+        "abondant",
+        "conjecture",
+        "insuffisant",
+        "origine",
+        "apprécier",
+        "convaincre",
+        "hésiter",
+        "avare",
+        "hypothèse",
+        "avancée",
+        "raison"
+      ]
+    },
+    {
+      "id": "mv9c7gyz0qduz",
+      "title": "Trouver l’intrus · Noir",
+      "instruction": "Trouve le mot qui n’appartient pas à la même catégorie.",
+      "rows": [
+        {
+          "q": "tempérer · nuancer · modérer · exagérer",
+          "a": "exagérer",
+          "color": "#E32636",
+          "choices": [
+            "nuancer",
+            "modérer",
+            "tempérer",
+            "exagérer"
+          ]
+        },
+        {
+          "q": "contradictoire · logique · rationnel · cohérent",
+          "a": "contradictoire",
+          "color": "#1769D2",
+          "choices": [
+            "cohérent",
+            "logique",
+            "rationnel",
+            "contradictoire"
+          ]
+        },
+        {
+          "q": "perspicace · clairvoyant · naïf · lucide",
+          "a": "naïf",
+          "color": "#FFD900",
+          "choices": [
+            "lucide",
+            "clairvoyant",
+            "perspicace",
+            "naïf"
+          ]
+        },
+        {
+          "q": "approprié · déplacé · judicieux · pertinent",
+          "a": "déplacé",
+          "color": "#159447",
+          "choices": [
+            "pertinent",
+            "approprié",
+            "judicieux",
+            "déplacé"
+          ]
+        },
+        {
+          "q": "tacite · sous-entendu · implicite · explicite",
+          "a": "explicite",
+          "color": "#FF8A00",
+          "choices": [
+            "implicite",
+            "sous-entendu",
+            "tacite",
+            "explicite"
+          ]
+        },
+        {
+          "q": "passager · fugitif · éphémère · éternel",
+          "a": "éternel",
+          "color": "#803EAA",
+          "choices": [
+            "éphémère",
+            "passager",
+            "fugitif",
+            "éternel"
+          ]
+        },
+        {
+          "q": "prospère · précaire · favorable · florissant",
+          "a": "précaire",
+          "color": "#F56BAD",
+          "choices": [
+            "prospère",
+            "florissant",
+            "favorable",
+            "précaire"
+          ]
+        },
+        {
+          "q": "constant · versatile · persévérant · tenace",
+          "a": "versatile",
+          "color": "#8B4513",
+          "choices": [
+            "persévérant",
+            "tenace",
+            "constant",
+            "versatile"
+          ]
+        },
+        {
+          "q": "véritable · authentique · sincère · factice",
+          "a": "factice",
+          "color": "#1B1B1B",
+          "choices": [
+            "authentique",
+            "véritable",
+            "sincère",
+            "factice"
+          ]
+        },
+        {
+          "q": "entente · consensus · accord · conflit",
+          "a": "conflit",
+          "color": "#FFFFFF",
+          "choices": [
+            "consensus",
+            "accord",
+            "entente",
+            "conflit"
+          ]
+        }
+      ],
+      "order": [
+        "accord",
+        "logique",
+        "authentique",
+        "tempérer",
+        "naïf",
+        "approprié",
+        "explicite",
+        "florissant",
+        "prospère",
+        "judicieux",
+        "pertinent",
+        "éphémère",
+        "persévérant",
+        "consensus",
+        "cohérent",
+        "précaire",
+        "nuancer",
+        "véritable",
+        "favorable",
+        "éternel",
+        "tacite",
+        "conflit",
+        "entente",
+        "clairvoyant",
+        "sous-entendu",
+        "exagérer",
+        "rationnel",
+        "passager",
+        "contradictoire",
+        "constant",
+        "sincère",
+        "perspicace",
+        "versatile",
+        "modérer",
+        "tenace",
+        "déplacé",
+        "factice",
+        "implicite",
+        "fugitif",
+        "lucide"
+      ]
+    }
+  ]
+}

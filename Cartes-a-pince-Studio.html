@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Créez vos cartes à pince autocorrectives : questions colorées, réponses blanches et correction au dos. Impression A4, pli vertical, une ou deux fiches par page.">
+<title>Cartes à pince</title>
+<style>
+:root{--ink:#223a36;--muted:#62736e;--green:#246b58;--light:#e7eee7;--cream:#f6f5ee;--line:#d9dfd5;--orange:#c75c39;--radius:16px;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}button,input,textarea,select{border-radius:8px}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #e9b854;outline-offset:3px}button{border:1px solid var(--line);background:white;color:var(--ink);font-weight:600;padding:10px 14px;transition:background .15s,transform .15s}button:hover{background:#f0f3eb}button.primary{background:var(--green);color:white;border-color:var(--green)}button.primary:hover{background:#18513f}button.quiet{background:transparent}.icon{width:18px;height:18px;vertical-align:-4px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}header.app-header{padding:20px 4vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px;background:#fbfaf5}.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:-.4px}.brand-symbol{background:var(--green);color:#fff;border-radius:12px;width:39px;height:39px;display:grid;place-items:center}.brand-symbol svg{transform:rotate(-20deg);width:25px;height:25px}.brand small{display:block;font-size:10px;letter-spacing:1.9px;text-transform:uppercase;color:var(--muted);margin-top:4px;font-weight:650}.header-actions{display:flex;gap:8px;align-items:center}.header-actions button{font-size:12px}.intro{padding:32px 4vw 26px;display:flex;justify-content:space-between;align-items:end;gap:24px}.eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:750;margin:0 0 10px}.intro h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(28px,3vw,43px);line-height:1.13;letter-spacing:-1.2px;margin:0}.intro h1 em{color:var(--green);font-weight:500}.intro p{color:var(--muted);font-size:13px;line-height:1.65;max-width:450px;margin:10px 0 0}.steps-mini{display:flex;gap:17px;align-items:center;margin:0 0 5px;font-size:11px;color:var(--muted)}.steps-mini b{display:inline-grid;place-items:center;width:23px;height:23px;background:#e6ece2;color:var(--green);border-radius:50%;margin-right:5px}.workspace{display:grid;grid-template-columns:410px minmax(0,1fr);gap:24px;padding:0 4vw 40px;align-items:start;max-width:1650px;margin:auto}.editor{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.section{padding:21px 23px;border-bottom:1px solid #e7eae3}.section:last-child{border:0}.section-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;gap:8px}.section-heading h2{font-size:13px;letter-spacing:-.1px;margin:0}.section-heading .num{color:var(--green);font-size:10px;letter-spacing:.7px;margin-right:8px}.section-heading small{font-size:10px;color:var(--muted)}.formats{display:grid;grid-template-columns:1fr 1fr;gap:9px}.format{display:flex;gap:10px;text-align:left;padding:12px 10px;align-items:center;font-size:11px;background:#fff;font-weight:650}.format.active{background:#edf3ea;border:1.5px solid var(--green);padding:11.5px 9.5px}.format small{display:block;font-size:10px;color:var(--muted);font-weight:400;margin-top:5px}.paper-icon{display:grid;grid-template-columns:1fr 1fr;width:23px;height:32px;border:1px solid #81958a;border-radius:2px;flex:none;position:relative}.paper-icon:after{content:"";border-left:1px dashed #81958a}.format[data-format="2"] .paper-icon:before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px dashed #81958a}.hint{font-size:11px;color:var(--muted);line-height:1.6;margin:12px 0 0}.card-bar{display:flex;gap:6px;align-items:center;margin-bottom:13px}.card-bar select{flex:1;min-width:0}.square{padding:6px;width:32px;height:33px;flex:none}.field{display:block;font-size:11px;font-weight:650;margin:12px 0 0}.field input,.field textarea,.field select{display:block;margin-top:7px;width:100%;font-size:12px;font-weight:400}input[type=text],input[type=number],textarea,select{border:1px solid var(--line);background:#fff;color:var(--ink);padding:9px 10px;min-width:0}textarea{resize:vertical;line-height:1.5}.row-labels{display:grid;grid-template-columns:30px 1fr 1fr 22px;gap:7px;font-size:9px;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin:16px 0 8px}.entry{display:grid;grid-template-columns:30px 1fr 1fr 22px;gap:7px;margin-top:8px;align-items:center}.entry input[type=text]{width:100%;padding:9px 8px;font-size:12px}.swatch{width:30px;height:34px;overflow:hidden;border-radius:7px;border:1px solid #e0e4da;background:var(--c);position:relative}.swatch input{padding:0;position:absolute;inset:-6px;width:43px;height:46px;cursor:pointer;border:0;opacity:0}.swatch:after{content:"";position:absolute;inset:6px;border-radius:3px;border:1px solid #ffffff6b;pointer-events:none}.remove-row{padding:0;border:0;background:none;width:22px;height:26px;color:#819088;font-size:19px;font-weight:400}.add-row{width:100%;margin-top:12px;border-style:dashed;font-size:11px;background:#fbfcf8}.minor-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.minor-actions button{font-size:10px;padding:7px 9px}.section details{margin-top:14px;font-size:11px;color:var(--muted)}summary{cursor:pointer;font-weight:650;line-height:1.6}details p{line-height:1.5}details textarea{width:100%;font-size:11px;margin-top:7px}details button{font-size:11px;margin-top:8px}.answer-order{margin-top:10px}.order-row{display:flex;align-items:center;gap:4px;margin:5px 0}.order-row span{flex:1;overflow-wrap:anywhere;font-size:12px}.order-row button{padding:2px 7px;margin:0}.example-select{display:flex;gap:8px;margin-top:10px}.example-select button{font-size:11px;flex:1;padding:9px 6px}.controls-inline{display:flex;gap:12px;align-items:center;margin:14px 0 0}.controls-inline label{font-size:11px;display:flex;gap:7px;align-items:center;color:var(--muted)}input[type=range]{accent-color:var(--green);width:115px}input[type=checkbox]{accent-color:var(--green)}.preview-panel{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#e9eee6;position:relative}.preview-toolbar{padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:8px;background:#f9faf5;border-bottom:1px solid var(--line)}.preview-toolbar strong{font-size:12px}.live-dot{display:inline-block;width:6px;height:6px;background:#6d9279;border-radius:50%;margin-right:6px}.view-switch{background:#e9eee4;border-radius:7px;padding:3px;display:flex}.view-switch button{font-size:10px;border:0;background:transparent;padding:6px 10px;border-radius:5px;color:var(--muted)}.view-switch button.active{background:white;color:var(--green);box-shadow:0 1px 3px #283c2810}.preview-info{display:flex;align-items:center;justify-content:space-between;padding:13px 22px 0;font-size:10px;color:#66796a;gap:10px}.preview-info .tag{background:#dce7d7;padding:5px 8px;border-radius:20px;white-space:nowrap}.preview-stage{padding:22px 22px 18px;overflow:auto;display:flex;flex-direction:column;align-items:center;gap:24px;background-image:radial-gradient(#83967c28 .8px,transparent .8px);background-size:12px 12px;max-height:860px}.scaled-wrap{position:relative;flex:none}.paper{width:210mm;height:297mm;padding:8mm;background:white;color:#202522;font-family:Arial,Helvetica,sans-serif;box-shadow:0 8px 25px #2a43251f;overflow:hidden;position:relative;transform-origin:top left}.part{height:281mm;width:194mm;position:relative;display:grid;grid-template-columns:1fr 1fr}.paper.two .part{height:140.5mm}.part + .part:before{content:"";position:absolute;left:0;right:0;top:0;border-top:.25mm dashed #8b958c;text-align:left;padding-left:3mm;font-size:6pt;letter-spacing:1px;color:#6e786e;line-height:3mm;z-index:1}.fold-marker{position:absolute;left:50%;top:0;height:100%;border-left:.25mm dashed #a2aba1;z-index:1;pointer-events:none}.fold-marker span{position:absolute;top:1mm;left:1.2mm;font-size:5.5pt;letter-spacing:.8px;white-space:nowrap;color:#768171}.face{position:relative;min-width:0;display:flex;flex-direction:column;padding:1mm 2mm 2mm;overflow:hidden}.back{padding:1mm 2mm 2mm}.face-head{height:7mm;flex:none;overflow:hidden}.back .face-head{visibility:hidden}.sheet-kicker{text-transform:uppercase;font-size:6pt;letter-spacing:1.1px;color:#6e796c;margin-bottom:2.5mm}.sheet-title{font-family:Georgia,serif;font-size:10pt;line-height:1.2;color:#29473b;overflow-wrap:anywhere;margin:0;font-weight:500;text-align:center}.sheet-instruction{font-size:8pt;line-height:1.3;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.face-body{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) 28mm;gap:3mm}.question-list{display:flex;flex-direction:column;gap:1.5mm;min-height:0}.question-box{border:1.4mm solid var(--qcolor);border-radius:2mm;background:white;display:flex;justify-content:center;align-items:center;flex:1;min-height:0;padding:1.5mm;text-align:center;font-size:var(--text-size,14pt);font-weight:500;line-height:1.15;overflow-wrap:anywhere;white-space:pre-wrap}.answer-table{border:.3mm solid #59665b;display:flex;flex-direction:column;min-height:0;background:white}.answer-cell{flex:1;border-bottom:.3mm solid #59665b;display:flex;justify-content:center;align-items:center;text-align:center;min-height:0;padding:1.5mm;font-size:var(--text-size,14pt);line-height:1.15;overflow-wrap:anywhere;white-space:pre-wrap}.answer-cell:last-child{border-bottom:0}.correction-body{flex:1;min-height:0;display:grid;grid-template-columns:28mm minmax(0,1fr);gap:3mm}.correction-table{border:.3mm solid transparent;display:flex;flex-direction:column;min-height:0}.correction-cell{flex:1;min-height:0;display:grid;grid-template-columns:repeat(var(--zone-cols,1),minmax(0,1fr));grid-template-rows:repeat(var(--zone-rows,1),minmax(0,1fr));gap:1mm;padding:.5mm 0;border-bottom:.3mm solid transparent}.correction-cell:last-child{border-bottom:0}.color-zone{display:block;background:var(--zone);min-width:0;min-height:0;border:.15mm solid #0001;print-color-adjust:exact;-webkit-print-color-adjust:exact}.back-center{display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;padding:3mm;gap:6mm;color:#66755f}.back-emblem{width:20mm;height:20mm;border-radius:50%;border:.3mm solid #dbe2d4;display:grid;place-items:center;color:#698266}.back-emblem svg{width:10mm;height:10mm;transform:rotate(-18deg)}.back-center p{font-size:8pt;line-height:1.6;margin:0}.back-center strong{font-family:Georgia,serif;font-size:15pt;font-weight:400;color:#425c43;display:block;margin-bottom:2mm}.sheet-foot{flex:none;height:8mm;padding-top:3mm;font-size:6pt;letter-spacing:.2px;display:flex;justify-content:space-between;color:#77816f;gap:2mm}.paper.two .face{padding-top:1mm;padding-bottom:2mm}.paper.two .face-head{height:7mm}.paper.two .sheet-title{font-size:9pt}.paper.two .sheet-instruction{font-size:7pt}.paper.two .question-list{gap:1mm}.paper.two .question-box,.paper.two .answer-cell{font-size:calc(var(--text-size,14pt) * .85);padding:.6mm}.paper.two .sheet-foot{height:6mm;padding-top:2mm}.paper.two .back-center{gap:3mm}.paper.two .back-center strong{font-size:12pt}.paper.two .back-center p{font-size:7pt}.paper.no-guide .fold-marker,.paper.no-guide .part+.part:before{display:none}.paper.front-only{width:113mm}.paper.front-only .part{width:97mm;grid-template-columns:1fr}.paper.front-only .back,.paper.front-only .fold-marker{display:none}.preview-footer{padding:14px 20px;background:#f9faf5;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.6}.preview-footer strong{color:var(--ink)}.print-bar{display:flex;gap:12px;align-items:center;margin-top:16px;justify-content:space-between}.print-bar button{font-size:12px}.print-bar small{font-size:10px;color:var(--muted);line-height:1.5}.saved{font-size:10px;color:var(--muted)}#issues{padding:12px 15px;background:#fff1dc;border-radius:10px;font-size:12px;line-height:1.5;margin-top:15px;color:#755128}#issues:empty{display:none}.help{margin:0 4vw 36px;border-top:1px solid var(--line);padding-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.help h3{font-size:12px;margin:0 0 7px}.help p{font-size:12px;color:var(--muted);line-height:1.65;margin:0}.help .badge{font-size:10px;color:var(--green);margin-bottom:8px;display:block;letter-spacing:1px}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#203f33;color:white;border-radius:9px;padding:13px 22px;font-size:12px;box-shadow:0 8px 35px #0002;z-index:20;max-width:90vw}.toast[hidden]{display:none}#printRoot{display:none}footer.app-foot{font-size:10px;padding:0 4vw 22px;color:var(--muted);display:flex;justify-content:space-between;gap:12px}.sheet-blank{display:flex;align-items:center;justify-content:center;height:100%;color:#929b90;font-size:9pt;grid-column:1/-1}dialog{border:1px solid var(--line);border-radius:16px;padding:25px;width:min(600px,90vw);color:var(--ink)}dialog::backdrop{background:#162d2980}dialog h2{font-family:Georgia,serif;font-size:26px;font-weight:400;margin:0 0 15px}dialog p{font-size:13px;line-height:1.7}dialog button{float:right}.mobile-only{display:none}
+@media(min-width:1450px){.workspace{grid-template-columns:450px minmax(0,1fr)}.section{padding:23px 27px}}
+@media(max-width:1000px){.workspace{grid-template-columns:365px minmax(0,1fr);gap:16px;padding-left:20px;padding-right:20px}.section{padding:18px 16px}.intro,.app-header{padding-left:24px!important;padding-right:24px!important}.steps-mini{display:none}.preview-toolbar{flex-wrap:wrap}.preview-stage{padding:16px 10px}.preview-info{padding-left:12px;padding-right:12px}.help{margin-left:24px;margin-right:24px;gap:20px}.header-actions .download-label{display:none}}
+@media(max-width:760px){.workspace{display:flex;flex-direction:column;padding:0 16px 30px}.editor,.preview-column{width:100%}.preview-panel{position:static}.intro{padding:25px 20px!important}.intro h1{font-size:33px}.header-actions{gap:4px}.header-actions button{padding:8px;font-size:11px}.brand{font-size:12px}.brand small{font-size:8px;letter-spacing:1px}.brand-symbol{width:32px;height:32px}.help{grid-template-columns:1fr;gap:20px}.preview-stage{max-height:none}.preview-toolbar{flex-wrap:nowrap}.print-bar{margin-bottom:5px}.intro p{font-size:12px}.app-header{padding:14px 16px!important;gap:10px}.header-actions button span.optional{display:none}.app-foot{flex-direction:column}.mobile-only{display:inline}}
+@page{size:A4 portrait;margin:0}
+@media print{html,body{margin:0!important;padding:0!important;background:#fff!important}body>*:not(#printRoot){display:none!important}#printRoot{display:block!important}.paper{width:210mm!important;height:297mm!important;box-shadow:none;transform:none!important;margin:0!important;break-after:page;page-break-after:always;print-color-adjust:exact;-webkit-print-color-adjust:exact}.paper:last-child{break-after:auto;page-break-after:auto}}
+[hidden]{display:none!important}
+.library{margin:0 4vw 24px;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden}.library>details>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:21px 24px;list-style:none;background:#fbfcf8}.library>details>summary::-webkit-details-marker{display:none}.library>details>summary:after{content:'+';font-size:22px;color:var(--green);font-weight:400}.library>details[open]>summary:after{content:'−'}.library-eyebrow{font-size:9px;letter-spacing:1.7px;color:var(--green);display:block;margin-bottom:6px}.library>details>summary strong{font-family:Georgia,serif;font-size:25px;font-weight:400;letter-spacing:-.5px}.library-badge{margin-left:auto;background:#e5eee2;padding:7px 11px;border-radius:20px;font-size:10px;color:var(--green);white-space:nowrap}.library-body{border-top:1px solid var(--line);display:grid;grid-template-columns:285px 1fr}.library-settings{background:#fafbf6;padding:9px 23px 23px;border-right:1px solid var(--line)}.library-settings select,.library-settings input{font-size:12px;width:100%}.library-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.library-exercises{padding:20px 24px}.level-chips{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}.level-chips button{padding:5px 7px;font-size:10px;display:flex;align-items:center;gap:4px}.level-chips i{height:8px;width:8px;display:inline-block;border-radius:50%;background:var(--level)}.level-chips button.active{border-color:var(--green);background:#eaf2e6}.library-exercise-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:12px}.library-exercise-head strong{font-size:12px}.library-exercise-head button{font-size:10px;padding:5px 8px}.exercise-choices{display:grid;grid-template-columns:1fr 1fr;gap:8px}.exercise-choice{display:flex;align-items:flex-start;gap:9px;padding:12px;border:1px solid var(--line);border-radius:9px;cursor:pointer;font-size:12px;line-height:1.45}.exercise-choice:has(input:checked){border-color:#9fb69d;background:#f0f5eb}.exercise-choice input{margin-top:3px;flex:none}.exercise-choice b{font-weight:600}.exercise-choice small{display:block;color:var(--muted);font-size:10px;margin-top:4px;font-weight:400}.library-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:19px;margin-top:18px;border-top:1px solid var(--line)}.library-bottom span{font-size:12px;font-weight:600}.library-bottom small{display:block;font-size:10px;color:var(--muted);margin-top:6px}.library-bottom button{white-space:nowrap;font-size:12px}.all-catalogue{margin-top:16px;font-size:11px;color:var(--muted)}.all-catalogue p{line-height:1.65;max-width:650px}.all-catalogue button,#legacySample{font-size:11px;padding:8px 10px}.gen-checkboxes{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.gen-checkboxes label{display:flex;align-items:center;gap:6px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;font-size:12px;cursor:pointer}.gen-checkboxes label:has(input:checked){background:#edf4e9;border-color:#a5bda2}.gen-checkboxes input{margin:0}.gen-option{margin-bottom:17px}.gen-option>strong{font-size:12px}.gen-option select{margin-top:8px;font-size:12px;width:100%;max-width:300px}#classicControls>.hint{margin-bottom:20px}#legacyControls textarea{font-size:12px}.library #libraryError:not(:empty){margin-top:12px;padding:11px;background:#fff1dc;border-radius:8px;font-size:12px;color:#755128;line-height:1.5}.card-number{font-family:'Comic Sans MS',cursive;position:absolute;right:0;top:0;font-size:9pt;line-height:1.2;white-space:nowrap;color:#29473b}.face-head{position:relative}.sheet-title{font-family:'Comic Sans MS',cursive;font-size:9pt;line-height:1.1;padding:0 10mm;max-height:100%;overflow:hidden}.paper.two .sheet-title{font-size:8.5pt}.paper.two .card-number{font-size:8pt}.question-box.has-graphic{padding:.6mm;overflow:hidden;gap:1mm}.question-box.has-graphic .clock-svg{height:100%;max-width:70%;max-height:34mm;aspect-ratio:1;flex:0 1 auto;min-width:0}.visual-label{font-size:9pt;line-height:1.15;max-width:20mm;overflow-wrap:anywhere;white-space:normal}.money-svg{width:100%;height:100%;max-height:34mm;display:block;flex:1;min-width:0}.graphic-editor-note{grid-column:2/4;font-size:9px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;margin-top:-4px}.graphic-editor-note button{font-size:9px;border:0;background:transparent;padding:2px 0;color:var(--green)}.paper.two .visual-label{font-size:7pt}.number-setting{display:flex;align-items:center;gap:8px;font-size:11px;margin-top:14px;color:var(--muted)}.number-setting input{width:75px;padding:7px;font-size:12px}
+@media(max-width:900px){.library-body{grid-template-columns:245px 1fr}.exercise-choices{grid-template-columns:1fr}.library-settings{padding-left:16px;padding-right:16px}.library-exercises{padding:18px}.library{margin-left:20px;margin-right:20px}}
+@media(max-width:650px){.library{margin-left:16px;margin-right:16px}.library-body{grid-template-columns:1fr}.library-settings{border-right:0;border-bottom:1px solid var(--line);padding-top:5px;padding-bottom:18px}.library>details>summary{padding:18px 16px;flex-wrap:wrap}.library>details>summary strong{font-size:21px}.library-badge{display:none}.library>details>summary:after{margin-left:auto}.library-exercises{padding:16px}.library-bottom{flex-wrap:wrap}.library-bottom button{width:100%}.level-chips{gap:7px}.level-chips button{padding:7px 9px}.library-pair{gap:12px}}
+
+.fixed-palette{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px 5px;margin:13px 0 0}.palette-item{font-size:9px;text-align:center;line-height:1.3;color:var(--muted)}.palette-item i{display:block;width:24px;height:24px;border:1px solid #78847b;border-radius:4px;margin:0 auto 4px}.swatch.fixed{display:block;border-color:#6f7c72;cursor:default}.swatch.fixed:after{display:none}.question-box.white-pin{box-shadow:inset 0 0 0 .25mm #555,0 0 0 .25mm #555}.question-count-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.question-count-controls label{font-size:10px;color:var(--muted);font-weight:600}.question-count-controls select{display:block;width:100%;font-size:11px;padding:8px 6px;margin-top:5px}.question-count-controls button{grid-column:1/-1;font-size:11px;padding:8px}.palette-explainer{font-size:10px;line-height:1.6;color:var(--muted);margin:10px 0 0}.question-box.has-graphic:has(.clock-svg){display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;justify-items:center;gap:.5mm}.question-box.has-graphic .clock-svg{grid-row:1;grid-column:1;width:100%;height:100%;max-width:100%;max-height:none;min-width:0;min-height:0}.question-box.has-graphic:has(.clock-svg) .visual-label{grid-row:2;grid-column:1;max-width:none;text-align:center;line-height:1.1}.paper.two .question-box.has-graphic:has(.clock-svg) .visual-label{font-size:7pt}
+
+.color-zone.white-pin{border:.3mm solid #555}
+
+.app-shell{max-width:1600px;margin:auto;padding:27px 4vw 45px}.workflow-intro{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:23px}.workflow-intro h1{font-family:Georgia,serif;font-weight:400;letter-spacing:-.7px;font-size:32px;margin:0}.workflow-intro .eyebrow{margin-bottom:8px}.project-status{font-size:10px;color:var(--muted);max-width:220px;line-height:1.5;text-align:right}.workflow-tabs{display:grid;grid-template-columns:repeat(3,1fr);background:#e8ede3;border:1px solid var(--line);border-radius:12px;padding:5px;gap:5px;margin-bottom:28px}.workflow-tabs>button{display:flex;align-items:center;gap:12px;text-align:left;background:transparent;border-color:transparent;padding:13px 17px;border-radius:9px;font-size:14px}.workflow-tabs>button.active{background:white;border-color:#dce5d6;box-shadow:0 2px 6px #263a2810}.workflow-tabs small{display:block;font-weight:400;color:var(--muted);font-size:11px;margin-top:5px}.step-circle{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:#d8e2d1;color:#46644b;font-size:13px;flex:none}.workflow-tabs .active .step-circle{color:white;background:var(--green)}.count-badge{font-size:10px;border-radius:12px;background:#e2eadb;color:var(--green);padding:3px 7px;font-weight:600;margin-left:4px}.pane-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:20px}.pane-heading h2{font-family:Georgia,serif;font-size:27px;font-weight:400;letter-spacing:-.5px;margin:0 0 8px}.pane-heading p{margin:0;font-size:12px;color:var(--muted);line-height:1.5}.pane-actions{display:flex;align-items:center;gap:8px}.pane-actions button{font-size:12px}.creation-sources{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:18px}.creation-sources button{text-align:left;padding:14px;background:#fff;border:1px solid var(--line);border-radius:10px}.creation-sources strong{font-size:12px}.creation-sources small{font-size:10px;color:var(--muted);line-height:1.5;display:block;margin-top:6px;font-weight:400}.creation-sources button.active{background:#edf4e8;border:1.5px solid var(--green);padding:13.5px}.app-shell .library{margin:0;border-radius:12px}.app-shell .library>details>summary{display:none}.app-shell .library-body{border-top:0;grid-template-columns:285px 1fr}.app-shell .library-settings{padding-top:8px}.app-shell .library-exercises{padding-top:24px}.app-shell .library-bottom{margin-top:20px}.library-advanced{margin-top:12px;font-size:11px;color:var(--muted)}.library-advanced>summary{font-size:11px}.examples-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.examples-grid article{background:white;border:1px solid var(--line);padding:25px;border-radius:12px;display:flex;flex-direction:column}.example-mark{display:grid;place-items:center;height:80px;background:#edf3e7;color:var(--green);border:2px solid #94b597;border-radius:10px;font-family:'Comic Sans MS',cursive;font-size:23px;margin-bottom:20px}.examples-grid article:nth-child(2) .example-mark{background:#f5eaf0;color:#984e70;border-color:#c992ad}.examples-grid article:nth-child(3) .example-mark{background:#f9eddc;color:#a57133;border-color:#d2b084}.examples-grid h3{font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px}.examples-grid p{font-size:12px;line-height:1.6;color:var(--muted);flex:1;margin:0 0 20px}.examples-grid button{font-size:12px}.example-footnote{font-size:11px;color:var(--muted);margin-top:15px}.queue-tools{display:grid;grid-template-columns:minmax(220px,1fr) 220px;gap:14px;max-width:850px;margin-bottom:16px}.queue-tools label{font-size:10px;font-weight:600;color:var(--muted)}.queue-tools input,.queue-tools select{display:block;width:100%;padding:10px 11px;background:white;border:1px solid var(--line);margin-top:6px;font-size:12px;border-radius:8px}.selection-bar{display:flex;align-items:center;gap:13px;flex-wrap:wrap;padding:12px 0 17px;border-bottom:1px solid var(--line);margin-bottom:19px}.selection-bar label{font-size:11px;display:flex;gap:8px;align-items:center}.selection-bar>span{font-size:10px;color:var(--muted);margin-left:auto}.selection-bar button{font-size:11px;padding:8px 10px}.selection-bar>details{position:relative;font-size:10px;color:var(--muted)}.selection-bar>details>button{display:block;margin-top:7px}.queue-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.queue-card{background:white;border:1px solid var(--line);border-radius:12px;padding:17px;min-width:0}.queue-card.chosen{border-color:var(--green);box-shadow:0 0 0 1px var(--green)}.queue-card-top{display:flex;align-items:center;gap:8px;margin-bottom:12px}.queue-card-top input{margin:0}.queue-number{font-size:10px;color:var(--muted);font-weight:650}.readiness{font-size:9px;background:#e9f2e3;color:#426a46;padding:4px 7px;border-radius:14px;margin-left:auto}.readiness.incomplete{background:#fff0d9;color:#986d2b}.queue-card h3{font-family:'Comic Sans MS',cursive;font-size:14px;font-weight:400;line-height:1.4;margin:0 0 12px;overflow-wrap:anywhere}.queue-mini{display:grid;gap:5px;margin-bottom:13px}.queue-mini div{border-left:4px solid var(--q);background:#f8faf4;border-radius:2px;padding:6px 8px;font-size:10px;line-height:1.4;color:#53645b;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.queue-card-meta{font-size:10px;color:var(--muted);margin-bottom:15px;line-height:1.5}.queue-card-actions{display:flex;align-items:center;gap:5px}.queue-card-actions button{font-size:10px;padding:7px 8px}.queue-card-actions .edit-queue{margin-right:auto;background:var(--green);color:white;border-color:var(--green);font-size:11px}.queue-card-actions .move-card{padding:6px;width:27px}.queue-empty{padding:55px;text-align:center;color:var(--muted);font-size:13px}.editing-heading{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 17px}.editing-heading>strong{font-size:12px;margin-left:auto;margin-right:auto}.editing-heading>div{display:flex;gap:6px}.editing-heading button{font-size:11px;padding:8px 11px}.workflow-workspace{padding:0;max-width:none;gap:22px;grid-template-columns:400px minmax(0,1fr)}.workflow-workspace .section{padding:20px}.workflow-workspace .preview-stage{max-height:900px}.print-instructions h3{font-size:12px;margin:0 0 10px}.print-instructions p{font-size:11px;line-height:1.7;margin:0;color:var(--muted)}.preview-navigation{display:flex;align-items:center;gap:6px;padding:11px 18px 0;justify-content:center}.preview-navigation button{padding:4px 8px;font-size:11px}.preview-navigation select{padding:5px 8px;font-size:10px;max-width:210px}.workflow-workspace .print-bar button{font-size:12px}.workflow-workspace #printNote{line-height:1.5}.app-header .brand{font-size:14px}.money-svg{max-height:none!important}.money-reference{margin-top:15px;font-size:11px;color:var(--muted)}.currency-reference-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:14px}.currency-reference-grid div{border:1px solid var(--line);border-radius:7px;background:#fcfcf8;padding:8px;text-align:center}.currency-reference-grid .money-svg{height:70px}.currency-reference-grid small{font-size:10px;display:block;margin-top:6px}
+@media(min-width:1500px){.workflow-workspace{grid-template-columns:440px minmax(0,1fr)}}
+@media(max-width:1100px){.queue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.workflow-workspace{grid-template-columns:360px minmax(0,1fr)}.app-shell{padding-left:22px;padding-right:22px}.workflow-tabs>button{padding:12px}.workflow-tabs small{font-size:10px}.creation-sources{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.app-shell{padding:22px 16px 30px}.workflow-intro h1{font-size:26px}.project-status{display:none}.workflow-tabs{gap:3px;padding:4px;margin-bottom:24px}.workflow-tabs>button{padding:10px 7px;justify-content:center;gap:6px;font-size:12px}.workflow-tabs small{display:none}.step-circle{width:23px;height:23px;font-size:10px}.count-badge{font-size:9px;padding:2px 4px}.pane-heading{align-items:flex-start;flex-wrap:wrap}.pane-heading h2{font-size:25px}.pane-heading p{font-size:11px}.pane-actions{width:100%}.pane-actions button{flex:1;font-size:11px}.app-shell .library-body{grid-template-columns:1fr}.app-shell .library-settings{border-right:0;border-bottom:1px solid var(--line)}.examples-grid{grid-template-columns:1fr}.examples-grid article{padding:20px}.example-mark{height:65px}.queue-tools{grid-template-columns:1fr 150px;gap:10px}.selection-bar{gap:10px}.selection-bar>span{margin-left:0}.queue-grid{gap:10px}.queue-card{padding:13px}.queue-card h3{font-size:12px}.queue-card-actions{flex-wrap:wrap}.queue-card-actions .edit-queue{width:100%;margin-bottom:3px}.workflow-workspace{display:flex;flex-direction:column}.workflow-workspace>.editor,.workflow-workspace>.preview-column{width:100%}.editing-heading>strong{margin:0}.editing-heading>div{width:100%}.editing-heading>div button{flex:1}.currency-reference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:400px){.queue-grid{grid-template-columns:1fr}.queue-tools{grid-template-columns:1fr}.creation-sources small{font-size:9px}.creation-sources button{padding:12px}.creation-sources button.active{padding:11.5px}}
+@media print{body>.app-shell{display:none!important}}
+
+.workflow-intro #undoDeletion{font-size:10px;padding:8px 10px;white-space:nowrap}
+
+html,body{height:100%;overflow:hidden;background:#f5f5ef}body{color:#273e34}header.app-header,.app-shell,footer.app-foot{display:none!important}#simpleApp{height:100dvh;display:flex;flex-direction:column}.simple-top{display:flex;align-items:center;justify-content:space-between;padding:11px 23px;background:#fffefa;border-bottom:1px solid #dbe1d5;gap:10px;flex:none}#simpleFiles,.simple-print{display:flex;align-items:center;gap:8px}.simple-top button,.simple-top select{font-size:11px;padding:9px 12px}.simple-top select{background:#fff;max-width:205px}.simple-layout{display:grid;grid-template-columns:360px minmax(0,1fr) 240px;min-height:0;flex:1}.simple-center{overflow:auto;min-width:0;padding:22px 27px 35px}.simple-right{min-height:0;display:flex;flex-direction:column;background:#fffefa;border-left:1px solid #dbe1d5}.simple-settings{display:grid;grid-template-columns:145px minmax(180px,1fr) auto;gap:12px;align-items:end;padding-bottom:19px;border-bottom:1px solid #dde3d6;margin-bottom:17px}.simple-settings>label{font-size:10px;font-weight:650;color:#637165}.simple-settings select{display:block;width:100%;margin-top:6px;padding:10px;background:#fff;font-size:12px}.simple-main-actions{display:flex;gap:8px}.simple-main-actions button{font-size:11px;padding:11px 12px;white-space:nowrap}.simple-card-fields{margin-bottom:17px;max-width:850px}.simple-card-fields details{margin-top:10px;font-size:11px;color:#566b5a}.simple-card-fields summary{font-weight:600}.simple-card-fields>details[open]{background:#fffefa;border:1px solid #dce3d5;border-radius:9px;padding:14px 16px}.simple-card-fields>details[open]>summary{margin-bottom:14px}.simple-card-fields .field{margin-top:0;font-weight:500;color:#657466}.simple-card-fields .field input{max-width:440px;padding:9px 11px;background:#fffefa}#simpleTitleSlot{margin-bottom:12px}.simple-card-fields .entry{grid-template-columns:30px 1fr 1fr 23px;max-width:650px}.simple-card-fields .row-labels{grid-template-columns:30px 1fr 1fr 23px;max-width:650px}.simple-card-fields .add-row{max-width:650px}#simpleOptionsSlot>.section{border:0;padding:13px 0}#simpleOptionsSlot .section-heading,#simpleOptionsSlot .section-heading small{display:none}.simple-card-fields #simpleOptionsSlot details{margin-top:14px}.simple-card-fields #simpleOptionsSlot .minor-actions{margin:0}#simpleOptionsSlot #saveState{font-size:10px}#simplePreviewSlot .preview-column{width:100%}#simplePreviewSlot .preview-panel{background:#e9eee4;border-radius:12px}#simplePreviewSlot .preview-toolbar strong{font-size:11px}#simplePreviewSlot .preview-stage{max-height:none;padding:20px;min-height:180px}#simplePreviewSlot .preview-info{padding-top:12px}#simplePreviewSlot .preview-footer,#simplePreviewSlot .preview-navigation,#simplePreviewSlot .print-bar,#simplePreviewSlot #printNote{display:none}#simplePreviewSlot .preview-toolbar{padding:10px 14px}#simplePreviewSlot #issues:not(:empty){margin:12px 0 0}.simple-list-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:17px 16px;border-bottom:1px solid #e0e5da;flex:none;font-size:12px;font-weight:650}.simple-list-head b{font-size:10px;background:#e6eddf;color:#406947;border-radius:12px;padding:3px 7px;margin-left:5px}.simple-list-head button{font-size:10px;padding:6px 8px}.simple-card-list{overflow:auto;min-height:0;padding:9px;flex:1}.simple-list-item{display:grid;grid-template-columns:1fr 26px;align-items:start;margin-bottom:6px;border:1px solid transparent;border-radius:8px;background:#fff;padding:3px}.simple-list-item.active{border-color:#3e765a;background:#f0f5e9}.simple-list-item>button.simple-select-card{display:flex;gap:10px;text-align:left;border:0;background:transparent;font-weight:400;padding:9px 7px;min-width:0;width:100%}.simple-list-item>button.simple-select-card:hover{background:#eff3e9}.simple-thumb{height:54px;width:52px;flex:none;border:1px solid #e0e5d9;border-radius:4px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:2px}.simple-thumb>.money-svg{height:100%;width:100%}.simple-thumb>.clock-svg{height:100%;width:100%}.simple-thumb .visual-label{display:none}.simple-thumb .thumb-words{font-size:8px;line-height:1.4;overflow:hidden;overflow-wrap:anywhere;max-height:45px;text-align:center;width:100%}.simple-item-info{min-width:0;display:block}.simple-item-info small{font-size:9px;color:#6e7d6c;display:block;margin:1px 0 5px}.simple-item-info strong{font-size:11px;line-height:1.45;font-weight:550;display:block;overflow-wrap:anywhere}.simple-item-info em{font-size:9px;font-style:normal;color:#8f682d;display:block;margin-top:5px}.simple-discard{font-size:19px;color:#7e8d7b;border:0;background:transparent;padding:4px;width:25px;font-weight:400}.simple-list-empty{font-size:12px;line-height:1.7;color:#76816f;padding:30px 12px;text-align:center}.simple-list-foot{font-size:10px;line-height:1.5;color:#6d7f68;flex:none;border-top:1px solid #e0e5d9;padding:11px 15px}.simple-no-card{font-size:13px;color:#6d7f68;text-align:center;padding:70px 20px;background:#fffefa;border-radius:12px;border:1px dashed #cdd9c7}.simple-options-title{font-size:11px;font-weight:600}.simple-card-fields .fixed-palette{max-width:350px}#studioDialog{width:min(1100px,94vw);max-width:1100px;max-height:91dvh;padding:0;border:1px solid #cfdaca;box-shadow:0 15px 70px #18312130;border-radius:13px;color:#283f33}#studioDialog::backdrop{background:#1f332d80}.studio-head{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 21px;border-bottom:1px solid #e0e6d7;background:#fbfcf7;position:sticky;top:0;z-index:2}.studio-head strong{font-size:17px;font-weight:600}.studio-head button{float:none;margin:0;width:29px;height:29px;padding:0;font-size:22px;border:0;background:transparent;color:#698063;font-weight:400}.studio-summary{font-size:11px;color:#61785b;padding:12px 21px;margin:0;border-bottom:1px solid #e7ecdf;background:#f5f8ef}#studioDialog .library{border:0;border-radius:0;margin:0}#studioDialog .library>details>summary{display:none}#studioDialog .library-body{border:0;grid-template-columns:270px 1fr}#studioDialog .library-settings{padding:8px 20px 23px;background:#fbfcf7}#studioDialog .library-exercises{padding:22px}#studioDialog .library-pair{grid-template-columns:1fr}#studioDialog .library-pair label:has(#genRows){display:none}#studioDialog .library-settings>.library-advanced{display:none}#studioDialog .library-settings>.hint{font-size:10px}#studioDialog .library-bottom{position:sticky;bottom:0;background:#fff;padding:15px 0 5px;margin-top:17px;border-top:1px solid #dce4d4}#studioDialog .library-bottom button{font-size:12px;float:none}#studioDialog .library-bottom small{font-size:10px}#studioDialog .exercise-choice{font-size:11px}#studioDialog .exercise-choice small{font-size:10px}#studioDialog .all-catalogue{font-size:10px}#studioDialog .all-catalogue button,#studioDialog #legacySample{float:none}.simple-choices-note{font-size:10px;line-height:1.6;color:#74836c;margin:10px 0 0}
+@media(max-width:1150px){.simple-settings{grid-template-columns:140px 1fr}.simple-main-actions{grid-column:1/-1}.simple-main-actions button:last-child{flex:1}.simple-center{padding:19px}.simple-layout{grid-template-columns:320px minmax(0,1fr) 200px}}
+@media(max-width:760px){.simple-top{padding:10px 13px;align-items:stretch;gap:8px;flex-wrap:wrap}.simple-top button{padding:8px;font-size:10px}.simple-top select{font-size:10px;padding:7px;max-width:155px}.simple-print{margin-left:auto;gap:5px}.simple-layout{grid-template-columns:300px minmax(310px,1fr) 160px;overflow-x:auto}.simple-center{padding:13px}.simple-list-head{padding:13px 10px}.simple-card-list{padding:5px}.simple-thumb{display:none}.simple-list-item>button.simple-select-card{padding:8px 5px}.simple-item-info strong{font-size:10px}.simple-main-actions{flex-wrap:wrap}.simple-main-actions button{font-size:10px}.simple-settings{grid-template-columns:100px minmax(0,1fr);gap:9px}.simple-settings select{padding:8px 6px;font-size:10px}.simple-card-fields .entry,.simple-card-fields .row-labels{grid-template-columns:25px 1fr 1fr 18px;gap:5px}.simple-card-fields .entry input{font-size:11px;padding:8px 5px}.simple-card-fields .swatch{width:25px;height:32px}#simplePreviewSlot .view-switch button{padding:5px 6px;font-size:9px}#simplePreviewSlot .preview-toolbar strong{display:none}#simplePreviewSlot .preview-toolbar{justify-content:center}#simplePreviewSlot .preview-stage{padding:10px}#simplePreviewSlot .preview-info{padding:10px 10px 0;font-size:9px}#simplePreviewSlot .previewCaption{display:none}#studioDialog .library-body{grid-template-columns:1fr}#studioDialog .library-settings{border-right:0;border-bottom:1px solid #dae2d2}#studioDialog .library-pair{grid-template-columns:1fr 1fr}#studioDialog .exercise-choices{grid-template-columns:1fr}#studioDialog .library-exercises{padding:17px}.studio-head strong{font-size:16px}}
+@media(max-width:500px){.simple-layout{grid-template-columns:290px minmax(300px,1fr) 150px}.simple-item-info strong{font-size:9px}.simple-item-info small{font-size:8px}.simple-list-foot{font-size:9px;padding:9px}.simple-list-head{font-size:11px}.simple-settings{grid-template-columns:1fr}.simple-main-actions{grid-column:auto}.simple-main-actions button{width:100%}.simple-main-actions button:last-child{flex:auto}.simple-settings>label{font-size:9px}.simple-card-fields>details[open]{padding:10px 6px}.simple-print{width:100%;justify-content:space-between}.simple-top select{max-width:none;flex:1}.simple-top .simple-print button{flex:1}.simple-item-info em{font-size:8px}.simple-card-list{padding:3px}.simple-discard{width:20px}.simple-list-item{grid-template-columns:1fr 20px}.simple-center{padding:10px}#simpleTitleSlot input{font-size:10px}.simple-card-fields summary{font-size:10px}#simplePreviewSlot .preview-info>span:first-child{display:none}}
+@media print{html,body{height:auto!important;overflow:visible!important}#simpleApp,#studioDialog{display:none!important}}
+
+.simple-create{min-height:0;overflow:auto;padding:22px 18px;background:#fffefa;border-right:1px solid #dbe1d5}.simple-create .simple-settings{display:flex;flex-direction:column;align-items:stretch;gap:22px;padding:0;border:0;margin:0}.simple-create .simple-settings>label{font-size:11px;line-height:1.6}.simple-create .simple-settings select{font-size:12px;margin-top:7px;width:100%}.simple-create .simple-main-actions{display:flex;flex-direction:column;gap:10px}.simple-create .simple-main-actions button{white-space:normal;width:100%;font-size:12px;line-height:1.5}.simple-creation-note{font-size:10px;line-height:1.7;color:#77836e;margin:21px 0 0}.simple-center{min-height:0}.simple-top{padding:11px 18px}@media(max-width:1150px){.simple-create{padding:19px 13px}}@media(max-width:760px){.simple-create{padding:15px 11px}.simple-create .simple-settings select{font-size:11px}.simple-create .simple-main-actions button{font-size:11px}.simple-layout{align-items:stretch}.simple-create,.simple-center,.simple-right{height:100%}}
+.simple-create .simple-settings{display:grid;grid-template-columns:1fr 1fr;gap:12px}.simple-create .simple-main-actions{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.3fr;gap:8px}.simple-create .simple-settings select{font-size:11px;padding:8px 6px}.simple-create .simple-main-actions button{font-size:11px;padding:10px 8px}.simple-create .simple-creation-note{margin:12px 0 18px;font-size:10px}.simple-create .simple-card-fields{padding-top:18px;border-top:1px solid #dbe1d5;margin:0}.simple-create .simple-card-fields>details[open]{padding:12px 9px;background:#fff}.simple-create .simple-card-fields .entry,.simple-create .simple-card-fields .row-labels{grid-template-columns:22px minmax(0,1.2fr) minmax(0,1fr) 18px;gap:5px}.simple-create .simple-card-fields .entry input{font-size:11px;padding:9px 5px}.simple-create .swatch{width:22px;height:31px;border-radius:4px}.simple-create .simple-card-fields .row-labels{font-size:8px;letter-spacing:0}.simple-create .simple-card-fields .remove-row{width:18px}.simple-create #simpleTitleSlot input{width:100%;max-width:none}.simple-create .controls-inline{flex-wrap:wrap;gap:8px}.simple-create .controls-inline input[type=range]{width:110px}.simple-create .question-count-controls{grid-template-columns:1fr}.simple-create .question-count-controls button{grid-column:1/-1}.simple-create .number-setting input{width:95px}.simple-center{padding:18px}.simple-center #simplePreviewSlot{max-width:900px;margin:auto}
+#studioDialog{width:min(1370px,96vw);max-width:1370px}.studio-content{display:grid;grid-template-columns:minmax(0,1fr) 360px;align-items:start}#studioLibrarySlot{min-width:0}#studioDialog .library-body{grid-template-columns:220px minmax(0,1fr)}#studioDialog .library-exercises{padding:18px}#studioDialog .exercise-choices{grid-template-columns:1fr}#studioDialog .library-bottom{display:flex;flex-wrap:wrap;gap:12px}#studioDialog .library-bottom small{display:none}.studio-preview-panel{position:sticky;top:60px;min-width:0;padding:16px 14px 18px;background:#edf2e8;border-left:1px solid #dce4d5;max-height:calc(91dvh - 60px);overflow:auto}.studio-batch-controls{padding:13px;background:#fffefa;border:1px solid #d5dfce;border-radius:10px}.studio-batch-controls>strong{display:block;font-size:12px;margin-bottom:13px}.studio-control-label{display:block;font-size:11px;font-weight:600;margin:12px 0 8px}.studio-control-label output{float:right;color:#376b4b}.studio-row-choices{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}.studio-row-choices button{float:none;padding:6px 0;font-size:11px;border-radius:5px;min-width:0}.studio-row-choices button.active{background:#246b58;color:#fff;border-color:#246b58}.studio-font-controls{display:flex;align-items:center;gap:10px}.studio-font-controls button{float:none;width:30px;height:30px;padding:0;font-size:19px;flex:none}.studio-font-controls input{accent-color:#246b58;min-width:0;flex:1;width:100%}.studio-preview-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:15px 0 8px;font-size:11px;font-weight:600;color:#5d7558}.studio-preview-nav button{float:none;padding:0;width:28px;height:28px;font-size:20px;background:#fffefa}.studio-preview-stage{min-height:120px;padding:12px;display:flex;justify-content:center;overflow:hidden}.studio-preview-stage .paper{box-shadow:0 3px 15px #233e2224}.studio-preview-stage .paper.two{height:156.5mm}.studio-preview-empty{font-size:12px;line-height:1.7;text-align:center;margin:30px 5px;color:#6e7c66}.studio-preview-issue{margin:8px 0 0;color:#8a5d20;font-size:11px;line-height:1.6}.studio-preview-issue:empty{display:none}@media(max-width:1100px){.studio-content{grid-template-columns:minmax(0,1fr) 330px}#studioDialog .library-body{grid-template-columns:1fr}#studioDialog .library-settings{padding:12px 18px}#studioDialog .library-pair{grid-template-columns:1fr 1fr}#studioDialog .library-settings>.hint{display:none}.studio-preview-panel{padding:12px 10px}.simple-create{padding:16px 12px}}@media(max-width:700px){.studio-content{grid-template-columns:minmax(0,1fr)}.studio-preview-panel{position:static;max-height:none;border-left:0;border-top:1px solid #dce4d5}.studio-preview-stage{max-width:380px;margin:auto}.simple-create .simple-settings{gap:8px}.simple-create .simple-main-actions{grid-template-columns:1fr}.simple-create .simple-card-fields .entry{grid-template-columns:20px minmax(0,1.2fr) minmax(0,1fr) 16px}}
+
+</style></head>
+<body>
+<svg style="display:none" aria-hidden="true"><symbol id="pin" viewBox="0 0 24 24"><path d="M9 3h6l1 7-1 11h-3l-1-8-1 8H7L8 10z"/><path d="M8 10h8M12 3v7"/><circle cx="12" cy="11" r="2"/></symbol><symbol id="print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 17H3V9h18v8h-3M6 14h12v7H6z"/><path d="M17 11h1"/></symbol><symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol><symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol></svg>
+<header class="app-header"><div class="brand"><div class="brand-symbol"><svg class="icon"><use href="#pin"/></svg></div><div>L’atelier des cartes à pince<small>Créer · Plier · Apprendre</small></div></div><div class="header-actions"><button id="helpBtn" class="quiet">Mode d’emploi</button><button id="saveBtn"><svg class="icon"><use href="#download"/></svg> <span class="optional">Sauvegarder</span></button><button id="openBtn"><span class="optional">Ouvrir un projet</span><span class="mobile-only">Ouvrir</span></button><input id="fileInput" type="file" accept=".json,application/json" hidden></div></header>
+<div id="simpleApp">
+<div class="simple-top"><div id="simpleFiles"></div><div class="simple-print"><select id="simplePrintScope" aria-label="Fiches à imprimer"><option value="ready">Toutes les fiches prêtes</option><option value="current">La fiche affichée</option></select><button id="simplePrint" class="primary">Imprimer / PDF</button></div></div>
+<main class="simple-layout"><aside class="simple-create" aria-label="Création des fiches"><div class="simple-settings"><label>Questions par nouvelle fiche<select id="simpleRows"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></label><label>Format des nouvelles fiches<select id="simpleFormat"><option value="1">1 grande fiche par feuille</option><option value="2">2 petites fiches par feuille</option></select></label><div class="simple-main-actions"><button id="simpleNew">+ Fiche vide</button><button id="openStudio" class="primary">Créer des fiches toutes faites</button></div></div><p class="simple-creation-note">Ces réglages s’appliquent aux prochaines fiches créées.</p><div class="simple-card-fields" id="simpleCardFields"><div id="simpleTitleSlot"></div><details id="simpleEditorDetails" open><summary>Modifier les questions et les réponses</summary><div class="row-labels"><span>Pince</span><span>Question</span><span>Bonne réponse</span><span></span></div><div id="simpleRowsSlot"></div><div id="simpleAddRowSlot"></div></details><details id="simpleOptions"><summary>Options</summary><div id="simpleOptionsSlot"></div></details></div></aside><section class="simple-center" aria-label="Fiche affichée">
+<div id="simplePreviewSlot"></div></section>
+<aside class="simple-right"><div class="simple-list-head"><span>Fiches <b id="simpleCount">0</b></span><button id="simpleUndo" class="quiet" hidden>Annuler</button></div><div id="simpleCardList" class="simple-card-list"></div><div id="simpleListFoot" class="simple-list-foot"></div></aside></main>
+</div>
+<dialog id="studioDialog"><div class="studio-head"><strong>Studio de création</strong><button id="closeStudio" aria-label="Fermer le studio">×</button></div><p id="studioSummary" class="studio-summary"></p><div class="studio-content"><div id="studioLibrarySlot"></div><aside class="studio-preview-panel" aria-label="Aperçu du lot à créer"><div class="studio-batch-controls"><strong>Pour tout le lot à créer</strong><div class="studio-control-label">Questions par fiche</div><div id="studioRowsChoices" class="studio-row-choices" aria-label="Nombre de questions par fiche"></div><label for="studioFont" class="studio-control-label">Taille du texte <output id="studioFontOutput" for="studioFont">14 pt</output></label><div class="studio-font-controls"><button id="studioFontLess" type="button" aria-label="Réduire la taille du texte">−</button><input id="studioFont" type="range" min="10" max="28" step="1" value="14"><button id="studioFontMore" type="button" aria-label="Augmenter la taille du texte">+</button></div></div><div class="studio-preview-nav"><button id="studioPrev" aria-label="Fiche précédente">‹</button><span id="studioPreviewCount">Aperçu</span><button id="studioNext" aria-label="Fiche suivante">›</button></div><div id="studioPreviewStage" class="studio-preview-stage"></div><p id="studioPreviewIssue" class="studio-preview-issue" role="status"></p></aside>
+</div></dialog>
+<div class="app-shell">
+<div class="workflow-intro"><div><p class="eyebrow">L’ATELIER DES CARTES À PINCE</p><h1>Des fiches prêtes, en trois étapes.</h1></div><span class="project-status" id="projectStatus">Vos fiches sont enregistrées dans ce navigateur.</span><button id="undoDeletion" class="quiet" hidden>↶ Annuler la suppression</button></div>
+<nav class="workflow-tabs" aria-label="Étapes de préparation"><button data-step="create" class="active"><span class="step-circle">1</span><span>Créer<small>Choisir ou écrire les exercices</small></span></button><button data-step="cards"><span class="step-circle">2</span><span>Mes fiches <b id="queueCount" class="count-badge"></b><small>Retrouver, modifier, organiser</small></span></button><button data-step="print"><span class="step-circle">3</span><span>Imprimer<small>Vérifier et préparer la feuille</small></span></button></nav>
+<section id="createPane" class="workflow-pane"><div class="pane-heading"><div><h2>Comment souhaitez-vous créer vos fiches ?</h2><p>Les nouvelles fiches s’ajoutent à « Mes fiches ». Vous pourrez ensuite les modifier.</p></div><button id="addCard" class="quiet">+ Fiche vierge</button></div><div class="creation-sources" aria-label="Source des exercices"><button data-source="ulis"><strong>Exercices Logico</strong><small>95 objectifs, par domaine et niveau</small></button><button data-source="custom"><strong>À la carte</strong><small>Calculs, conjugaison, heures, monnaie</small></button><button data-source="write"><strong>Mes questions</strong><small>Écrire ou coller une liste</small></button><button data-source="examples"><strong>Exemples</strong><small>Des fiches pour commencer</small></button></div><div id="generatorWorkbench"><section class="library" aria-label="Exercices du Logico"><details id="libraryDetails" open><summary><span><span class="library-eyebrow">VOTRE BIBLIOTHÈQUE D’EXERCICES</span><strong>Du Logico aux cartes à pince</strong></span><span class="library-badge">95 objectifs · 7 niveaux</span></summary><div class="library-body"><div class="library-settings"><label class="field">Activité<select id="genMode"><option value="ulis">Progression par domaine et niveau</option><option value="conjugation">Conjugaison à la carte</option><option value="multiplication">Tables de multiplication</option><option value="addition">Additions</option><option value="complement">Compléments</option><option value="money">Pièces et billets</option><option value="time">Lecture de l’heure</option><option value="free">Texte de mes anciens Logico</option></select></label><div id="scopeControls"><label class="field">Domaine<select id="genDomain"></select></label><div class="field">Niveau<div id="levelChips" class="level-chips"></div></div></div><div class="library-pair"><label class="field">Questions par carte<select id="genRows"><option value="1">1 question</option><option value="2">2 questions</option><option value="3">3 questions</option><option value="4">4 questions</option><option value="5">5 questions</option><option value="6">6 questions</option><option value="7">7 questions</option><option value="8">8 questions</option><option value="9">9 questions</option><option value="10">10 questions</option></select></label><label class="field"><span id="copiesLabel">Cartes par exercice</span><input id="genCopies" type="number" min="1" max="20" value="1"></label></div><details class="library-advanced"><summary>Options du lot</summary><label class="field">Destination<select id="genDestination"><option value="append">Ajouter à mes fiches</option><option value="replace">Remplacer mes fiches</option></select></label></details><p class="hint">Le nombre de questions choisi s’applique aux nouvelles fiches. Pour les cadrans, 4 questions donnent davantage de place.</p></div><div class="library-exercises"><div id="ulisControls"><div class="library-exercise-head"><strong id="scopeLabel"></strong><button id="toggleExercises" class="quiet">Tout décocher</button></div><div id="exerciseChoices" class="exercise-choices"></div></div><div id="classicControls" hidden></div><details id="moneyReference" class="money-reference" hidden><summary>Reconnaître les pièces et les billets</summary><div id="currencyReferenceGrid" class="currency-reference-grid"></div></details><div id="legacyControls" hidden><label class="field">Titre de la série<input id="legacyTitle" type="text" maxlength="70" value="Mes exercices Logico"></label><label class="field">Une ligne : question -- réponse<textarea id="legacyData" rows="7" placeholder="La capitale de la France est… -- Paris"></textarea></label><p class="hint">Le séparateur === permet de conserver les limites entre vos séries. Les blocs longs sont répartis sur plusieurs cartes.</p><button id="legacySample">Charger l’exemple du Logico</button></div><div class="library-bottom"><div><span id="generationSummary"></span><small>Le format et la présentation sont ceux choisis ci-dessous.</small></div><button id="generateCards" class="primary">Générer les cartes</button></div><div id="libraryError" role="status"></div><details class="all-catalogue"><summary>Préparer tous les objectifs du Logico</summary><p>Une carte pour chacun des 95 objectifs, dans les six domaines et les sept niveaux. Le nombre de questions choisi s’applique à toutes les cartes.</p><button id="generateCatalogue">Générer les 95 cartes du catalogue</button></details></div></div></details></section></div><div id="examplesPane" hidden><div class="examples-grid"><article><span class="example-mark">2 + 3</span><h3>Petites additions</h3><p>6 questions pour découvrir le principe.</p><button data-create-example="math" class="primary">Ajouter cet exemple</button></article><article><span class="example-mark">Je, tu, il…</span><h3>Verbes au présent</h3><p>6 questions, avec une réponse commune à deux verbes.</p><button data-create-example="verbs" class="primary">Ajouter cet exemple</button></article><article><span class="example-mark">Demain…</span><h3>Conjugaison au futur</h3><p>Les 10 phrases de l’exemple du Logico.</p><button data-create-example="future" class="primary">Ajouter cet exemple</button></article></div><p class="example-footnote">Un exemple ajoute une nouvelle fiche à votre collection. Il ne remplace pas les fiches existantes.</p></div></section>
+<section id="queuePane" class="workflow-pane" hidden><div class="pane-heading"><div><h2>Mes fiches</h2><p id="queueSummary"></p></div><div class="pane-actions"><button id="queueCreate">+ Créer d’autres fiches</button><button id="printAllQueue" class="primary">Préparer l’impression</button></div></div><div class="queue-tools"><label class="queue-search">Rechercher une fiche<input id="queueSearch" type="search" placeholder="Titre ou contenu de la fiche…"></label><label>Afficher<select id="queueFilter"><option value="all">Toutes les fiches</option><option value="ready">Prêtes à imprimer</option><option value="incomplete">À compléter</option><option value="clocks">Fiches d’heures</option><option value="money">Fiches de monnaie</option></select></label></div><div class="selection-bar"><label><input id="selectVisible" type="checkbox"> Sélectionner les fiches affichées</label><span id="selectionCount">Aucune sélection</span><button id="printSelectedQueue">Imprimer la sélection</button><details><summary>Autres actions</summary><button id="deleteSelectedQueue">Supprimer la sélection</button><button id="clearSelection">Désélectionner</button></details></div><div id="queueGrid" class="queue-grid"></div><div id="queueEmpty" class="queue-empty" hidden>Aucune fiche ne correspond à cette recherche.</div></section>
+<div id="editingHeading" class="editing-heading" hidden><button id="backToQueue" class="quiet">← Toutes mes fiches</button><strong id="editingLabel"></strong><div><button id="previousCard" aria-label="Fiche précédente">←</button><button id="nextCard" aria-label="Fiche suivante">→</button><button id="cloneCard">Dupliquer</button><button id="deleteCard">Supprimer</button></div><select id="cardSelect" aria-label="Choisir une fiche" hidden></select></div>
+<div id="printingHeading" class="pane-heading" hidden><div><h2>Préparer l’impression</h2><p>Choisissez les fiches et le format, puis vérifiez la feuille à droite.</p></div><button id="printBackToQueue">← Mes fiches</button></div>
+<div id="sharedWorkspace" class="workspace workflow-workspace" hidden><aside id="editorPanel" class="editor" hidden><section class="section"><div class="section-heading"><h2> Le titre de la fiche</h2><small id="cardCount"></small></div><label class="field">Titre<input id="titleInput" type="text" maxlength="70"></label></section><section class="section"><div class="section-heading"><h2> Questions & réponses</h2><small id="rowCount"></small></div><p class="hint" style="margin-top:0">Une couleur fixe par question, toujours dans le même ordre. Les réponses sont mélangées dans le tableau blanc.</p><div class="row-labels"><span>Pince</span><span>Question</span><span>Bonne réponse</span><span></span></div><div class="question-count-controls"><label>Questions par carte<select id="cardRows"><option value="1">1 question</option><option value="2">2 questions</option><option value="3">3 questions</option><option value="4">4 questions</option><option value="5">5 questions</option><option value="6">6 questions</option><option value="7">7 questions</option><option value="8">8 questions</option><option value="9">9 questions</option><option value="10">10 questions</option></select></label><label>Appliquer à<select id="cardRowsScope"><option value="current">Cette carte</option><option value="clocks">Toutes les cartes d’heures</option><option value="all">Toutes les cartes</option></select></label><button id="applyCardRows">Appliquer le nombre choisi</button></div><p id="cardRowsHelp" class="palette-explainer"></p><details><summary>Les 10 couleurs de pinces</summary><div id="fixedPalette" class="fixed-palette"></div><p class="palette-explainer">Palette fixe et identique pour toutes les fiches. Avec moins de 10 questions, seules les premières couleurs sont utilisées. Le blanc est délimité par un fin trait foncé.</p></details><div id="rows"></div><button id="addRow" class="add-row">+ Ajouter une question</button><div class="minor-actions"><button id="shuffleBtn">↝ Mélanger les réponses</button></div><details id="orderDetails"><summary>Régler l’ordre des réponses</summary><div id="answerOrder" class="answer-order"></div><p>Jusqu’à 10 questions par grande fiche. Une réponse identique apparaît une seule fois dans le tableau. Plusieurs rectangles colorés figurent alors au dos de sa case.</p></details><details><summary>Coller une liste de questions</summary><p>Une ligne par paire, séparée par un point-virgule ou une tabulation.</p><textarea id="bulkInput" rows="4" placeholder="2 + 3 ; 5&#10;4 + 2 ; 6&#10;1 + 7 ; 8" aria-label="Liste de questions et réponses"></textarea><button id="bulkBtn">Remplacer les paires de cette fiche</button></details></section></aside><aside id="printPanel" class="editor" hidden><section class="section"><div class="section-heading"><h2>Les fiches à imprimer</h2></div><label class="field">Imprimer<select id="printScope"><option value="all">Toutes mes fiches</option><option value="ready">Les fiches prêtes uniquement</option><option value="selected">Ma sélection</option></select></label><p id="printScopeSummary" class="hint"></p></section><section class="section"><div class="section-heading"><h2> Le format</h2><small>A4 · portrait</small></div><div class="formats"><button class="format active" data-format="1" aria-pressed="true"><span class="paper-icon"></span><span>Une grande fiche<small>Toute la hauteur</small></span></button><button class="format" data-format="2" aria-pressed="false"><span class="paper-icon"></span><span>Deux petites fiches<small>Découpe au milieu</small></span></button></div><p class="hint">Un pli vertical au centre. La correction se retrouve au dos, face aux réponses.</p></section><section class="section"><div class="section-heading"><h2> Les finitions</h2><small>Pour toutes les fiches</small></div><div class="controls-inline"><label for="fontSize">Taille du texte</label><input id="fontSize" type="range" min="10" max="19" step="1" value="14"><output id="fontOutput" for="fontSize" style="font-size:11px">14 pt</output></div><div class="controls-inline"><label><input id="guidesInput" type="checkbox" checked> Afficher les repères de pli et de découpe</label></div><p class="hint" id="saveState" role="status">Enregistrement automatique dans ce navigateur.</p><label class="number-setting">Premier numéro de carte<input id="startNumber" type="number" min="1" max="9999" value="1"></label></section><section class="section print-instructions"><h3>Après l’impression</h3><p>Imprimez sur une seule face, en A4 portrait à 100 %. Pour deux fiches, coupez au milieu. Pliez verticalement, correction derrière le jeu, puis collez les deux faces.</p></section></aside><div class="preview-column" id="sharedPreview"><section class="preview-panel" aria-label="Aperçu imprimable"><div class="preview-toolbar"><strong><span class="live-dot"></span> Votre fiche prend forme</strong><div class="view-switch" aria-label="Vue de la fiche"><button data-view="flat" class="active" aria-pressed="true">Feuille à imprimer</button><button data-view="front" aria-pressed="false">Fiche pliée</button></div></div><div id="previewNavigation" class="preview-navigation"><button id="previousPreviewPage" aria-label="Feuille précédente">←</button><select id="previewPageSelect" aria-label="Feuille affichée"></select><button id="nextPreviewPage" aria-label="Feuille suivante">→</button></div><div class="preview-info"><span id="previewCaption">Correction au dos ← Pli vertical → Face de jeu</span><span id="pageTag" class="tag"></span></div><div id="previewStage" class="preview-stage"></div><div class="preview-footer">Aperçu en direct · Les modifications sont enregistrées automatiquement.</div></section><div id="issues" role="status"></div><div class="print-bar"><small>Impression sur une seule face.<br>A4 · Taille réelle (100 %) · Couleurs</small><button id="printBtn" class="primary"><svg class="icon"><use href="#print"/></svg> Imprimer / PDF</button></div><p class="saved" id="printNote">Toutes les fiches du projet seront imprimées.</p></div></div>
+</div>
+
+<footer class="app-foot"><span>Fait pour les petites mains et les grandes idées.</span><span>Vos fiches restent dans votre navigateur · Fonctionne hors connexion</span></footer>
+<div id="printRoot"></div><div class="toast" id="toast" role="status" hidden></div>
+<dialog id="helpDialog"><h2>Des cartes à pince, tout simplement.</h2><p><strong>Composez.</strong> Chaque question reçoit un contour de couleur. Saisissez sa bonne réponse : le générateur crée le tableau blanc et prépare automatiquement le corrigé. Les mêmes dix couleurs de pinces sont utilisées sur toutes les fiches.</p><p><strong>Imprimez.</strong> Une grande fiche occupe toute la hauteur d’une feuille A4. Le format « deux petites fiches » place deux fiches successives sur la même feuille. Ajoutez, dupliquez ou sélectionnez une fiche avec les boutons de l’éditeur. Si le nombre de fiches est impair, la dernière demi-feuille reste vide.</p><p><strong>Pliez.</strong> La feuille à plat présente la correction à gauche et le jeu à droite. Rabattez la moitié gauche derrière la moitié droite le long du pli vertical. Les rectangles au dos sont alignées avec les réponses, sur le bord libre, à l’opposé du pli.</p><p><strong>Vérifiez.</strong> Une même réponse peut recevoir plusieurs pinces : les rectangles correspondants se trouvent ensemble au dos. Pour une vérification confortable, privilégiez peu de questions et des réponses courtes, surtout sur les demi-fiches.</p><p><strong>Générez.</strong> Retrouvez les 95 objectifs du Logico par domaine et niveau, ainsi que les réglages libres. Choisissez de 1 à 10 questions, puis générez un lot modifiable. La numérotation se suit et son premier numéro est réglable.</p><p><strong>Conservez.</strong> Le bouton « Sauvegarder » télécharge votre projet modifiable. « Ouvrir un projet » permet de le retrouver sur un autre ordinateur. L’enregistrement automatique dépend du navigateur et de ses réglages.</p><button id="closeHelp" class="primary">C’est compris</button></dialog>
+<script>
+const Logico=(()=>{
+  var SAMPLE_DATA = `Tu ... des biscuits \xE0 la vanille. -- mangeras
+Nous ... la balle. -- lancerons
+Je ... les oiseaux dehors. -- regarderai
+Elle ... son flan d'un coup. -- avalera
+Ils ... dans leurs mains. -- frapperont
+Vous ... les insectes \xE0 la loupe. -- observerez
+On ... la suite de l'histoire. -- imaginera
+Les oiseaux ... le chat. -- \xE9viteront
+Tu ... de ton futur m\xE9tier. -- r\xEAveras
+Vous ... la solution. -- trouverez`;
+
+  var DEFAULT_GENERATOR = {
+    mode: "free",
+    sheetCount: 1,
+    seed: 1,
+    tense: "present",
+    verbGroups: ["group1"],
+    tables: [2, 3, 4, 5],
+    additionAdds: [1, 2, 3, 4, 5],
+    additionMax: 20,
+    complementTargets: [10],
+    moneyDenoms: [1, 2, 5, 10, 20, 50, 100, 200, 500, 1e3, 2e3],
+    timePrecision: "quarter",
+    timePeriod: "mixed",
+    ulisDomain: "numeration",
+    ulisLevel: "green",
+    ulisExercise: "num_read",
+    ulisExercises: ["num_read", "num_before", "num_after", "num_compare", "num_decompose"],
+    ulisCopiesPerExercise: 1
+  };
+  var LOGICO_COLORS = [
+    { hex: "#FF0000", dot: false },
+    { hex: "#FFFF00", dot: false },
+    { hex: "#0000FF", dot: false },
+    { hex: "#FF9933", dot: false },
+    { hex: "#009900", dot: false },
+    { hex: "#FF0000", dot: true },
+    { hex: "#FFFF00", dot: true },
+    { hex: "#0000FF", dot: true },
+    { hex: "#FF9933", dot: true },
+    { hex: "#009900", dot: true }
+  ];
+
+  function shuffleWithRandom(items, random) {
+    const result = [...items];
+    for (let index2 = result.length - 1; index2 > 0; index2 -= 1) {
+      const target = Math.floor(random() * (index2 + 1));
+      [result[index2], result[target]] = [result[target], result[index2]];
+    }
+    return result;
+  }
+
+  var PRONOUNS = ["Je", "Tu", "Il", "Nous", "Vous", "Ils"];
+  var GROUP1 = ["aimer", "parler", "regarder", "jouer", "travailler", "donner", "trouver", "demander", "penser", "passer", "arriver", "rester", "porter", "montrer", "\xE9couter", "marcher", "chanter"];
+  var GROUP2 = ["finir", "choisir", "grandir", "r\xE9ussir", "remplir", "r\xE9fl\xE9chir", "ob\xE9ir", "rougir", "applaudir"];
+  var GROUP3_PRESENT = {
+    "\xEAtre": ["suis", "es", "est", "sommes", "\xEAtes", "sont"],
+    "avoir": ["ai", "as", "a", "avons", "avez", "ont"],
+    "aller": ["vais", "vas", "va", "allons", "allez", "vont"],
+    "faire": ["fais", "fais", "fait", "faisons", "faites", "font"],
+    "dire": ["dis", "dis", "dit", "disons", "dites", "disent"],
+    "venir": ["viens", "viens", "vient", "venons", "venez", "viennent"],
+    "voir": ["vois", "vois", "voit", "voyons", "voyez", "voient"],
+    "pouvoir": ["peux", "peux", "peut", "pouvons", "pouvez", "peuvent"],
+    "vouloir": ["veux", "veux", "veut", "voulons", "voulez", "veulent"],
+    "prendre": ["prends", "prends", "prend", "prenons", "prenez", "prennent"],
+    "mettre": ["mets", "mets", "met", "mettons", "mettez", "mettent"],
+    "savoir": ["sais", "sais", "sait", "savons", "savez", "savent"],
+    "devoir": ["dois", "dois", "doit", "devons", "devez", "doivent"],
+    "partir": ["pars", "pars", "part", "partons", "partez", "partent"],
+    "sortir": ["sors", "sors", "sort", "sortons", "sortez", "sortent"],
+    "lire": ["lis", "lis", "lit", "lisons", "lisez", "lisent"],
+    "\xE9crire": ["\xE9cris", "\xE9cris", "\xE9crit", "\xE9crivons", "\xE9crivez", "\xE9crivent"],
+    "boire": ["bois", "bois", "boit", "buvons", "buvez", "boivent"]
+  };
+  var GROUP3_IMPERFECT = {
+    "\xEAtre": "\xE9t",
+    "avoir": "av",
+    "aller": "all",
+    "faire": "fais",
+    "dire": "dis",
+    "venir": "ven",
+    "voir": "voy",
+    "pouvoir": "pouv",
+    "vouloir": "voul",
+    "prendre": "pren",
+    "mettre": "mett",
+    "savoir": "sav",
+    "devoir": "dev",
+    "partir": "part",
+    "sortir": "sort",
+    "lire": "lis",
+    "\xE9crire": "\xE9criv",
+    "boire": "buv"
+  };
+  var GROUP3_FUTURE = {
+    "\xEAtre": "ser",
+    "avoir": "aur",
+    "aller": "ir",
+    "faire": "fer",
+    "dire": "dir",
+    "venir": "viendr",
+    "voir": "verr",
+    "pouvoir": "pourr",
+    "vouloir": "voudr",
+    "prendre": "prendr",
+    "mettre": "mettr",
+    "savoir": "saur",
+    "devoir": "devr",
+    "partir": "partir",
+    "sortir": "sortir",
+    "lire": "lir",
+    "\xE9crire": "\xE9crir",
+    "boire": "boir"
+  };
+  var MONEY_DENOMS = [
+    { value: 1, label: "1 c", kind: "coin" },
+    { value: 2, label: "2 c", kind: "coin" },
+    { value: 5, label: "5 c", kind: "coin" },
+    { value: 10, label: "10 c", kind: "coin" },
+    { value: 20, label: "20 c", kind: "coin" },
+    { value: 50, label: "50 c", kind: "coin" },
+    { value: 100, label: "1 \u20AC", kind: "coin" },
+    { value: 200, label: "2 \u20AC", kind: "coin" },
+    { value: 500, label: "5 \u20AC", kind: "note" },
+    { value: 1e3, label: "10 \u20AC", kind: "note" },
+    { value: 2e3, label: "20 \u20AC", kind: "note" },
+    { value: 5e3, label: "50 \u20AC", kind: "note" },
+    { value: 1e4, label: "100 \u20AC", kind: "note" },
+    { value: 2e4, label: "200 \u20AC", kind: "note" }
+  ];
+  var ULIS_LEVELS = [
+    { id: "green", label: "Vert", color: "#00B050", max: 10 },
+    { id: "yellow", label: "Jaune", color: "#FFC000", max: 30 },
+    { id: "red", label: "Rouge", color: "#EE0000", max: 60 },
+    { id: "pink", label: "Rose", color: "#FF85FF", max: 100 },
+    { id: "purple", label: "Violet", color: "#7030A0", max: 1e3 },
+    { id: "blue", label: "Bleu", color: "#0070C0", max: 1e4 },
+    { id: "black", label: "Noir", color: "#000000", max: 1e5 }
+  ];
+  var ULIS_DOMAINS = [
+    { id: "numeration", label: "Num\xE9ration", short: "Nombres", icon: "+", shape: "plus" },
+    { id: "conjugation", label: "Conjugaison", short: "Conjugaison", icon: "\u2229", shape: "arch" },
+    { id: "written", label: "Calcul pos\xE9", short: "Calcul pos\xE9", icon: "\u25CB", shape: "circle" },
+    { id: "measures", label: "Grandeurs et mesures", short: "Mesures", icon: "\u263E", shape: "moon" },
+    { id: "mental", label: "Calcul mental", short: "Calcul mental", icon: "\u03DF", shape: "lightning" },
+    { id: "lexicon", label: "Lexique", short: "Lexique", icon: "\u2665", shape: "heart" }
+  ];
+  var ULIS_EXERCISES = {
+    numeration: Object.fromEntries(ULIS_LEVELS.map((level) => [level.id, [
+      { id: "num_read", label: `\xC9crire les nombres jusqu\u2019\xE0 ${level.max.toLocaleString("fr-FR")} en chiffres`, instruction: "\xC9cris le nombre en chiffres." },
+      { id: "num_before", label: "Nombre juste avant", instruction: "Trouve le nombre juste avant." },
+      { id: "num_after", label: "Nombre juste apr\xE8s", instruction: "Trouve le nombre juste apr\xE8s." },
+      { id: "num_compare", label: "Comparer deux nombres", instruction: "Trouve le plus grand nombre." },
+      { id: "num_decompose", label: "D\xE9composer un nombre", instruction: "Recompose le nombre." }
+    ]])),
+    conjugation: {
+      yellow: [{ id: "conj_present_er", label: "Pr\xE9sent des verbes en -er", instruction: "Conjugue le verbe au pr\xE9sent." }],
+      red: [
+        { id: "conj_present_etre_avoir", label: "Pr\xE9sent : \xEAtre et avoir", instruction: "Conjugue \xEAtre ou avoir au pr\xE9sent." },
+        { id: "conj_find_infinitive", label: "Trouver l\u2019infinitif", instruction: "Trouve l\u2019infinitif du verbe conjugu\xE9." }
+      ],
+      pink: [{ id: "conj_imperfect_regular", label: "Imparfait : verbes r\xE9guliers, \xEAtre et avoir", instruction: "Conjugue le verbe \xE0 l\u2019imparfait." }],
+      purple: [{ id: "conj_future_regular", label: "Futur : verbes r\xE9guliers, \xEAtre et avoir", instruction: "Conjugue le verbe au futur." }],
+      blue: [
+        { id: "conj_present_irregular", label: "Pr\xE9sent des verbes courants irr\xE9guliers", instruction: "Conjugue le verbe au pr\xE9sent." },
+        { id: "conj_past_compound", label: "Pass\xE9 compos\xE9 avec avoir", instruction: "Conjugue le verbe au pass\xE9 compos\xE9." }
+      ],
+      black: [{ id: "conj_irregular_forms", label: "Formes irr\xE9guli\xE8res des verbes \xE9tudi\xE9s", instruction: "Trouve la forme verbale correcte." }]
+    },
+    written: {
+      green: [{ id: "written_add_small", label: "Addition en ligne jusqu\u2019\xE0 10", instruction: "Calcule l\u2019addition." }],
+      yellow: [{ id: "written_add_no_carry", label: "Addition sans retenue", instruction: "Pose et calcule l\u2019addition." }],
+      red: [{ id: "written_add_carry", label: "Addition avec retenue", instruction: "Pose et calcule l\u2019addition." }],
+      pink: [{ id: "written_sub_no_borrow", label: "Soustraction sans retenue", instruction: "Pose et calcule la soustraction." }],
+      purple: [{ id: "written_sub_borrow", label: "Soustraction avec retenue", instruction: "Pose et calcule la soustraction." }],
+      blue: [{ id: "written_mul_one", label: "Multiplier par un chiffre", instruction: "Pose et calcule la multiplication." }],
+      black: [
+        { id: "written_mul_two", label: "Multiplier par deux chiffres", instruction: "Pose et calcule la multiplication." },
+        { id: "written_div_one", label: "Division par un chiffre", instruction: "Pose et calcule la division." }
+      ]
+    },
+    measures: {
+      yellow: [
+        { id: "measure_time_hour", label: "Lire les heures piles", instruction: "Lis l\u2019heure indiqu\xE9e.", layout: "twoByFive" },
+        { id: "measure_unit", label: "Choisir kg, m ou L", instruction: "Choisis l\u2019unit\xE9 qui convient." },
+        { id: "measure_money_small", label: "Pi\xE8ces de 1 \u20AC et 2 \u20AC", instruction: "Trouve la somme repr\xE9sent\xE9e.", layout: "twoByFive" }
+      ],
+      red: [
+        { id: "measure_time_half", label: "Heures et demi-heures", instruction: "Lis l\u2019heure indiqu\xE9e.", layout: "twoByFive" },
+        { id: "measure_length_cm_m", label: "Choisir cm ou m", instruction: "Choisis l\u2019unit\xE9 qui convient." },
+        { id: "measure_money_bills", label: "Billets de 5 \u20AC \xE0 50 \u20AC", instruction: "Trouve la somme repr\xE9sent\xE9e.", layout: "twoByFive" }
+      ],
+      pink: [
+        { id: "measure_time_quarter", label: "Heures et quarts d\u2019heure", instruction: "Lis l\u2019heure indiqu\xE9e.", layout: "twoByFive" },
+        { id: "measure_length_km", label: "Choisir cm, m ou km", instruction: "Choisis l\u2019unit\xE9 qui convient." },
+        { id: "measure_money_cents", label: "Sommes de centimes", instruction: "Trouve la somme repr\xE9sent\xE9e.", layout: "twoByFive" }
+      ],
+      purple: [
+        { id: "measure_time_day", label: "Matin, apr\xE8s-midi et soir", instruction: "Lis l\u2019heure et pr\xE9cise le moment.", layout: "twoByFive" },
+        { id: "measure_compare_mm_cm", label: "Comparer mm et cm", instruction: "Trouve la plus grande longueur." },
+        { id: "measure_money_large", label: "Sommes sup\xE9rieures \xE0 100 \u20AC", instruction: "Trouve la somme repr\xE9sent\xE9e.", layout: "twoByFive" }
+      ],
+      blue: [
+        { id: "measure_time_five", label: "Lire l\u2019heure \xE0 5 minutes", instruction: "Lis l\u2019heure indiqu\xE9e.", layout: "twoByFive" },
+        { id: "measure_compare_length", label: "Comparer mm, cm et m", instruction: "Trouve la plus grande longueur." },
+        { id: "measure_money_add", label: "Additionner des sommes", instruction: "Calcule la somme d\u2019argent." }
+      ],
+      black: [
+        { id: "measure_time_minute", label: "Lire l\u2019heure \xE0 la minute", instruction: "Lis l\u2019heure indiqu\xE9e.", layout: "twoByFive" },
+        { id: "measure_perimeter", label: "P\xE9rim\xE8tre d\u2019un polygone", instruction: "Calcule le p\xE9rim\xE8tre." },
+        { id: "measure_money_change", label: "Rendre la monnaie", instruction: "Calcule la monnaie rendue." },
+        { id: "measure_money_sub", label: "Soustraire des sommes", instruction: "Calcule la diff\xE9rence." }
+      ]
+    },
+    mental: {
+      green: [
+        { id: "mental_add9", label: "Sommes jusqu\u2019\xE0 9", instruction: "Calcule mentalement." },
+        { id: "mental_sub12", label: "Enlever 1 ou 2", instruction: "Calcule mentalement." },
+        { id: "mental_double5", label: "Doubles de 1 \xE0 5", instruction: "Trouve le double." }
+      ],
+      yellow: [
+        { id: "mental_add_unit", label: "Ajouter un chiffre", instruction: "Calcule mentalement." },
+        { id: "mental_sub_unit", label: "Enlever un chiffre", instruction: "Calcule mentalement." },
+        { id: "mental_table_012", label: "Tables de 0, 1 et 2", instruction: "Trouve le produit." }
+      ],
+      red: [
+        { id: "mental_tens", label: "Ajouter ou retirer des dizaines", instruction: "Calcule mentalement." },
+        { id: "mental_table_510", label: "Tables de 5 et 10", instruction: "Trouve le produit." }
+      ],
+      pink: [
+        { id: "mental_unit_large", label: "Ajouter ou retirer un chiffre", instruction: "Calcule mentalement." },
+        { id: "mental_table_3", label: "Table de 3", instruction: "Trouve le produit." }
+      ],
+      purple: [
+        { id: "mental_endings", label: "Calculer avec les chiffres des unit\xE9s", instruction: "Calcule mentalement." },
+        { id: "mental_table_4", label: "Table de 4", instruction: "Trouve le produit." }
+      ],
+      blue: [
+        { id: "mental_two_digits", label: "Deux nombres \xE0 deux chiffres", instruction: "Calcule mentalement." },
+        { id: "mental_table_67", label: "Tables de 6 et 7", instruction: "Trouve le produit." },
+        { id: "mental_div_27", label: "Divisions par 2 \xE0 7", instruction: "Trouve le quotient." }
+      ],
+      black: [
+        { id: "mental_large", label: "Grands nombres sans retenue", instruction: "Calcule mentalement." },
+        { id: "mental_table_89", label: "Tables de 8 et 9", instruction: "Trouve le produit." },
+        { id: "mental_div_29", label: "Divisions par 2 \xE0 9", instruction: "Trouve le quotient." }
+      ]
+    },
+    lexicon: Object.fromEntries(ULIS_LEVELS.map((level) => [level.id, [
+      { id: "lexicon_intruder", label: "Trouver l\u2019intrus", instruction: "Trouve le mot qui n\u2019appartient pas \xE0 la m\xEAme cat\xE9gorie." }
+    ]]))
+  };
+  function normalizeGeneratorState(saved) {
+    const raw = { ...DEFAULT_GENERATOR, ...saved ?? {} };
+    const modes = ["free", "ulis", "conjugation", "multiplication", "addition", "complement", "money", "time"];
+    const levels = ULIS_LEVELS.map((item) => item.id), domains = ULIS_DOMAINS.map((item) => item.id);
+    const numbers = (value, fallback) => Array.isArray(value) ? value.filter((item) => typeof item === "number" && Number.isFinite(item)) : fallback;
+    const groups = (value) => Array.isArray(value) ? value.filter((item) => item === "group1" || item === "group2" || item === "group3") : DEFAULT_GENERATOR.verbGroups;
+    const ulisDomain = domains.includes(raw.ulisDomain) ? raw.ulisDomain : DEFAULT_GENERATOR.ulisDomain;
+    const ulisLevel = levels.includes(raw.ulisLevel) ? raw.ulisLevel : DEFAULT_GENERATOR.ulisLevel;
+    const exercises = ULIS_EXERCISES[ulisDomain]?.[ulisLevel] ?? [];
+    const ulisExercise = exercises.some((item) => item.id === raw.ulisExercise) ? raw.ulisExercise : exercises[0]?.id ?? "";
+    const ulisExercises = Array.isArray(raw.ulisExercises) ? raw.ulisExercises.filter((id) => exercises.some((item) => item.id === id)) : [ulisExercise].filter(Boolean);
+    return {
+      ...raw,
+      mode: modes.includes(raw.mode) ? raw.mode : "free",
+      sheetCount: Number.isInteger(raw.sheetCount) ? Math.min(20, Math.max(1, raw.sheetCount)) : 1,
+      seed: Number.isFinite(raw.seed) ? raw.seed : 1,
+      verbGroups: groups(raw.verbGroups),
+      tables: numbers(raw.tables, DEFAULT_GENERATOR.tables),
+      additionAdds: numbers(raw.additionAdds, DEFAULT_GENERATOR.additionAdds),
+      complementTargets: numbers(raw.complementTargets, DEFAULT_GENERATOR.complementTargets),
+      moneyDenoms: numbers(raw.moneyDenoms, DEFAULT_GENERATOR.moneyDenoms),
+      ulisDomain,
+      ulisLevel,
+      ulisExercise,
+      ulisExercises,
+      ulisCopiesPerExercise: Number.isInteger(raw.ulisCopiesPerExercise) ? Math.min(20, Math.max(1, raw.ulisCopiesPerExercise)) : 1
+    };
+  }
+  function seededRandom(seed) {
+    let value = seed >>> 0;
+    return () => {
+      value += 1831565813;
+      let t3 = value;
+      t3 = Math.imul(t3 ^ t3 >>> 15, t3 | 1);
+      t3 ^= t3 + Math.imul(t3 ^ t3 >>> 7, t3 | 61);
+      return ((t3 ^ t3 >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  function choose(items, random) {
+    return items[Math.floor(random() * items.length)];
+  }
+  function conjugate(verb, group, tense, pronounIndex) {
+    const imperfectEndings = ["ais", "ais", "ait", "ions", "iez", "aient"];
+    const futureEndings = ["ai", "as", "a", "ons", "ez", "ont"];
+    if (group === "group1") {
+      if (tense === "present") return verb.slice(0, -2) + ["e", "es", "e", "ons", "ez", "ent"][pronounIndex];
+      if (tense === "imparfait") return verb.slice(0, -2) + imperfectEndings[pronounIndex];
+      return verb + futureEndings[pronounIndex];
+    }
+    if (group === "group2") {
+      if (tense === "present") return verb.slice(0, -2) + ["is", "is", "it", "issons", "issez", "issent"][pronounIndex];
+      if (tense === "imparfait") return verb.slice(0, -2) + "iss" + imperfectEndings[pronounIndex];
+      return verb + futureEndings[pronounIndex];
+    }
+    if (tense === "present") return GROUP3_PRESENT[verb][pronounIndex];
+    if (tense === "imparfait") return GROUP3_IMPERFECT[verb] + imperfectEndings[pronounIndex];
+    return GROUP3_FUTURE[verb] + futureEndings[pronounIndex];
+  }
+  function formatMoney(cents) {
+    const euros = Math.floor(cents / 100), remainder = cents % 100;
+    return remainder ? `${euros},${String(remainder).padStart(2, "0")} \u20AC` : `${euros} \u20AC`;
+  }
+  var ULIS_PRESENT_IRREGULAR = ["faire", "dire", "voir", "pouvoir", "vouloir", "prendre", "aller", "venir"];
+  var PAST_COMPOUND_ER = ["aimer", "parler", "regarder", "jouer", "travailler", "donner", "trouver", "demander", "penser", "porter", "montrer", "\xE9couter", "chanter", "marcher"];
+  var PAST_PARTICIPLES = {
+    faire: "fait",
+    dire: "dit",
+    voir: "vu",
+    pouvoir: "pu",
+    vouloir: "voulu",
+    prendre: "pris",
+    avoir: "eu"
+  };
+  function conjugationGroup(verb) {
+    if (GROUP1.includes(verb)) return "group1";
+    if (GROUP2.includes(verb)) return "group2";
+    return "group3";
+  }
+  function conjugationQuestion(pronoun, verb) {
+    return `${pronoun} \u2014 ${verb}`;
+  }
+  function ulisConjugationVerbs(id) {
+    if (id === "conj_present_er") return GROUP1;
+    if (id === "conj_present_etre_avoir") return ["\xEAtre", "avoir"];
+    if (id === "conj_imperfect_regular" || id === "conj_future_regular") return [...GROUP1, ...GROUP2, "\xEAtre", "avoir"];
+    if (id === "conj_present_irregular") return ULIS_PRESENT_IRREGULAR;
+    if (id === "conj_past_compound") return [...PAST_COMPOUND_ER, "faire", "dire", "voir", "pouvoir", "vouloir", "prendre"];
+    if (id === "conj_irregular_forms") return [...ULIS_PRESENT_IRREGULAR, "\xEAtre", "avoir"];
+    return [];
+  }
+  function conjugationAnswerFor(id, verb, tense, pronounIndex) {
+    if (id === "conj_past_compound") {
+      const participle = PAST_COMPOUND_ER.includes(verb) ? `${verb.slice(0, -2)}\xE9` : PAST_PARTICIPLES[verb];
+      return `${GROUP3_PRESENT.avoir[pronounIndex]} ${participle}`;
+    }
+    return conjugate(verb, conjugationGroup(verb), tense, pronounIndex);
+  }
+  function threeDistinctPronouns(answerAt) {
+    const indices = [], answers = /* @__PURE__ */ new Set();
+    for (let index2 = 0; index2 < PRONOUNS.length && indices.length < 3; index2 += 1) {
+      const answer = answerAt(index2).toLocaleLowerCase("fr");
+      if (answers.has(answer)) continue;
+      answers.add(answer);
+      indices.push(index2);
+    }
+    return indices;
+  }
+  function numberToFrench(value) {
+    if (value === 0) return "z\xE9ro";
+    const underHundred = (n3) => {
+      const small = ["z\xE9ro", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze", "douze", "treize", "quatorze", "quinze", "seize"];
+      if (n3 < 17) return small[n3];
+      if (n3 < 20) return `dix-${small[n3 - 10]}`;
+      if (n3 < 70) {
+        const tens = ["", "", "vingt", "trente", "quarante", "cinquante", "soixante"][Math.floor(n3 / 10)];
+        const unit = n3 % 10;
+        return unit === 0 ? tens : unit === 1 ? `${tens} et un` : `${tens}-${small[unit]}`;
+      }
+      if (n3 < 80) return n3 === 71 ? "soixante et onze" : `soixante-${underHundred(n3 - 60)}`;
+      if (n3 === 80) return "quatre-vingts";
+      return `quatre-vingt-${underHundred(n3 - 80)}`;
+    };
+    const underThousand = (n3) => {
+      if (n3 < 100) return underHundred(n3);
+      const hundreds = Math.floor(n3 / 100), rest2 = n3 % 100;
+      const prefix2 = hundreds === 1 ? "cent" : `${underHundred(hundreds)} cent`;
+      return rest2 ? `${prefix2} ${underHundred(rest2)}` : `${prefix2}${hundreds > 1 ? "s" : ""}`;
+    };
+    if (value < 1e3) return underThousand(value);
+    const thousands = Math.floor(value / 1e3), rest = value % 1e3;
+    const prefix = thousands === 1 ? "mille" : `${underThousand(thousands).replace(/cents$/, "cent").replace(/vingts$/, "vingt")} mille`;
+    return rest ? `${prefix} ${underThousand(rest)}` : prefix;
+  }
+  var UNIT_PROMPTS = [
+    ["La longueur d\u2019un crayon est de\u2026", "15 cm"],
+    ["La hauteur d\u2019une porte est de\u2026", "2 m"],
+    ["La masse d\u2019un cartable est de\u2026", "4 kg"],
+    ["Une bouteille contient\u2026", "1 L"],
+    ["La largeur d\u2019un cahier est de\u2026", "21 cm"],
+    ["La longueur d\u2019une classe est de\u2026", "8 m"],
+    ["La masse d\u2019une pomme est de\u2026", "150 g"],
+    ["Une carafe contient\u2026", "2 L"],
+    ["La distance entre deux villes est de\u2026", "35 km"],
+    ["L\u2019\xE9paisseur d\u2019une pi\xE8ce est de\u2026", "2 mm"],
+    ["La taille d\u2019un \xE9l\xE8ve est de\u2026", "135 cm"],
+    ["Un sac de farine p\xE8se\u2026", "1 kg"]
+  ];
+  UNIT_PROMPTS.push(["La longueur d’une règle est de…","30 cm"],["La hauteur d’une table est de…","75 cm"],["La hauteur d’une chaise est de…","45 cm"],["La longueur d’un livre est de…","24 cm"],["La longueur d’une gomme est de…","4 cm"],["La longueur d’une piscine est de…","25 m"],["La hauteur d’un arbre est de…","6 m"],["La hauteur d’un immeuble est de…","18 m"],["La longueur d’un pont est de…","120 m"],["La longueur d’un terrain est de…","100 m"],["Un ruban mesure…","3 m"],["Un paquet de pommes de terre pèse…","5 kg"],["Une grande bonbonne contient…","10 L"]);
+  var INTRUDER_BANK = {
+    green: [["chat \xB7 chien \xB7 lapin \xB7 voiture", "voiture"], ["pomme \xB7 poire \xB7 banane \xB7 chaussure", "chaussure"], ["rouge \xB7 bleu \xB7 vert \xB7 table", "table"], ["lit \xB7 armoire \xB7 chaise \xB7 nuage", "nuage"], ["poule \xB7 canard \xB7 vache \xB7 v\xE9lo", "v\xE9lo"], ["main \xB7 pied \xB7 nez \xB7 ballon", "ballon"], ["bus \xB7 train \xB7 voiture \xB7 fraise", "fraise"], ["lundi \xB7 mardi \xB7 jeudi \xB7 soupe", "soupe"], ["fourchette \xB7 cuill\xE8re \xB7 couteau \xB7 livre", "livre"], ["manteau \xB7 pantalon \xB7 bonnet \xB7 g\xE2teau", "g\xE2teau"], ["soleil \xB7 pluie \xB7 neige \xB7 crayon", "crayon"], ["carr\xE9 \xB7 rond \xB7 triangle \xB7 poisson", "poisson"]],
+    yellow: [["rose \xB7 tulipe \xB7 marguerite \xB7 ch\xEAne", "ch\xEAne"], ["marteau \xB7 scie \xB7 tournevis \xB7 casserole", "casserole"], ["m\xE9decin \xB7 infirmier \xB7 dentiste \xB7 boulangerie", "boulangerie"], ["lion \xB7 tigre \xB7 panth\xE8re \xB7 dauphin", "dauphin"], ["janvier \xB7 mars \xB7 avril \xB7 vendredi", "vendredi"], ["chemise \xB7 pull \xB7 jupe \xB7 assiette", "assiette"], ["courir \xB7 sauter \xB7 marcher \xB7 orange", "orange"], ["France \xB7 Italie \xB7 Espagne \xB7 Paris", "Paris"], ["salon \xB7 chambre \xB7 cuisine \xB7 jardinier", "jardinier"], ["cinq \xB7 huit \xB7 douze \xB7 mardi", "mardi"], ["guitare \xB7 piano \xB7 violon \xB7 pinceau", "pinceau"], ["abeille \xB7 mouche \xB7 papillon \xB7 l\xE9zard", "l\xE9zard"]],
+    red: [["chanter \xB7 chanson \xB7 chanteur \xB7 chantier", "chantier"], ["dent \xB7 dentiste \xB7 dentaire \xB7 dedans", "dedans"], ["lait \xB7 laitage \xB7 laitier \xB7 laid", "laid"], ["terre \xB7 terrain \xB7 terrier \xB7 terrible", "terrible"], ["fleur \xB7 fleuriste \xB7 floral \xB7 fleuve", "fleuve"], ["mer \xB7 marin \xB7 maritime \xB7 mairie", "mairie"], ["porter \xB7 porteur \xB7 portable \xB7 portail", "portail"], ["jour \xB7 journ\xE9e \xB7 journal \xB7 jouet", "jouet"], ["courage \xB7 courageux \xB7 encourager \xB7 courir", "courir"], ["peindre \xB7 peintre \xB7 peinture \xB7 peigne", "peigne"], ["glace \xB7 glacier \xB7 glac\xE9 \xB7 classe", "classe"], ["route \xB7 routier \xB7 autoroute \xB7 roue", "roue"]],
+    pink: [["joyeux \xB7 heureux \xB7 content \xB7 f\xE2ch\xE9", "f\xE2ch\xE9"], ["rapide \xB7 vif \xB7 press\xE9 \xB7 immobile", "immobile"], ["regarder \xB7 observer \xB7 contempler \xB7 \xE9couter", "\xE9couter"], ["maison \xB7 demeure \xB7 logement \xB7 chemin", "chemin"], ["peur \xB7 crainte \xB7 frayeur \xB7 plaisir", "plaisir"], ["d\xE9but \xB7 commencement \xB7 d\xE9part \xB7 arriv\xE9e", "arriv\xE9e"], ["beau \xB7 joli \xB7 magnifique \xB7 minuscule", "minuscule"], ["parler \xB7 dire \xB7 raconter \xB7 dormir", "dormir"], ["calme \xB7 paisible \xB7 tranquille \xB7 bruyant", "bruyant"], ["ancien \xB7 vieux \xB7 \xE2g\xE9 \xB7 neuf", "neuf"], ["facile \xB7 simple \xB7 ais\xE9 \xB7 lourd", "lourd"], ["erreur \xB7 faute \xB7 m\xE9prise \xB7 victoire", "victoire"]],
+    purple: [["roman \xB7 conte \xB7 po\xE9sie \xB7 dictionnaire", "dictionnaire"], ["addition \xB7 produit \xB7 quotient \xB7 grammaire", "grammaire"], ["triangle \xB7 rectangle \xB7 carr\xE9 \xB7 sph\xE8re", "sph\xE8re"], ["respirer \xB7 dig\xE9rer \xB7 circuler \xB7 conjuguer", "conjuguer"], ["solide \xB7 liquide \xB7 gazeux \xB7 lumineux", "lumineux"], ["Europe \xB7 Afrique \xB7 Asie \xB7 Atlantique", "Atlantique"], ["sujet \xB7 verbe \xB7 compl\xE9ment \xB7 num\xE9rateur", "num\xE9rateur"], ["thermom\xE8tre \xB7 balance \xB7 r\xE8gle \xB7 calendrier", "calendrier"], ["rivi\xE8re \xB7 fleuve \xB7 ruisseau \xB7 montagne", "montagne"], ["hiver \xB7 printemps \xB7 \xE9t\xE9 \xB7 d\xE9cembre", "d\xE9cembre"], ["cuivre \xB7 fer \xB7 aluminium \xB7 plastique", "plastique"], ["oc\xE9an \xB7 mer \xB7 lac \xB7 for\xEAt", "for\xEAt"]],
+    blue: [["avare \xB7 \xE9conome \xB7 parcimonieux \xB7 g\xE9n\xE9reux", "g\xE9n\xE9reux"], ["\xE9bauche \xB7 brouillon \xB7 esquisse \xB7 conclusion", "conclusion"], ["convaincre \xB7 persuader \xB7 influencer \xB7 h\xE9siter", "h\xE9siter"], ["fragile \xB7 vuln\xE9rable \xB7 d\xE9licat \xB7 robuste", "robuste"], ["rare \xB7 inhabituel \xB7 exceptionnel \xB7 banal", "banal"], ["progr\xE8s \xB7 avanc\xE9e \xB7 am\xE9lioration \xB7 recul", "recul"], ["cause \xB7 origine \xB7 raison \xB7 cons\xE9quence", "cons\xE9quence"], ["hypoth\xE8se \xB7 supposition \xB7 conjecture \xB7 certitude", "certitude"], ["prudent \xB7 vigilant \xB7 attentif \xB7 t\xE9m\xE9raire", "t\xE9m\xE9raire"], ["objectif \xB7 but \xB7 finalit\xE9 \xB7 obstacle", "obstacle"], ["abondant \xB7 nombreux \xB7 copieux \xB7 insuffisant", "insuffisant"], ["admirer \xB7 estimer \xB7 appr\xE9cier \xB7 m\xE9priser", "m\xE9priser"]],
+    black: [["\xE9ph\xE9m\xE8re \xB7 passager \xB7 fugitif \xB7 \xE9ternel", "\xE9ternel"], ["implicite \xB7 sous-entendu \xB7 tacite \xB7 explicite", "explicite"], ["\xE9quitable \xB7 impartial \xB7 juste \xB7 arbitraire", "arbitraire"], ["coh\xE9rent \xB7 logique \xB7 rationnel \xB7 contradictoire", "contradictoire"], ["pers\xE9v\xE9rant \xB7 tenace \xB7 constant \xB7 versatile", "versatile"], ["authentique \xB7 v\xE9ritable \xB7 sinc\xE8re \xB7 factice", "factice"], ["prosp\xE8re \xB7 florissant \xB7 favorable \xB7 pr\xE9caire", "pr\xE9caire"], ["lucide \xB7 clairvoyant \xB7 perspicace \xB7 na\xEFf", "na\xEFf"], ["nuancer \xB7 mod\xE9rer \xB7 temp\xE9rer \xB7 exag\xE9rer", "exag\xE9rer"], ["consensus \xB7 accord \xB7 entente \xB7 conflit", "conflit"], ["pertinent \xB7 appropri\xE9 \xB7 judicieux \xB7 d\xE9plac\xE9", "d\xE9plac\xE9"], ["rigoureux \xB7 pr\xE9cis \xB7 m\xE9thodique \xB7 approximatif", "approximatif"]]
+  };
+  function makeUlisCandidate(generator, random, hint = {}) {
+    const level = ULIS_LEVELS.find((item) => item.id === generator.ulisLevel) ?? ULIS_LEVELS[0];
+    const id = generator.ulisExercise, max2 = level.max;
+    const rnd = (min, maximum) => min + Math.floor(random() * (maximum - min + 1));
+    const arithmetic = (q2, answer, key) => ({ key: `${key}-${q2}`, pair: { q: q2, a: String(answer) } });
+    if (id.startsWith("conj_")) {
+      const pi = hint.pronounIndex ?? rnd(0, PRONOUNS.length - 1), pronoun = PRONOUNS[pi];
+      if (id === "conj_find_infinitive") {
+        const verbs2 = [...GROUP1, ...GROUP2, ...ULIS_PRESENT_IRREGULAR, "\xEAtre", "avoir"], verb2 = choose(verbs2, random), form = conjugate(verb2, conjugationGroup(verb2), "present", pi);
+        const q3 = form;
+        return { key: `${id}-${verb2}-${pi}-${q3}`, pair: { q: q3, a: verb2 } };
+      }
+      const verbs = ulisConjugationVerbs(id);
+      let tense = "present";
+      if (id === "conj_imperfect_regular") tense = "imparfait";
+      else if (id === "conj_future_regular") tense = "future";
+      if (id === "conj_past_compound") {
+        const verb2 = hint.verb && verbs.includes(hint.verb) ? hint.verb : choose(verbs, random), answer2 = conjugationAnswerFor(id, verb2, "present", pi);
+        const q3 = conjugationQuestion(pronoun, verb2);
+        return { key: `${id}-${verb2}-${pi}-${q3}`, pair: { q: q3, a: answer2 } };
+      } else if (id === "conj_irregular_forms") {
+        const verb2 = hint.verb && verbs.includes(hint.verb) ? hint.verb : choose(verbs, random), chosenTense = hint.tense ?? choose(["present", "imparfait", "future"], random);
+        const q3 = conjugationQuestion(pronoun, verb2) + " (" + ({present:"présent",imparfait:"imparfait",future:"futur"}[chosenTense]) + ")", answer2 = conjugate(verb2, "group3", chosenTense, pi);
+        return { key: `${id}-${chosenTense}-${verb2}-${pi}-${q3}`, pair: { q: q3, a: answer2 } };
+      }
+      const verb = hint.verb && verbs.includes(hint.verb) ? hint.verb : choose(verbs, random), q2 = conjugationQuestion(pronoun, verb), answer = conjugate(verb, conjugationGroup(verb), tense, pi);
+      return { key: `${id}-${tense}-${verb}-${pi}-${q2}`, pair: { q: q2, a: answer } };
+    }
+    if (id === "num_read") {
+      const n3 = rnd(0, max2), q2 = numberToFrench(n3);
+      return { key: `read-${n3}`, pair: { q: q2, a: String(n3) } };
+    }
+    if (id === "num_before") {
+      const n3 = rnd(1, max2);
+      return arithmetic(`\u2026 est juste avant ${n3}`, n3 - 1, `before-${n3}`);
+    }
+    if (id === "num_after") {
+      const n3 = rnd(0, max2 - 1);
+      return arithmetic(`\u2026 est juste apr\xE8s ${n3}`, n3 + 1, `after-${n3}`);
+    }
+    if (id === "num_compare") {
+      const a4 = rnd(0, max2), b3 = rnd(0, max2);
+      if (a4 === b3) return makeUlisCandidate(generator, random);
+      const result=arithmetic(`Le plus grand : ${a4} ou ${b3} ?`, Math.max(a4, b3), `compare-${a4}-${b3}`);result.pair.choices=[String(a4),String(b3)];return result;
+    }
+    if (id === "num_decompose") {
+      const n3 = rnd(1, max2), thousands = Math.floor(n3 / 1e3), hundreds = Math.floor(n3 % 1e3 / 100), tens = Math.floor(n3 % 100 / 10), units = n3 % 10;
+      const parts = [[thousands, 1e3], [hundreds, 100], [tens, 10], [units, 1]].filter(([digit]) => digit).map(([digit, value]) => `${digit} \xD7 ${value}`);
+      return arithmetic(`${parts.join(" + ")} = \u2026`, n3, `decompose-${n3}`);
+    }
+    if (id === "written_add_small") {
+      const a4 = rnd(0, 10), b3 = rnd(0, 10 - a4);
+      return arithmetic(`${a4} + ${b3} = \u2026`, a4 + b3, `was-${a4}-${b3}`);
+    }
+    if (id === "written_add_no_carry") {
+      const a4 = 10 * rnd(1, 8) + rnd(0, 8), b3 = 10 * rnd(1, 9 - Math.floor(a4 / 10)) + rnd(0, 9 - a4 % 10);
+      return arithmetic(`Pose : ${a4} + ${b3}`, a4 + b3, `wanc-${a4}-${b3}`);
+    }
+    if (id === "written_add_carry") {
+      const au = rnd(4, 9), bu = rnd(10 - au, 9), a4 = 10 * rnd(1, 4) + au, b3 = 10 * rnd(1, 4) + bu;
+      return arithmetic(`Pose : ${a4} + ${b3}`, a4 + b3, `wac-${a4}-${b3}`);
+    }
+    if (id === "written_sub_no_borrow") {
+      const bt2 = rnd(1, 8), bu = rnd(0, 8), at2 = rnd(bt2, 9), au = rnd(bu, 9), a4 = 10 * at2 + au, b3 = 10 * bt2 + bu;
+      return arithmetic(`Pose : ${a4} - ${b3}`, a4 - b3, `wsnb-${a4}-${b3}`);
+    }
+    if (id === "written_sub_borrow") {
+      const bt2 = rnd(1, 7), at2 = rnd(bt2 + 1, 9), au = rnd(0, 5), bu = rnd(au + 1, 9), a4 = 10 * at2 + au, b3 = 10 * bt2 + bu;
+      return arithmetic(`Pose : ${a4} - ${b3}`, a4 - b3, `wsb-${a4}-${b3}`);
+    }
+    if (id === "written_mul_one") {
+      const a4 = rnd(12, 999), b3 = rnd(2, 9);
+      return arithmetic(`Pose : ${a4} \xD7 ${b3}`, a4 * b3, `wm1-${a4}-${b3}`);
+    }
+    if (id === "written_mul_two") {
+      const a4 = rnd(12, 999), b3 = rnd(12, 99);
+      return arithmetic(`Pose : ${a4} \xD7 ${b3}`, a4 * b3, `wm2-${a4}-${b3}`);
+    }
+    if (id === "written_div_one") {
+      const divisor = rnd(2, 9), quotient = rnd(12, 999);
+      return arithmetic(`Pose : ${divisor * quotient} \xF7 ${divisor}`, quotient, `wd1-${divisor}-${quotient}`);
+    }
+    if (id.startsWith("measure_time_")) {
+      const minutes = id.endsWith("hour") ? [0] : id.endsWith("half") ? [0, 30] : id.endsWith("quarter") ? [0, 15, 30, 45] : id.endsWith("five") ? [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55] : Array.from({ length: 60 }, (_3, i3) => i3);
+      let period = id.endsWith("day") ? choose(["morning", "afternoon", "evening"], random) : random() > 0.5 ? "afternoon" : "morning";
+      const faceHour = period === "evening" ? rnd(6, 11) : rnd(1, 11), minute = choose(minutes, random), answerHour = period === "morning" ? faceHour : faceHour + 12;
+      if(period === "afternoon" && faceHour >= 6)period="evening";
+      const label = period === "morning" ? "matin" : period === "afternoon" ? "apr\xE8s-midi" : "soir";
+      const q2 = label;
+      return { key: `${id}-${answerHour}-${minute}-${period}-${q2}`, pair: { q: q2, a: `${answerHour}h${minute ? String(minute).padStart(2, "0") : ""}`, graphic: { type: "clock", hour: faceHour, minute, period } } };
+    }
+    if (id === "measure_unit" || id.startsWith("measure_length_")) {
+      const unitPool = id === "measure_length_cm_m" ? ["cm", "m"] : id === "measure_length_km" ? ["cm", "m", "km"] : ["m", "kg", "L"];
+      const prompts = UNIT_PROMPTS.filter((item2) => unitPool.includes(item2[1].split(" ").at(-1) ?? "")), index2 = Math.floor(random() * prompts.length), item = prompts[index2], unit = item[1].split(" ").at(-1) ?? "cm";
+      const value = Number(item[1].split(" ")[0]);
+      const options = shuffleWithRandom([unit, ...unitPool.filter((candidate) => candidate !== unit)].slice(0, Math.min(4, unitPool.length)), random).map((candidate) => `${value} ${candidate}`).join(" / ");
+      const choices=shuffleWithRandom(unitPool,random);const q2 = `${item[0].replace(/…$/, "")} ${value} …\n${choices.join(" / ")}`;
+      return { key: `unit-${index2}-${value}-${options}`, pair: { q: q2, a: unit, choices } };
+    }
+    if (["measure_money_small", "measure_money_bills", "measure_money_cents", "measure_money_large"].includes(id)) {
+      const denoms = id.endsWith("small") ? [100, 200] : id.endsWith("bills") ? [500, 1e3, 2e3, 5e3] : id.endsWith("cents") ? [1, 2, 5, 10, 20, 50] : [5e3, 1e4, 2e4];
+      const count = id.endsWith("large") ? rnd(2, 5) : rnd(1, 5), values = Array.from({ length: count }, () => choose(denoms, random)).sort((a4, b3) => b3 - a4), amount = values.reduce((sum, value) => sum + value, 0);
+      const q2 = choose(["Monnaie", "Trouve la somme", "Quel montant ?", "Compte l\u2019argent", "Total \xE0 trouver", "Combien d\u2019euros ?", "Calcule la somme", "Somme repr\xE9sent\xE9e", "Montant total", "Compte pi\xE8ces et billets", "Quelle somme ?", "Argent repr\xE9sent\xE9"], random);
+      return { key: `${id}-${values.join(".")}-${q2}`, pair: { q: q2, a: formatMoney(amount), graphic: { type: "money", values } } };
+    }
+    if (id === "measure_compare_mm_cm" || id === "measure_compare_length") {
+      if(id === "measure_compare_length") {const values=[rnd(1,9),rnd(1,990),rnd(1,9900)],units=["m","cm","mm"],mm=values.map((n,i)=>n*[1000,10,1][i]);if(new Set(mm).size!==3)return makeUlisCandidate(generator,random);const best=mm.indexOf(Math.max(...mm));return {key:`length3-${values.join("-")}`,pair:{q:values.map((n,i)=>`${n} ${units[i]}`).join(" ou ")+" ?",a:`${values[best]} ${units[best]}`,choices:values.map((n,i)=>`${n} ${units[i]}`)}};}
+      const cm = rnd(2, 90), mm = rnd(10, 990), cmInMm = cm * 10;
+      const answer = cmInMm >= mm ? `${cm} cm` : `${mm} mm`;
+      return { key: `length-${cm}-${mm}`, pair: { q: `${cm} cm ou ${mm} mm ?`, a: answer, choices:[`${cm} cm`,`${mm} mm`] } };
+    }
+    if (id === "measure_perimeter") {
+      const width = rnd(2, 20), height = rnd(2, 20);
+      return arithmetic(`Périmètre : ${width} cm × ${height} cm`, `${2 * (width + height)} cm`, `perimeter-${width}-${height}`);
+    }
+    if (id === "measure_money_add") {
+      const a4 = rnd(100, 9900), b3 = rnd(100, 9900);
+      return { key: `moneyadd-${a4}-${b3}`, pair: { q: `${formatMoney(a4)} + ${formatMoney(b3)}`, a: formatMoney(a4 + b3) } };
+    }
+    if (id === "measure_money_sub") {
+      const b3 = rnd(100, 9900), a4 = rnd(b3 + 100, b3 + 12e3);
+      return { key: `moneysub-${a4}-${b3}`, pair: { q: `${formatMoney(a4)} - ${formatMoney(b3)}`, a: formatMoney(a4 - b3) } };
+    }
+    if (id === "measure_money_change") {
+      const price = rnd(50, 1990), paid = choose([2e3, 5e3, 1e4], random);
+      if (price >= paid) return makeUlisCandidate(generator, random);
+      return { key: `change-${paid}-${price}`, pair: { q: `Pay\xE9 ${formatMoney(paid)} \xB7 prix ${formatMoney(price)}`, a: formatMoney(paid - price) } };
+    }
+    if (id === "lexicon_intruder") {
+      const bank = INTRUDER_BANK[generator.ulisLevel], index2 = Math.floor(random() * bank.length), item = bank[index2], q2 = shuffleWithRandom(item[0].split(" \xB7 "), random).join(" \xB7 ");
+      return { key: `intruder-${index2}-${q2}`, pair: { q: q2, a: item[1], choices:item[0].split(" \xB7 ") } };
+    }
+    if (id.startsWith("mental_table_")) {
+      const tables = id.endsWith("012") ? [0, 1, 2] : id.endsWith("510") ? [5, 10] : id.endsWith("3") ? [3] : id.endsWith("4") ? [4] : id.endsWith("67") ? [6, 7] : [8, 9], table = choose(tables, random), factor = rnd(0, 10);
+      return arithmetic(`${table} \xD7 ${factor} = \u2026`, table * factor, `${id}-${table}-${factor}`);
+    }
+    if (id.startsWith("mental_div_")) {
+      const divisor = rnd(2, id.endsWith("27") ? 7 : 9), quotient = rnd(1, 10);
+      return arithmetic(`${divisor * quotient} \xF7 ${divisor} = \u2026`, quotient, `${id}-${divisor}-${quotient}`);
+    }
+    if (id === "mental_add9") {
+      const a4 = rnd(0, 8), b3 = rnd(0, 9 - a4);
+      return arithmetic(`${a4} + ${b3} = \u2026`, a4 + b3, `ma9-${a4}-${b3}`);
+    }
+    if (id === "mental_sub12") {
+      const a4 = rnd(2, 10), b3 = rnd(1, 2);
+      return arithmetic(`${a4} - ${b3} = \u2026`, a4 - b3, `ms12-${a4}-${b3}`);
+    }
+    if (id === "mental_double5") {
+      const a4 = rnd(1, 5), euros = random() > 0.5, q2 = `Double de ${a4}${euros ? " \u20AC" : ""}`;
+      return { key: `md5-${a4}-${euros}-${q2}`, pair: { q: q2, a: `${a4 * 2}${euros ? " \u20AC" : ""}` } };
+    }
+    if (id === "mental_tens") {
+      const a4 = 10 * rnd(1, 9), b3 = 10 * rnd(1, 9), plus2 = random() > 0.5;
+      return arithmetic(`${plus2 ? a4 : Math.max(a4,b3)} ${plus2 ? "+" : "-"} ${plus2 ? b3 : Math.min(a4,b3)} = \u2026`, plus2 ? a4 + b3 : Math.abs(a4 - b3), `mt-${a4}-${b3}-${plus2}`);
+    }
+    if(id === "mental_large") {const plus=random()>.5, digits=Array.from({length:5},(_,i)=>rnd(i===0?1:0,i===0?8:9));const bd=digits.map(n=>rnd(0,plus?9-n:n));const a=Number(digits.join("")),b=Number(bd.join(""));return arithmetic(`${a} ${plus?"+":"-"} ${b} = …`,plus?a+b:a-b,`large-${a}-${b}-${plus}`);}
+    const limit = id === "mental_large" ? 99999 : id === "mental_two_digits" ? 99 : id === "mental_unit_large" || id === "mental_endings" ? 999 : 29;
+    const a3 = rnd(Math.min(10, limit), limit), plus = id === "mental_add_unit" ? true : id === "mental_sub_unit" ? false : random() > 0.45, b2 = id === "mental_two_digits" ? rnd(10,a3) : id.includes("unit") || id === "mental_endings" ? rnd(1, 9) : rnd(1, Math.min(limit, a3));
+    return arithmetic(`${a3} ${plus ? "+" : "-"} ${b2} = \u2026`, plus ? a3 + b2 : a3 - b2, `${id}-${a3}-${b2}-${plus}`);
+  }
+  function makeSingleModeSheets(generator) {
+    if (!Number.isInteger(generator.sheetCount) || generator.sheetCount < 1 || generator.sheetCount > 20) throw new Error("Choisis entre 1 et 20 pages.");
+    const random = seededRandom(generator.seed);
+    for (let restart = 0; restart < 30; restart += 1) {
+      const sheets = [], usedSheetSignatures = /* @__PURE__ */ new Set();
+      let generationFailed = false;
+      for (let sheetIndex = 0; sheetIndex < generator.sheetCount; sheetIndex += 1) {
+        const rows = [], usedAnswers = /* @__PURE__ */ new Set(), localExercises = /* @__PURE__ */ new Set();
+        let focusGroup = "group1", focusVerb = "", focusPronouns = [];
+        if (generator.mode === "conjugation") {
+          if (!generator.verbGroups.length) throw new Error("Coche au moins un groupe de verbes.");
+          focusGroup = choose(generator.verbGroups, random);
+          const focusVerbs = focusGroup === "group1" ? GROUP1 : focusGroup === "group2" ? GROUP2 : Object.keys(GROUP3_PRESENT);
+          focusVerb = choose(focusVerbs, random);
+          focusPronouns = threeDistinctPronouns((index2) => conjugate(focusVerb, focusGroup, generator.tense, index2));
+        }
+        let attempts = 0;
+        while (rows.length < (generator.rowCount || 10) && attempts < 12e3) {
+          attempts += 1;
+          let key = "", pair = null;
+          if (generator.mode === "ulis") {
+            if (!generator.ulisExercise) throw new Error("Choisis un exercice dans la progression ULIS.");
+            const generated = makeUlisCandidate(generator, random);
+            key = generated.key;
+            pair = generated.pair;
+          } else if (generator.mode === "conjugation") {
+            const repeatedSlot = rows.length < Math.min(3,generator.rowCount || 10) ? rows.length : -1, forceRepeat = repeatedSlot >= 0;
+            const group = forceRepeat ? focusGroup : choose(generator.verbGroups, random), verbs = group === "group1" ? GROUP1 : group === "group2" ? GROUP2 : Object.keys(GROUP3_PRESENT);
+            const verb = forceRepeat ? focusVerb : choose(verbs, random), pi = forceRepeat ? focusPronouns[repeatedSlot] : Math.floor(random() * PRONOUNS.length);
+            const q2 = conjugationQuestion(PRONOUNS[pi], verb);
+            key = `${generator.tense}-${verb}-${pi}-${q2}`;
+            pair = { q: q2, a: conjugate(verb, group, generator.tense, pi) };
+          } else if (generator.mode === "multiplication") {
+            if (!generator.tables.length) throw new Error("Coche au moins une table de multiplication.");
+            const table = choose(generator.tables, random), factor = 1 + Math.floor(random() * 10);
+            key = `${table}x${factor}`;
+            pair = { q: `${table} \xD7 ${factor} = \u2026`, a: String(table * factor) };
+          } else if (generator.mode === "addition") {
+            if (!generator.additionAdds.length) throw new Error("Coche au moins un nombre \xE0 ajouter.");
+            const add = choose(generator.additionAdds, random), start = Math.floor(random() * (generator.additionMax + 1));
+            key = `${start}+${add}`;
+            pair = { q: `${start} + ${add} = \u2026`, a: String(start + add) };
+          } else if (generator.mode === "complement") {
+            if (!generator.complementTargets.length) throw new Error("Coche au moins un nombre cible.");
+            const target = choose(generator.complementTargets, random), start = Math.floor(random() * (target + 1));
+            key = `${start}-${target}`;
+            pair = { q: `${start} + \u2026 = ${target}`, a: String(target - start) };
+          } else if (generator.mode === "money") {
+            if (generator.moneyDenoms.length < 2) throw new Error("S\xE9lectionne au moins deux pi\xE8ces ou billets diff\xE9rents pour obtenir dix r\xE9ponses uniques.");
+            const count = 1 + Math.floor(random() * 6), values = Array.from({ length: count }, () => choose(generator.moneyDenoms, random)).sort((a3, b2) => b2 - a3);
+            const amount = values.reduce((sum, value) => sum + value, 0);
+            key = `money-${values.join(".")}`;
+            pair = { q: "Monnaie", a: formatMoney(amount), graphic: { type: "money", values } };
+          } else if (generator.mode === "time") {
+            const minutes = generator.timePrecision === "hour" ? [0] : generator.timePrecision === "half" ? [0, 30] : generator.timePrecision === "quarter" ? [0, 15, 30, 45] : [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55];
+            let period = generator.timePeriod === "mixed" ? random() < 0.5 ? "morning" : "afternoon" : generator.timePeriod;
+            const faceHour = 1 + Math.floor(random() * 11), minute = choose(minutes, random), answerHour = period === "afternoon" ? faceHour + 12 : faceHour;
+            if(period === "afternoon" && faceHour >= 6)period="evening";
+            key = `time-${answerHour}-${minute}`;
+            pair = { q: period === "morning" ? "matin" : "apr\xE8s-midi", a: `${answerHour}h${minute ? String(minute).padStart(2, "0") : ""}`, graphic: { type: "clock", hour: faceHour, minute, period } };
+          }
+          if (!pair) continue;
+          const answerKey = pair.a.trim().toLocaleLowerCase("fr"), exerciseKey = `${key}::${answerKey}`;
+          if (localExercises.has(exerciseKey) || usedAnswers.has(answerKey)&&!["measure_unit","measure_length_cm_m","measure_length_km"].includes(generator.ulisExercise)) continue;
+          localExercises.add(exerciseKey);
+          usedAnswers.add(answerKey);
+          rows.push({ ...pair, conf: LOGICO_COLORS[rows.length] });
+        }
+        if (rows.length < (generator.rowCount || 10)) {
+          generationFailed = true;
+          break;
+        }
+        const finalRows = generator.mode === "conjugation" ? shuffleWithRandom(rows, random).map((pair, index2) => ({ ...pair, conf: LOGICO_COLORS[index2] })) : rows;
+        const signature = finalRows.map((pair) => `${pair.q.trim().toLocaleLowerCase("fr")}::${pair.a.trim().toLocaleLowerCase("fr")}`).join("||");
+        if (usedSheetSignatures.has(signature)) {
+          generationFailed = true;
+          break;
+        }
+        usedSheetSignatures.add(signature);
+        sheets.push(finalRows);
+      }
+      if (!generationFailed) return sheets;
+    }
+    throw new Error(`Impossible de cr\xE9er ${generator.sheetCount} pages sans r\xE9p\xE9ter un exercice avec ces r\xE9glages. R\xE9duis le nombre de pages ou s\xE9lectionne davantage de valeurs ou de cat\xE9gories.`);
+  }
+  function makeGeneratedBundle(generator) {
+    if (generator.mode !== "ulis") return makeSingleModeSheets(generator).map((pairs) => ({ pairs }));
+    const available = ULIS_EXERCISES[generator.ulisDomain]?.[generator.ulisLevel] ?? [];
+    const selectedIds = generator.ulisExercises.filter((id) => available.some((exercise) => exercise.id === id));
+    if (!selectedIds.length) throw new Error("Coche au moins un exercice dans la progression ULIS.");
+    const totalPages = selectedIds.length * generator.ulisCopiesPerExercise;
+    if (totalPages > 200) throw new Error("Le lot est limit\xE9 \xE0 200 fiches. R\xE9duis le nombre de fiches par exercice.");
+    const pages = [];
+    selectedIds.forEach((exerciseId, exerciseIndex) => {
+      const exercise = available.find((item) => item.id === exerciseId);
+      if (!exercise) return;
+      const usedSheetSignatures = /* @__PURE__ */ new Set();
+      for (let copyIndex = 0; copyIndex < generator.ulisCopiesPerExercise; copyIndex += 1) {
+        const focusVerbs = exerciseId === "conj_find_infinitive" ? [] : ulisConjugationVerbs(exerciseId), focusRandom = seededRandom(generator.seed + (exerciseIndex + 1) * 3571 + (copyIndex + 1) * 10007);
+        const focusVerb = focusVerbs.length ? choose(focusVerbs, focusRandom) : "";
+        const focusTense = exerciseId === "conj_imperfect_regular" ? "imparfait" : exerciseId === "conj_future_regular" ? "future" : exerciseId === "conj_irregular_forms" ? choose(["present", "imparfait", "future"], focusRandom) : "present";
+        const focusPronouns = focusVerb ? threeDistinctPronouns((index2) => conjugationAnswerFor(exerciseId, focusVerb, focusTense, index2)) : [];
+        let accepted = null;
+        for (let attempt = 0; attempt < 30 && !accepted; attempt += 1) {
+          const seed = generator.seed + (exerciseIndex + 1) * 7919 + (copyIndex + 1) * 65537 + attempt * 104729, random = seededRandom(seed);
+          const rows = [], localPairs = /* @__PURE__ */ new Set(), usedAnswers = /* @__PURE__ */ new Set();
+          let draws = 0;
+          while (rows.length < (generator.rowCount || 10) && draws < 5e4) {
+            draws += 1;
+            const focusIndex = focusVerb && rows.length < Math.min(3,generator.rowCount || 10) ? rows.length : -1;
+            const hint = focusIndex >= 0 ? { verb: focusVerb, pronounIndex: focusPronouns[focusIndex], tense: focusTense } : {};
+            const generated = makeUlisCandidate({ ...generator, ulisExercise: exerciseId }, random, hint), answerKey = generated.pair.a.trim().toLocaleLowerCase("fr"), pairKey = `${generated.pair.q.trim().toLocaleLowerCase("fr")}::${answerKey}`;
+            if (localPairs.has(pairKey) || usedAnswers.has(answerKey)&&!["measure_unit","measure_length_cm_m","measure_length_km"].includes(exerciseId)) continue;
+            localPairs.add(pairKey);
+            usedAnswers.add(answerKey);
+            rows.push({ ...generated.pair, conf: LOGICO_COLORS[rows.length] });
+          }
+          if (rows.length === (generator.rowCount || 10)) {
+            const finalRows = focusVerb ? shuffleWithRandom(rows, random).map((pair, index2) => ({ ...pair, conf: LOGICO_COLORS[index2] })) : rows;
+            const signature = finalRows.map((pair) => `${pair.q.trim().toLocaleLowerCase("fr")}::${pair.a.trim().toLocaleLowerCase("fr")}`).join("||");
+            if (!usedSheetSignatures.has(signature)) {
+              usedSheetSignatures.add(signature);
+              accepted = finalRows;
+            }
+          }
+        }
+        if (!accepted) throw new Error(`Impossible de cr\xE9er ${generator.ulisCopiesPerExercise} fiches \xAB ${exercise.label} \xBB sans r\xE9p\xE9ter une question. Essaie un nouveau m\xE9lange ou r\xE9duis le nombre de fiches.`);
+        pages.push({ pairs: accepted, exercise });
+      }
+    });
+    return shuffleWithRandom(pages, seededRandom(generator.seed ^ 1597463007));
+  }
+  function makeGeneratedSheets(generator) {
+    return makeGeneratedBundle(normalizeGeneratorState(generator)).map((page) => page.pairs);
+  }
+
+return {defaults:DEFAULT_GENERATOR,levels:ULIS_LEVELS,domains:ULIS_DOMAINS,exercises:ULIS_EXERCISES,denoms:MONEY_DENOMS,sample:SAMPLE_DATA,makeBundle:makeGeneratedBundle,normalize:normalizeGeneratorState,seededRandom,shuffleWithRandom,makeUlisCandidate,conjugate,numberToFrench};})();
+
+</script>
+<script>
+'use strict';
+const $=s=>document.querySelector(s);
+const PIN_PALETTE=[{"name": "Rouge", "hex": "#E32636"}, {"name": "Bleu", "hex": "#1769D2"}, {"name": "Jaune", "hex": "#FFD900"}, {"name": "Vert", "hex": "#159447"}, {"name": "Orange", "hex": "#FF8A00"}, {"name": "Violet", "hex": "#803EAA"}, {"name": "Rose", "hex": "#F56BAD"}, {"name": "Marron", "hex": "#8B4513"}, {"name": "Noir", "hex": "#1B1B1B"}, {"name": "Blanc", "hex": "#FFFFFF"}];
+const COLORS=PIN_PALETTE.map(c=>c.hex);
+const KEY='atelier-pinces-v1';
+const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const normalize=s=>String(s).trim().normalize('NFC');
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+function example(kind){
+ const pairs=kind==='verbs'?[['Je … (chanter)','chante'],['Tu … (parler)','parles'],['Nous … (marcher)','marchons'],['Vous … (jouer)','jouez'],['Ils … (aimer)','aiment'],['Elle … (chanter)','chante']]:kind==='blank'?[['',''],['',''],['',''],['','']]:[['2 + 3','5'],['4 + 2','6'],['1 + 7','8'],['3 + 1','4'],['5 + 4','9'],['6 + 1','7']];
+ const card={id:uid(),title:kind==='verbs'?'Le présent':kind==='blank'?'Ma nouvelle fiche':'Les petites additions',instruction:kind==='verbs'?'Complète chaque verbe au présent.':kind==='blank'?'Associe chaque question à sa bonne réponse.':'Trouve le résultat de chaque addition.',rows:pairs.map((p,i)=>({q:p[0],a:p[1],color:COLORS[i]})),order:[]};
+ card.order=answers(card);if(kind!=='blank')card.order=card.order.slice(2).concat(card.order.slice(0,2));return card;
+}
+function answers(card){return [...new Set(card.rows.flatMap(r=>[normalize(r.a),...questionChoices(r)]).filter(Boolean))]}
+function syncOrder(card){const a=answers(card);card.order=[...new Set(card.order.filter(x=>a.includes(x)))];for(const x of a)if(!card.order.includes(x))card.order.push(x)}
+function defaults(){return{version:1,format:1,fontSize:14,guides:true,active:0,startNumber:1,generator:cleanGen(),cards:[]}}
+let state=defaults(),view='flat',timer,toastTimer;
+let stored='';try{stored=localStorage.getItem(KEY)||'';if(stored)state=validate(JSON.parse(stored));}catch(e){/* Start with a usable example if browser storage is unavailable or obsolete. */}
+function validate(raw){
+ if(!raw||raw.version!==1||!Array.isArray(raw.cards)||raw.cards.length>1000)throw Error('Ce fichier ne contient pas un projet de cartes à pince valide.');
+ const clean={version:1,startNumber:Math.min(9999,Math.max(1,Math.floor(Number(raw.startNumber)||1))),generator:cleanGen(raw.generator),format:Number(raw.format)===2?2:1,fontSize:Math.max(10,Math.min(19,Number(raw.fontSize)||14)),guides:raw.guides!==false,active:Math.max(0,Math.min(raw.cards.length-1,Number(raw.active)||0)),cards:[]};
+ for(const c of raw.cards){if(!c||!Array.isArray(c.rows)||c.rows.length<1||c.rows.length>12)throw Error('Chaque fiche doit contenir entre 1 et 10 questions (12 admises pour les anciens projets).');const card={fontSize:Math.max(10,Math.min(28,Number(c.fontSize??raw.fontSize)||14)),format:Number(c.format??raw.format)===2?2:1,id:uid(),title:String(c.title||'').slice(0,70),instruction:String(c.instruction||'').slice(0,180),rows:c.rows.map((r,i)=>({q:String(r.q??'').slice(0,160),a:String(r.a??'').slice(0,100),color:/^#[0-9a-f]{6}$/i.test(r.color)?r.color:COLORS[i],...(validateGraphic(r.graphic)?{graphic:validateGraphic(r.graphic)}:{}),...(Array.isArray(r.choices)?{choices:r.choices.slice(0,20).map(x=>String(x).slice(0,100))}:{})})),order:Array.isArray(c.order)?c.order.map(normalize):[]};syncOrder(card);clean.cards.push(card)}clean.cards=normalizeCardCollection(clean.cards);clean.active=Math.max(0,Math.min(clean.active,clean.cards.length-1));return clean;
+}
+function current(){return state.cards[state.active]}
+function maxRows(){return 10}
+function toast(message){$('#toast').textContent=message;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,4000)}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));$('#saveState').textContent='✓ Projet enregistré dans ce navigateur.'}catch(e){$('#saveState').textContent='Sauvegarde locale indisponible. Utilisez « Sauvegarder ».'}}
+function changed(){syncOrder(current());save();renderPreview();renderOrder();renderSelect();$('#rowCount').textContent=current().rows.length+' / '+maxRows();$('#addRow').disabled=current().rows.length>=maxRows()}
+function renderSelect(){const s=$('#cardSelect');s.innerHTML=state.cards.map((c,i)=>`<option value="${i}">${i+1}. ${escapeHTML(c.title||'Sans titre')}</option>`).join('');s.value=state.active;$('#cardCount').textContent=state.cards.length+' fiche'+(state.cards.length>1?'s':'');$('#deleteCard').disabled=state.cards.length===1;$('#addCard').disabled=state.cards.length>=1000;$('#cloneCard').disabled=state.cards.length>=1000}
+function renderEditor(){state.cards.forEach(applyFixedPalette);const c=current();renderSelect();$('#titleInput').value=c.title;$('#rows').innerHTML=c.rows.map((r,i)=>`<div class="entry" data-index="${i}"><span class="swatch fixed" style="--c:${r.color}" title="Pince ${escapeHTML(PIN_PALETTE[i].name.toLowerCase())}" aria-label="Pince ${escapeHTML(PIN_PALETTE[i].name.toLowerCase())}"></span><input type="text" maxlength="160" data-field="q" value="${escapeHTML(r.q)}" aria-label="Question ${i+1}" placeholder="Question ${i+1}"><input type="text" maxlength="100" data-field="a" value="${escapeHTML(r.a)}" aria-label="Bonne réponse ${i+1}" placeholder="Réponse"><button class="remove-row" data-remove="${i}" aria-label="Supprimer la question ${i+1}" ${c.rows.length<=1?'disabled':''}>×</button>${r.graphic?`<div class="graphic-editor-note"><span>${r.graphic.type==='clock'?'Horloge':'Pièces et billets'}</span><button data-clear-graphic="${i}">Retirer le visuel</button></div>`:''}</div>`).join('');$('#rowCount').textContent=c.rows.length+' / '+maxRows();$('#addRow').disabled=c.rows.length>=maxRows();renderOrder();document.querySelectorAll('[data-format]').forEach(b=>{const yes=Number(b.dataset.format)===state.format;b.classList.toggle('active',yes);b.setAttribute('aria-pressed',yes)});$('#fontSize').value=state.fontSize;$('#fontOutput').value=state.fontSize+' pt';refreshCardCountControls();$('#guidesInput').checked=state.guides;$('#startNumber').value=state.startNumber||1;renderLibrary();renderPreview()}
+function renderOrder(){const c=current();$('#answerOrder').innerHTML=c.order.map((a,i)=>`<div class="order-row"><span>${escapeHTML(a)}</span><button data-move="${i},-1" aria-label="Monter la réponse ${escapeHTML(a)}" ${i===0?'disabled':''}>↑</button><button data-move="${i},1" aria-label="Descendre la réponse ${escapeHTML(a)}" ${i===c.order.length-1?'disabled':''}>↓</button></div>`).join('')}
+function completeRows(c){return c.rows.filter(r=>normalize(r.q)&&normalize(r.a))}
+function partHTML(c,index){if(!c)return '<section class="part"><div class="sheet-blank"></div><div class="fold-marker"></div></section>';
+ const esc=escapeHTML;const rows=c.rows;const order=c.order;const title=esc(c.title||'Ma fiche');const stamp=String(index+1).padStart(2,'0');
+ const questions=rows.map(r=>`<div class="question-box ${r.graphic?'has-graphic':''} ${r.color.toUpperCase()==='#FFFFFF'?'white-pin':''}" style="--qcolor:${r.color}">${questionHTML(r)}</div>`).join('');
+ const answerCells=order.length?order.map(a=>`<div class="answer-cell">${esc(a)}</div>`).join(''):'<div class="answer-cell">…</div>';
+ const corrections=order.length?order.map(a=>{const matches=rows.filter(r=>normalize(r.a)===a),cols=Math.max(1,Math.min(2,matches.length)),nrows=Math.max(1,Math.ceil(matches.length/cols));return `<div class="correction-cell" style="--zone-cols:${cols};--zone-rows:${nrows}">${matches.map(r=>`<i class="color-zone ${r.color.toUpperCase()==='#FFFFFF'?'white-pin':''}" style="--zone:${r.color}" aria-label="${esc(r.color)}"></i>`).join('')}</div>`}).join(''):'<div class="correction-cell"></div>';
+ return `<section class="part"><div class="face back"><div class="face-head" aria-hidden="true"></div><div class="correction-body"><div class="correction-table">${corrections}</div></div></div><div class="face front"><div class="face-head"><h2 class="sheet-title">${title}</h2><span class="card-number">N° ${String(index+(state.startNumber||1)).padStart(2,'0')}</span></div><div class="face-body"><div class="question-list">${questions}</div><div class="answer-table">${answerCells}</div></div></div><div class="fold-marker"></div></section>`;
+}
+function paperHTML(cards,start,front=false){return `<div class="paper ${state.format===2?'two':''} ${!state.guides?'no-guide':''} ${front?'front-only':''}" style="--text-size:${state.fontSize}pt">${cards.map((c,i)=>partHTML(c,start+i)).join('')}</div>`}
+function pagesHTML(front=false){const pages=[];for(let i=0;i<state.cards.length;i+=state.format){const cards=state.cards.slice(i,i+state.format);if(state.format===2&&cards.length===1)cards.push(null);pages.push(paperHTML(cards,i,front))}return pages}
+function checkIssues(){const issues=[];state.cards.forEach((c,i)=>{const prefix='Fiche '+(i+1)+' : ';if(c.rows.length>maxRows())issues.push(prefix+'ce format accepte au maximum '+maxRows()+' questions. Retirez les questions en trop pour imprimer.');if(completeRows(c).length!==c.rows.length)issues.push(prefix+'complétez toutes les questions et réponses.');const colors=c.rows.map(r=>r.color.toLowerCase());if(new Set(colors).size!==colors.length)issues.push(prefix+'choisissez une couleur différente pour chaque question.');});return issues}
+function overflowIssues(root){const parts=[...root.querySelectorAll('.part')];return parts.some(p=>[...p.querySelectorAll('.question-box,.answer-cell,.face-head,.sheet-title')].some(el=>el.scrollHeight>el.clientHeight+2||el.scrollWidth>el.clientWidth+2))}
+function renderPreview(){const front=view==='front';const start=Math.floor(state.active/state.format)*state.format;const cards=state.cards.slice(start,start+state.format);if(state.format===2&&cards.length===1)cards.push(null);$('#previewStage').innerHTML='<div class="scaled-wrap">'+paperHTML(cards,start,front)+'</div>';$('#printRoot').innerHTML='';$('#pageTag').textContent='Page '+(Math.floor(state.active/state.format)+1)+' / '+Math.ceil(state.cards.length/state.format);$('#previewCaption').textContent=front?'Face de jeu après pliage · Pinces sur le bord droit':'Dos à gauche · Pli vertical · Jeu à droite';$('#printNote').textContent=state.cards.length+' fiche'+(state.cards.length>1?'s':'')+' · '+Math.ceil(state.cards.length/state.format)+' feuille'+(Math.ceil(state.cards.length/state.format)>1?'s':'')+' A4 à imprimer';scalePreview();fitCards($('#previewStage'));const issues=checkIssues();if(overflowIssues($('#previewStage')))issues.push('Du texte dépasse : raccourcissez-le, réduisez sa taille ou choisissez une grande fiche.');$('#issues').innerHTML=issues.map(escapeHTML).join('<br>');$('#printBtn').disabled=checkIssues().length>0;}
+function scalePreview(){const stage=$('#previewStage'),wrap=stage.querySelector('.scaled-wrap'),paper=stage.querySelector('.paper');if(!paper)return;const maxWidth=Math.min(stage.clientWidth-(innerWidth<1000?22:46),view==='front'?370:570);const scale=Math.min(1,maxWidth/paper.offsetWidth);paper.style.transform='scale('+scale+')';wrap.style.width=(paper.offsetWidth*scale)+'px';wrap.style.height=(paper.offsetHeight*scale)+'px'}
+$('#rows').addEventListener('input',e=>{const field=e.target.dataset.field;if(!['q','a'].includes(field))return;const index=Number(e.target.closest('.entry').dataset.index);current().rows[index][field]=e.target.value;if(field==='color')e.target.closest('.swatch').style.setProperty('--c',e.target.value);changed()});
+$('#rows').addEventListener('click',e=>{const b=e.target.closest('[data-remove]');if(!b||current().rows.length<=1)return;current().rows.splice(Number(b.dataset.remove),1);syncOrder(current());save();renderEditor()});
+$('#titleInput').addEventListener('input',e=>{current().title=e.target.value;changed()});
+$('#addRow').onclick=()=>{const c=current();if(c.rows.length>=maxRows())return;const color=COLORS.find(x=>!c.rows.some(r=>r.color.toLowerCase()===x))||COLORS[c.rows.length];c.rows.push({q:'',a:'',color});save();renderEditor();$('#rows .entry:last-child input[data-field=q]').focus()};
+$('#shuffleBtn').onclick=()=>{const a=current().order;if(a.length<2){toast('Ajoutez au moins deux réponses différentes.');return}const before=a.join('\u0000');for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}if(a.join('\u0000')===before)a.push(a.shift());changed();toast('Les réponses ont été mélangées. Le corrigé est aligné.')};
+$('#answerOrder').onclick=e=>{const b=e.target.closest('[data-move]');if(!b)return;const [i,d]=b.dataset.move.split(',').map(Number),a=current().order;if(i+d<0||i+d>=a.length)return;[a[i],a[i+d]]=[a[i+d],a[i]];changed()};
+$('#cardSelect').onchange=e=>{state.active=Number(e.target.value);save();renderEditor()};
+$('#addCard').onclick=()=>{if(state.cards.length>=1000)return;state.cards.push(example('blank'));state.active=state.cards.length-1;save();renderEditor();toast('Nouvelle fiche ajoutée.')};
+$('#cloneCard').onclick=()=>{if(state.cards.length>=1000)return;const c=JSON.parse(JSON.stringify(current()));c.id=uid();c.title=(c.title+' (copie)').slice(0,70);state.cards.splice(state.active+1,0,c);state.active++;save();renderEditor();toast('Fiche dupliquée.')};
+$('#deleteCard').onclick=()=>{if(state.cards.length<=1)return;if(!confirm('Supprimer « '+(current().title||'Sans titre')+' » ?'))return;state.cards.splice(state.active,1);state.active=Math.min(state.active,state.cards.length-1);save();renderEditor()};
+for(const b of document.querySelectorAll('[data-format]'))b.onclick=()=>{state.format=Number(b.dataset.format);save();renderEditor();if(state.format===2&&state.cards.length===1)toast('Ajoutez ou dupliquez une fiche pour remplir la seconde moitié.')};
+for(const b of document.querySelectorAll('[data-view]'))b.onclick=()=>{view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>{const on=x===b;x.classList.toggle('active',on);x.setAttribute('aria-pressed',on)});renderPreview()};
+for(const b of document.querySelectorAll('[data-example]'))b.onclick=()=>{const c=current();if(completeRows(c).length&& !confirm('Remplacer le contenu de cette fiche par cet exemple ?'))return;state.cards[state.active]=example(b.dataset.example);save();renderEditor()};
+$('#fontSize').oninput=e=>{state.fontSize=Number(e.target.value);$('#fontOutput').value=state.fontSize+' pt';save();renderPreview()};$('#guidesInput').onchange=e=>{state.guides=e.target.checked;save();renderPreview()};
+$('#bulkBtn').onclick=()=>{const lines=$('#bulkInput').value.split(/\r?\n/).filter(s=>s.trim());if(lines.length<1||lines.length>maxRows()){toast('Collez entre 1 et '+maxRows()+' lignes pour ce format.');return}const parsed=lines.map(s=>{const match=s.match(/^(.+?)[;\t](.+)$/);return match?{q:match[1].trim().slice(0,160),a:match[2].trim().slice(0,100)}:null});if(parsed.some(x=>!x||!x.q||!x.a)){toast('Chaque ligne doit contenir : question ; réponse.');return}if(!confirm('Remplacer les questions de cette fiche par votre liste ?'))return;current().rows=parsed.map((r,i)=>({...r,color:COLORS[i]}));current().order=[];syncOrder(current());save();renderEditor();$('#bulkInput').value='';toast('Votre liste a été ajoutée.')};
+$('#saveBtn').onclick=()=>{save();const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='mes-cartes-a-pince.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Projet téléchargé. Vous pourrez le rouvrir et le modifier.')};
+$('#openBtn').onclick=()=>$('#fileInput').click();$('#fileInput').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>5000000)throw Error('Ce fichier est trop volumineux.');const imported=validate(JSON.parse(await file.text()));if(!confirm('Ouvrir ce projet à la place du projet actuel ? Pensez à sauvegarder vos fiches actuelles.'))return;state=imported;save();renderEditor();toast('Projet ouvert.')}catch(err){toast(err instanceof SyntaxError?'Ce fichier JSON ne peut pas être lu.':err.message)}finally{e.target.value=''}};
+function printProject(){const issues=checkIssues();if(issues.length){toast('Complétez les fiches avant d’imprimer.');return}const overflow=preparePrint();if(overflow){$('#issues').textContent='Du texte dépasse dans une fiche. Raccourcissez les textes ou réduisez leur taille avant d’imprimer.';toast('Certains textes dépassent. Ajustez-les avant d’imprimer.');return}window.print()}
+$('#printBtn').onclick=printProject;window.addEventListener('beforeprint',()=>{preparePrint()});
+$('#helpBtn').onclick=()=>$('#helpDialog').showModal();$('#closeHelp').onclick=()=>$('#helpDialog').close();$('#helpDialog').addEventListener('click',e=>{if(e.target===$('#helpDialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});
+window.addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(scalePreview,80)});
+function cleanGen(raw){
+ const g=Logico.normalize({...Logico.defaults,mode:'ulis',...(raw&&typeof raw==='object'?raw:{})});
+ g.rowCount=Number.isInteger(Number(raw?.rowCount))&&Number(raw?.rowCount)>=1&&Number(raw?.rowCount)<=10?Number(raw.rowCount):10;
+ return g;
+}
+function validateGraphic(raw){
+ if(!raw||typeof raw!=='object')return undefined;
+ if(raw.type==='clock'&&Number.isInteger(raw.hour)&&raw.hour>=0&&raw.hour<=12&&Number.isInteger(raw.minute)&&raw.minute>=0&&raw.minute<60&&['morning','afternoon','evening'].includes(raw.period))return{type:'clock',hour:raw.hour,minute:raw.minute,period:raw.period};
+ if(raw.type==='money'&&Array.isArray(raw.values)&&raw.values.length>0&&raw.values.length<=6&&raw.values.every(n=>Logico.denoms.some(d=>d.value===n)))return{type:'money',values:[...raw.values]};
+ return undefined;
+}
+function clockHTML(graphic,q){
+ const point=(angle,length)=>[50+Math.sin(angle)*length,50-Math.cos(angle)*length];
+ const hour=(graphic.hour%12+graphic.minute/60)*Math.PI/6,minute=graphic.minute*Math.PI/30;
+ let ticks='',numbers='';
+ for(let i=0;i<60;i++){const a=i*Math.PI/30,[x,y]=point(a,i%5?42:39),[xx,yy]=point(a,45);ticks+=`<line x1="${x}" y1="${y}" x2="${xx}" y2="${yy}" stroke="#61706c" stroke-width="${i%5?.5:1}"/>`;}
+ for(let i=1;i<=12;i++){const [x,y]=point(i*Math.PI/6,33);numbers+=`<text x="${x}" y="${y+3}" font-size="9" text-anchor="middle" fill="#263f39" font-family="Arial">${i}</text>`;}
+ const hp=point(hour,23),mp=point(minute,35);
+ return `<span class="visual-label">${escapeHTML(q)}</span><svg class="clock-svg" viewBox="0 0 100 100" role="img" aria-label="Horloge à lire"><circle cx="50" cy="50" r="47" fill="white" stroke="#295d89" stroke-width="2.5"/>${ticks}${numbers}<line x1="50" y1="50" x2="${mp[0]}" y2="${mp[1]}" stroke="#216ab8" stroke-width="2.2" stroke-linecap="round"/><line x1="50" y1="50" x2="${hp[0]}" y2="${hp[1]}" stroke="#d13336" stroke-width="3" stroke-linecap="round"/><circle cx="50" cy="50" r="2.4" fill="#283d35"/></svg>`;
+}
+function moneyHTML(graphic){
+ const values=graphic.values,hasNotes=values.some(n=>n>=500),cols=values.length<=2?values.length:values.length===4?2:3,rows=Math.ceil(values.length/cols),cellW=hasNotes?182:108,cellH=106,prefix='money-'+uid();
+ const notes={500:{color:'#899596',pale:'#e8edeb',dark:'#4f6261',w:146,h:77},1000:{color:'#c96453',pale:'#f8e1d4',dark:'#9e423a',w:151,h:80},2000:{color:'#4c8bbc',pale:'#deedf6',dark:'#285e94',w:156,h:84},5000:{color:'#cd904a',pale:'#f9ead3',dark:'#9a5d2b',w:161,h:87},10000:{color:'#649263',pale:'#e3efcd',dark:'#386b49',w:166,h:87},20000:{color:'#b6a44e',pale:'#f5f0ca',dark:'#81712c',w:171,h:87}};
+ const sizes={1:30,2:34.6,5:39.2,10:36.4,20:41.1,50:44.8,100:43,200:47.6};
+ const star=(x,y,r,rotation=-Math.PI/2)=>Array.from({length:10},(_,i)=>{const a=rotation+i*Math.PI/5,rr=i%2?r*.43:r;return(x+Math.cos(a)*rr).toFixed(2)+','+(y+Math.sin(a)*rr).toFixed(2)}).join(' ');
+ const defs=`<defs><linearGradient id="${prefix}-copper" x2=".8" y2="1"><stop stop-color="#eac09a"/><stop offset=".45" stop-color="#c98b60"/><stop offset="1" stop-color="#e2ad82"/></linearGradient><linearGradient id="${prefix}-gold" x2=".8" y2="1"><stop stop-color="#f4df93"/><stop offset=".5" stop-color="#d6b452"/><stop offset="1" stop-color="#e9cd77"/></linearGradient><linearGradient id="${prefix}-silver" x2=".8" y2="1"><stop stop-color="#f0f0e8"/><stop offset=".5" stop-color="#bec3bd"/><stop offset="1" stop-color="#e0e3dc"/></linearGradient></defs>`;
+ const items=values.map((n,i)=>{
+  const row=Math.floor(i/cols),itemsInRow=Math.min(cols,values.length-row*cols),x=(i%cols)*cellW+(cols-itemsInRow)*cellW/2,cy=row*cellH+cellH/2;
+  if(n>=500){const t=notes[n],x0=x+(cellW-t.w)/2,y0=cy-t.h/2,v=n/100;
+   const stars=Array.from({length:12},(_,k)=>{const a=k*Math.PI/6;return `<polygon points="${star(15+Math.sin(a)*5.5,12-Math.cos(a)*5.5,1)}" fill="#f7d548"/>`}).join('');
+   const arch=n===2000?'<path d="M53 62V35Q66 9 79 35V62M58 62V36Q66 20 74 36V62"/>':n===500?'<path d="M48 64V29H80V64M46 29L64 17L82 29M54 35V59M74 35V59M45 64H84"/>':n===20000?'<path d="M48 64V21H82V64M48 22L82 63M82 22L48 63M48 42H82M65 22V64"/>':'<path d="M48 64V38A17 17 0 0 1 82 38V64M54 64V39A11 11 0 0 1 76 39V64M44 65H86M45 30H51M79 30H85"/>';
+   const lines=Array.from({length:13},(_,k)=>`<path d="M${100+k*4} 12Q${83+k*4} 39 ${100+k*4} 74"/>`).join('');
+   return `<g transform="translate(${x0},${y0})"><defs><clipPath id="${prefix}-note-${i}" clipPathUnits="userSpaceOnUse"><rect x="4" y="4" width="${t.w-8}" height="${t.h-8}"/></clipPath></defs><rect x=".8" y=".8" width="${t.w-1.6}" height="${t.h-1.6}" rx="2" fill="${t.pale}" stroke="${t.dark}" stroke-width="1.6"/><rect x="3.5" y="3.5" width="${t.w-7}" height="${t.h-7}" rx="1" fill="none" stroke="${t.color}" stroke-width=".6"/><path d="M33 4H93V${t.h-4}H33Z" fill="${t.color}" opacity=".14"/><g clip-path="url(#${prefix}-note-${i})" fill="none" stroke="${t.color}" stroke-width=".55" opacity=".45">${lines}</g><rect x="5" y="5" width="20" height="14" rx=".7" fill="#234d93"/>${stars}<text x="5" y="31" fill="${t.dark}" font-size="7" font-family="Arial" font-weight="bold">EURO</text><g transform="translate(1,0)" fill="none" stroke="${t.dark}" stroke-width="1.8" stroke-linejoin="round">${arch}</g><rect x="${t.w-12}" y="7" width="5" height="${t.h-14}" fill="${t.color}" opacity=".38"/><text x="${t.w-18}" y="35" text-anchor="end" font-family="Arial" font-weight="bold" font-size="34" fill="${t.dark}" stroke="${t.pale}" stroke-width=".5" paint-order="stroke">${v}</text><text x="${t.w-19}" y="46" text-anchor="end" font-family="Arial" font-size="9" font-weight="bold" fill="${t.dark}">EURO</text><text x="6" y="${t.h-9}" font-family="Arial" font-weight="bold" font-size="${v>=100?21:23}" fill="${t.dark}">${v}</text><path d="M99 ${t.h-20}H${t.w-17}M99 ${t.h-17}H${t.w-17}M99 ${t.h-14}H${t.w-17}" stroke="${t.color}" stroke-width=".8"/></g>`;
+  }
+  const r=sizes[n],metal=n<10?'copper':n<100?'gold':n===100?'gold':'silver',inner=n===100?'silver':n===200?'gold':metal,ink=n<10?'#69442c':n===100||n===200?'#38443c':'#69571e',unit=n>=100?(n===100?'EURO':'EURO'):n===1?'CENT':'CENTS',v=n>=100?n/100:n;
+  let ridges='';for(let k=0;k<56;k++){const a=k*Math.PI/28,r1=r-1.8,r2=r-3.6;ridges+=`<line x1="${Math.sin(a)*r1}" y1="${-Math.cos(a)*r1}" x2="${Math.sin(a)*r2}" y2="${-Math.cos(a)*r2}"/>`;}
+  let stars='';if(n>=100)for(let k=0;k<12;k++){const a=k*Math.PI/6;stars+=`<polygon points="${star(Math.sin(a)*(r-7),-Math.cos(a)*(r-7),1.7)}"/>`;}
+  const europe='<path d="M10 -18l5 -5 3 6 7 2-1 7 6 2-4 5 3 7-8 1-4 7-4-3-3-6 3-7-5-4z"/>';
+  return `<g transform="translate(${x+cellW/2},${cy})"><circle r="${r}" fill="url(#${prefix}-${metal})" stroke="${ink}" stroke-width="1.1"/><g stroke="${ink}" stroke-width=".7" opacity=".42">${ridges}</g><circle r="${n>=100?r*.70:r-6}" fill="url(#${prefix}-${inner})" stroke="${ink}" stroke-width=".75"/><g fill="${ink}" opacity=".65">${stars}</g><g fill="${ink}" opacity=".16" transform="translate(0,0)">${europe}</g><text x="${v<10?-3:0}" y="8" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="${v>=10?36:42}" fill="${ink}" stroke="#fff7" stroke-width=".5" paint-order="stroke">${v}</text><text x="0" y="${n>=100?21:22}" text-anchor="middle" font-family="Arial" font-size="${n>=100?8:7.5}" font-weight="bold" letter-spacing=".6" fill="${ink}">${unit}</text></g>`;
+ }).join('');
+ return `<svg data-money-version="4" class="money-svg" viewBox="0 0 ${cols*cellW} ${rows*cellH}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Pièces et billets en euros à compter">${defs}${items}</svg>`;
+}
+
+function questionHTML(row){return row.graphic?.type==='clock'?clockHTML(row.graphic,row.q):row.graphic?.type==='money'?moneyHTML(row.graphic):escapeHTML(row.q)||'…'}
+function fitCards(root){
+ for(const el of root.querySelectorAll('.sheet-title,.question-box:not(.has-graphic),.answer-cell')){
+  const min=el.classList.contains('sheet-title')?8:9;
+  let px=parseFloat(getComputedStyle(el).fontSize);
+  while((el.scrollHeight>el.clientHeight+1||el.scrollWidth>el.clientWidth+1)&&px>min){px=Math.max(min,px-.5);el.style.fontSize=px+'px';}
+ }
+}
+function preparePrint(){
+ const root=$('#printRoot');root.innerHTML=pagesHTML().join('');root.style.cssText='display:block;position:absolute;left:-10000px;top:0';fitCards(root);const overflow=overflowIssues(root);root.removeAttribute('style');return overflow;
+}
+let genBusy=false;
+function libraryGen(){if(!state.generator)state.generator=cleanGen();return state.generator}
+function currentExercises(){const g=libraryGen();return Logico.exercises[g.ulisDomain]?.[g.ulisLevel]||[]}
+function updateGenerationSummary(){const g=libraryGen(),n=g.mode==='ulis'?g.ulisExercises.filter(id=>currentExercises().some(e=>e.id===id)).length*g.ulisCopiesPerExercise:g.mode==='free'?null:g.sheetCount;$('#generationSummary').textContent=g.mode==='free'?'Vos questions, dans le nouveau format':n+' carte'+(n>1?'s':'')+' · '+g.rowCount+' questions par carte';$('#generateCards').disabled=genBusy||(g.mode==='ulis'&&n===0);}
+function renderLibrary(){
+ const g=libraryGen();$('#genMode').value=g.mode;$('#scopeControls').hidden=g.mode!=='ulis';$('#ulisControls').hidden=g.mode!=='ulis';$('#classicControls').hidden=g.mode==='ulis'||g.mode==='free';$('#legacyControls').hidden=g.mode!=='free';$('#genRows').value=g.rowCount;$('#genCopies').value=g.mode==='ulis'?g.ulisCopiesPerExercise:g.sheetCount;$('#copiesLabel').textContent=g.mode==='ulis'?'Cartes par exercice':'Nombre de cartes';$('#genCopies').closest('label').hidden=g.mode==='free';
+ $('#genDomain').innerHTML=Logico.domains.map(d=>`<option value="${d.id}">${escapeHTML(d.label)}</option>`).join('');$('#genDomain').value=g.ulisDomain;
+ $('#levelChips').innerHTML=Logico.levels.map(n=>`<button data-level="${n.id}" class="${n.id===g.ulisLevel?'active':''}" aria-pressed="${n.id===g.ulisLevel}" style="--level:${n.color}"><i></i>${n.label}</button>`).join('');
+ const domain=Logico.domains.find(d=>d.id===g.ulisDomain),level=Logico.levels.find(n=>n.id===g.ulisLevel);$('#scopeLabel').textContent=domain.label+' · Niveau '+level.label;
+ const available=currentExercises();$('#exerciseChoices').innerHTML=available.length?available.map(e=>`<label class="exercise-choice"><input type="checkbox" data-exercise="${e.id}" ${g.ulisExercises.includes(e.id)?'checked':''}><span><b>${escapeHTML(e.label)}</b><small>${escapeHTML(e.instruction)}</small></span></label>`).join(''):'<p class="hint">Aucun objectif prévu à ce niveau dans le Logico. Choisissez un autre niveau.</p>';
+ $('#toggleExercises').disabled=!available.length;$('#toggleExercises').textContent=available.length&&g.ulisExercises.length===available.length?'Tout décocher':'Tout sélectionner';
+ renderClassicControls();updateGenerationSummary();
+}
+function checkboxSet(field,values,labels){const g=libraryGen();return `<div class="gen-checkboxes">${values.map((v,i)=>`<label><input type="checkbox" data-gen-field="${field}" value="${v}" ${g[field].includes(v)?'checked':''}>${escapeHTML(labels?labels[i]:String(v))}</label>`).join('')}</div>`}
+function genSelect(field,values,labels){const g=libraryGen();return `<select data-gen-field="${field}">${values.map((v,i)=>`<option value="${v}" ${String(g[field])===String(v)?'selected':''}>${escapeHTML(labels?labels[i]:String(v))}</option>`).join('')}</select>`}
+function renderClassicControls(){const g=libraryGen();let html='';
+ if(g.mode==='conjugation')html='<div class="gen-option"><strong>Temps</strong>'+genSelect('tense',['present','imparfait','future'],['Présent','Imparfait','Futur'])+'</div><div class="gen-option"><strong>Groupes de verbes</strong>'+checkboxSet('verbGroups',['group1','group2','group3'],['Verbes en -er','2e groupe','3e groupe'])+'</div>';
+ if(g.mode==='multiplication')html='<div class="gen-option"><strong>Tables à travailler</strong>'+checkboxSet('tables',Array.from({length:12},(_,i)=>i+1))+'</div>';
+ if(g.mode==='addition')html='<div class="gen-option"><strong>Nombres à ajouter</strong>'+checkboxSet('additionAdds',Array.from({length:10},(_,i)=>i+1),Array.from({length:10},(_,i)=>'+'+(i+1)))+'</div><div class="gen-option"><strong>Nombre de départ jusqu’à</strong>'+genSelect('additionMax',[10,20,50,100])+'</div>';
+ if(g.mode==='complement')html='<div class="gen-option"><strong>Compléments à…</strong>'+checkboxSet('complementTargets',[10,20,50,100])+'</div>';
+ if(g.mode==='money')html='<p class="hint">Les pièces et les billets sont dessinés dans les questions.</p><div class="gen-option"><strong>Pièces autorisées</strong>'+checkboxSet('moneyDenoms',Logico.denoms.filter(d=>d.kind==='coin').map(d=>d.value),Logico.denoms.filter(d=>d.kind==='coin').map(d=>d.label))+'</div><div class="gen-option"><strong>Billets autorisés</strong>'+checkboxSet('moneyDenoms',Logico.denoms.filter(d=>d.kind==='note').map(d=>d.value),Logico.denoms.filter(d=>d.kind==='note').map(d=>d.label))+'</div>';
+ if(g.mode==='time')html='<p class="hint">Les horloges conservent leurs aiguilles et le moment de la journée.</p><div class="gen-option"><strong>Précision</strong>'+genSelect('timePrecision',['hour','half','quarter','any'],['Heures piles','Heures et demies','Quarts d’heure','Toutes les 5 minutes'])+'</div><div class="gen-option"><strong>Moment de la journée</strong>'+genSelect('timePeriod',['morning','afternoon','mixed'],['Matin','Après-midi et soir','Les deux'])+'</div>';
+ $('#classicControls').innerHTML=html;
+}
+function changeScope(domain,level){const g=libraryGen();g.ulisDomain=domain;g.ulisLevel=level;g.ulisExercises=(Logico.exercises[domain]?.[level]||[]).map(e=>e.id);g.ulisExercise=g.ulisExercises[0]||'';save();renderLibrary()}
+function generatedCard(page,title){
+ const card={format:state.format,id:uid(),title:(title+(page.level?' · '+page.level.label:'')).slice(0,70),instruction:page.exercise?.instruction||'',rows:page.pairs.map((r,i)=>({q:r.graphic?.type==='clock'?({morning:'matin',afternoon:'après-midi',evening:'soir'}[r.graphic.period]):r.graphic?.type==='money'?'Monnaie':r.q,a:r.a,color:COLORS[i],...(Array.isArray(r.choices)?{choices:r.choices.map(String)}:{}),...(r.graphic?{graphic:validateGraphic(r.graphic)}:{})})),order:[]};
+ card.order=Logico.shuffleWithRandom(answers(card),Logico.seededRandom(libraryGen().seed+Math.floor(Math.random()*99999)));return card;
+}
+function titleForMode(g){return({conjugation:'Conjugaison · '+({present:'Présent',imparfait:'Imparfait',future:'Futur'}[g.tense]),multiplication:'Tables de multiplication',addition:'Les additions',complement:'Les compléments',money:'Compte la monnaie',time:'Lis l’heure'})[g.mode]||'Mes exercices';}
+function parseLegacyCards(raw,rowCount,title){const cards=[];for(const block of raw.split(/\n?\s*===\s*\n?/).filter(s=>s.trim())){const pairs=block.split(/\r?\n/).filter(s=>s.trim()).map((s,i)=>{const at=s.indexOf('--');if(at<0)throw Error('Ligne '+(i+1)+' : séparez la question et la réponse avec --.');const q=s.slice(0,at).trim(),a=s.slice(at+2).trim();if(!q||!a)throw Error('Une question ou une réponse est vide.');if(q.length>160||a.length>100)throw Error('Un texte est trop long : limitez les questions à 160 caractères et les réponses à 100.');return{q,a}});for(let i=0;i<pairs.length;i+=rowCount){const chunk=pairs.slice(i,i+rowCount);if(chunk.length<1)throw Error('La dernière carte ne contient qu’une question. Choisissez un autre nombre de questions par carte.');cards.push(generatedCard({pairs:chunk},title));}}if(!cards.length)throw Error('Collez d’abord vos questions et réponses.');return cards;}
+async function generateFromLibrary(all=false){
+ if(genBusy)return;genBusy=true;$('#generateCards').disabled=true;$('#generateCatalogue').disabled=true;$('#libraryError').textContent='';const label=$('#generateCards').textContent;$('#generateCards').textContent='Préparation…';
+ try{
+  await new Promise(resolve=>requestAnimationFrame(resolve));const g={...libraryGen()},cards=[];
+  if(all){let index=0;for(const domain of Logico.domains)for(const level of Logico.levels)for(const exercise of Logico.exercises[domain.id]?.[level.id]||[]){const config={...g,mode:'ulis',ulisDomain:domain.id,ulisLevel:level.id,ulisExercises:[exercise.id],ulisCopiesPerExercise:1,seed:g.seed+index*7919};const page=Logico.makeBundle(config)[0];cards.push(generatedCard({...page,level},exercise.label));index++;if(index%10===0){$('#generateCatalogue').textContent='Préparation : '+index+' / 95';await new Promise(resolve=>requestAnimationFrame(resolve));}}}
+  else if(g.mode==='free')cards.push(...parseLegacyCards($('#legacyData').value,g.rowCount,$('#legacyTitle').value||'Mes exercices Logico'));
+  else{for(const page of Logico.makeBundle(g))cards.push(generatedCard({...page,...(g.mode==='ulis'?{level:Logico.levels.find(n=>n.id===g.ulisLevel)}:{})},page.exercise?.label||titleForMode(g)));}
+  const append=$('#genDestination').value==='append';if((append?state.cards.length:0)+cards.length>1000)throw Error('Le projet peut contenir 1 000 cartes. Choisissez « Remplacer mes fiches » ou réduisez la quantité.');
+  if(!append&&!confirm('Remplacer les '+state.cards.length+' fiches du projet actuel ?'))return;
+  const first=append?state.cards.length:0;state.cards=append?state.cards.concat(cards):cards;state.active=first;libraryGen().seed++;save();renderEditor();renderLibrary();toast(cards.length+' carte'+(cards.length>1?'s':'')+' créée'+(cards.length>1?'s':'')+'. Vous pouvez les modifier et les imprimer.');
+ }catch(e){$('#libraryError').textContent=e.message||'La génération n’a pas abouti.';}
+ finally{genBusy=false;$('#generateCards').textContent=label;$('#generateCatalogue').textContent='Générer les 95 cartes du catalogue';$('#generateCatalogue').disabled=false;updateGenerationSummary();}
+}
+function initLibrary(){
+ renderLibrary();$('#rows').addEventListener('click',e=>{const b=e.target.closest('[data-clear-graphic]');if(!b)return;delete current().rows[Number(b.dataset.clearGraphic)].graphic;save();renderEditor()});$('#genMode').onchange=e=>{libraryGen().mode=e.target.value;save();renderLibrary()};$('#genDomain').onchange=e=>changeScope(e.target.value,libraryGen().ulisLevel);
+ $('#levelChips').onclick=e=>{const b=e.target.closest('[data-level]');if(b)changeScope(libraryGen().ulisDomain,b.dataset.level)};
+ $('#exerciseChoices').onchange=e=>{const id=e.target.dataset.exercise;if(!id)return;const g=libraryGen();g.ulisExercises=e.target.checked?[...new Set([...g.ulisExercises,id])]:g.ulisExercises.filter(x=>x!==id);save();updateGenerationSummary();$('#toggleExercises').textContent=g.ulisExercises.length===currentExercises().length?'Tout décocher':'Tout sélectionner'};
+ $('#toggleExercises').onclick=()=>{const g=libraryGen();g.ulisExercises=g.ulisExercises.length===currentExercises().length?[]:currentExercises().map(e=>e.id);save();renderLibrary()};
+ $('#genRows').onchange=e=>{libraryGen().rowCount=Number(e.target.value);save();updateGenerationSummary()};$('#genCopies').onchange=e=>{const n=Math.max(1,Math.min(20,Math.floor(Number(e.target.value)||1))),g=libraryGen();g[g.mode==='ulis'?'ulisCopiesPerExercise':'sheetCount']=n;e.target.value=n;save();updateGenerationSummary()};
+ $('#classicControls').onchange=e=>{const key=e.target.dataset.genField;if(!key)return;const g=libraryGen();if(e.target.type==='checkbox'){const value=key==='verbGroups'?e.target.value:Number(e.target.value);g[key]=e.target.checked?[...new Set([...g[key],value])]:g[key].filter(v=>v!==value);}else g[key]=key==='additionMax'?Number(e.target.value):e.target.value;save()};
+ $('#generateCards').onclick=()=>generateFromLibrary(false);$('#generateCatalogue').onclick=()=>generateFromLibrary(true);$('#legacySample').onclick=()=>{$('#legacyData').value=Logico.sample;$('#legacyTitle').value='Conjugaison · Futur';};
+ $('#startNumber').value=state.startNumber;$('#startNumber').oninput=e=>{const n=Math.floor(Number(e.target.value));if(!Number.isFinite(n)||n<1||n>9999)return;state.startNumber=n;save();renderPreview()};
+}
+
+function applyFixedPalette(card){card.rows.forEach((r,i)=>r.color=COLORS[i%COLORS.length]);syncOrder(card);return card}
+function splitCardAt(card,count){const result=[];for(let i=0;i<card.rows.length;i+=count){const copy={...card,id:i===0?card.id:uid(),rows:card.rows.slice(i,i+count).map(r=>({...r})),order:[...card.order]};result.push(applyFixedPalette(copy))}return result}
+function normalizeCardCollection(cards){return cards.flatMap(c=>splitCardAt(c,10))}
+function refreshCardCountControls(){const count=current().rows.length;$('#cardRows').value=count;$('#cardRowsHelp').textContent='Réduire le nombre répartit les questions sur plusieurs cartes, sans les supprimer. Pour les heures, essayez 4 questions.';}
+function repartitionCards(count,scope){
+ count=Number(count);if(!Number.isInteger(count)||count<1||count>10){toast('Choisissez entre 1 et 10 questions.');return false}
+ const out=[];let nextActive=state.active;
+ state.cards.forEach((c,i)=>{if(i===state.active)nextActive=out.length;const selected=scope==='all'||(scope==='clocks'&&c.rows.some(r=>r.graphic?.type==='clock'))||(scope==='current'&&i===state.active);if(!selected){out.push(c);return}const chunks=splitCardAt(c,count);if(scope==='current'&&c.rows.length<count){while(chunks[0].rows.length<count)chunks[0].rows.push({q:'',a:'',color:COLORS[chunks[0].rows.length]});applyFixedPalette(chunks[0]);}out.push(...chunks)});
+ if(out.length>1000){toast('Ce réglage dépasse 1 000 cartes. Choisissez davantage de questions par carte.');return false}
+ state.cards=out;state.active=Math.min(nextActive,out.length-1);save();renderEditor();toast('Répartition mise à jour. Toutes les questions ont été conservées.');return true;
+}
+function initCountPalette(){
+ $('#applyCardRows').onclick=()=>repartitionCards(Number($('#cardRows').value),$('#cardRowsScope').value||'current');
+ $('#fixedPalette').innerHTML=PIN_PALETTE.map(c=>`<span class="palette-item"><i style="background:${c.hex}"></i>${c.name}</span>`).join('');
+ refreshCardCountControls();
+}
+
+
+function questionChoices(row){
+ if(Array.isArray(row.choices)&&row.choices.length)return [...new Set(row.choices.map(normalize).filter(Boolean))];
+ const text=normalize(row.q),numeric=text.match(/\d+(?:\s*(?:mm|cm|km|m))?(?:\s+ou\s+\d+(?:\s*(?:mm|cm|km|m))?)+/i);
+ if(numeric)return numeric[0].split(/\s+ou\s+/i).map(normalize);
+ const last=text.split('\n').at(-1);if(last.includes(' / '))return [...new Set(last.split(' / ').map(normalize).filter(Boolean))];
+ const words=text.split(' · ');if(words.length>=3&&words.length<=6&&words.every(w=>/^[\p{L}’' -]+$/u.test(w)))return words.map(normalize);
+ return [];
+}
+answers=function(card){return [...new Set(card.rows.flatMap(r=>[normalize(r.a),...questionChoices(r)]).filter(Boolean))]};
+function retainAnswerChoices(card){for(const row of card.rows){const choices=questionChoices(row);if(choices.length)row.choices=choices;}syncOrder(card);return card;}
+
+const simpleUI={printing:false,printScope:'ready',undo:null};
+const simpleEmpty={id:'empty',title:'',instruction:'',rows:[],order:[]};
+current=function(){return state.cards[state.active]||simpleEmpty};
+function simpleProblems(card){return card.rows.length<1||card.rows.length>10?['Choisissez de 1 à 10 questions.']:card.rows.some(r=>!normalize(r.q)||!normalize(r.a))?['Complétez les questions et les réponses.']:[];}
+function simplePrintIndices(){return state.cards.map((c,i)=>i).filter(i=>simpleUI.printScope==='current'?i===state.active:!simpleProblems(state.cards[i]).length)}
+checkIssues=function(){return simplePrintIndices().flatMap(i=>simpleProblems(state.cards[i]).map(p=>'Fiche '+(i+(state.startNumber||1))+' : '+p))};
+function cardFormat(card){return Number(card?.format??state.format)===2?2:1}
+function simplePageGroups(indices){const pages=[];for(const i of indices){const last=pages.at(-1);if(cardFormat(state.cards[i])===2&&last?.length===1&&cardFormat(state.cards[last[0]])===2)last.push(i);else pages.push([i]);}return pages;}
+function simplePaper(indices,front=false){const format=cardFormat(state.cards[indices[0]]),parts=indices.map(i=>partHTML(state.cards[i],i));if(format===2&&parts.length===1)parts.push(partHTML(null,0));return `<div class="paper ${format===2?'two':''} ${!state.guides?'no-guide':''} ${front?'front-only':''}" style="--text-size:${state.fontSize}pt">${parts.join('')}</div>`;}
+pagesHTML=function(front=false){return simplePageGroups(simplePrintIndices()).map(ids=>simplePaper(ids,front))};
+renderPreview=function(){
+ if(!state.cards.length){$('#previewStage').innerHTML='<div class="simple-no-card">Choisissez les réglages, puis créez une fiche vide ou ouvrez le studio.</div>';$('#pageTag').textContent='';$('#issues').textContent='';$('#simplePrint').disabled=true;return;}
+ const indices=simplePageGroups(state.cards.map((c,i)=>i)).find(ids=>ids.includes(state.active))||[state.active];$('#previewStage').innerHTML='<div class="scaled-wrap">'+simplePaper(indices,view==='front')+'</div>';$('#printRoot').innerHTML='';$('#pageTag').textContent='Fiche '+(state.active+(state.startNumber||1));$('#previewCaption').textContent=view==='front'?'Fiche pliée':'Feuille à plier';scalePreview();fitCards($('#previewStage'));const errors=simpleProblems(current());if(overflowIssues($('#previewStage')))errors.push('Un texte dépasse. Réduisez sa taille dans « Options ».');$('#issues').innerHTML=errors.map(escapeHTML).join('<br>');$('#simplePrint').disabled=simplePrintIndices().length===0||checkIssues().length>0;
+};
+function simpleList(){
+ const scroll=$('#simpleCardList').scrollTop||0;
+ $('#simpleCount').textContent=state.cards.length;$('#simpleUndo').hidden=!simpleUI.undo;
+ $('#simpleCardList').innerHTML=state.cards.length?state.cards.map((c,i)=>{const graphic=c.rows.find(r=>r.graphic),thumb=graphic?graphic.graphic.type==='money'?moneyHTML(graphic.graphic):clockHTML(graphic.graphic,''):`<span class="thumb-words">${escapeHTML(c.rows.slice(0,2).map(r=>r.q||'…').join(' / '))}</span>`;return `<div class="simple-list-item ${i===state.active?'active':''}"><button class="simple-select-card" data-simple-select="${i}"><span class="simple-thumb">${thumb}</span><span class="simple-item-info"><small>N° ${i+(state.startNumber||1)} · ${c.rows.length} question${c.rows.length>1?'s':''} · ${cardFormat(c)===2?'Demi-format':'Grand format'}</small><strong>${escapeHTML(c.title||'Sans titre')}</strong>${simpleProblems(c).length?'<em>À compléter</em>':''}</span></button><button class="simple-discard" data-simple-delete="${i}" aria-label="Supprimer la fiche ${i+(state.startNumber||1)}">×</button></div>`}).join(''):'<div class="simple-list-empty">Les fiches créées apparaîtront ici.</div>';
+ $('#simpleCardList').scrollTop=scroll;
+ const ready=state.cards.filter(c=>!simpleProblems(c).length).length;$('#simpleListFoot').textContent=ready+' fiche'+(ready>1?'s':'')+' prête'+(ready>1?'s':'')+' à imprimer';
+}
+const originalEditor=renderEditor;renderEditor=function(){for(const c of state.cards){c.format=cardFormat(c);c.fontSize=cardFont(c);applyFixedPalette(c);retainAnswerChoices(c)}if(state.cards.length)originalEditor();else{renderSelect();renderLibrary();renderPreview()}$('#fontSize').value=cardFont(current());$('#fontOutput').value=cardFont(current())+' pt';$('#simpleCardFields').hidden=!state.cards.length;$('#simpleRows').value=libraryGen().rowCount;$('#simpleFormat').value=state.format;$('#simpleTitleSlot').hidden=!state.cards.length;$('#simpleEditorDetails').hidden=!state.cards.length;simpleList();};
+const originalChanged=changed;changed=function(){originalChanged();simpleList()};
+function batchCount(){return Math.max(1,Math.min(200,Math.floor(Number(libraryGen().studioCount)||1)))}
+updateGenerationSummary=function(){const g=libraryGen(),count=batchCount(),available=g.mode==='ulis'?g.ulisExercises.filter(id=>currentExercises().some(e=>e.id===id)).length:1;$('#generationSummary').textContent=g.mode==='free'?'Les cartes seront créées à partir de votre liste':count+' carte'+(count>1?'s':'')+' au total · '+g.rowCount+' question'+(g.rowCount>1?'s':'')+' par carte · '+studioFont()+' pt';$('#generateCards').textContent=g.mode==='free'?'Ajouter ma liste':'Ajouter '+count+' carte'+(count>1?'s':'');$('#generateCards').disabled=genBusy||!available;$('#studioSummary').textContent=g.rowCount+' question'+(g.rowCount>1?'s':'')+' par carte · '+studioFont()+' pt · '+(state.format===1?'Grand format':'Deux fiches par feuille')+(g.mode==='ulis'&&available?' · Tirage parmi '+available+' exercice'+(available>1?'s':''):'');};
+const originalLibrary=renderLibrary;renderLibrary=function(){originalLibrary();$('#copiesLabel').textContent='Nombre total de cartes à créer';$('#genCopies').max=200;$('#genCopies').value=batchCount();$('#genRows').value=libraryGen().rowCount;$('#genDestination').value='append';$('#moneyReference').hidden=!(libraryGen().mode==='money'||libraryGen().mode==='ulis'&&libraryGen().ulisDomain==='measures');updateGenerationSummary();requestStudioPreview();};
+changeScope=function(domain,level){const g=libraryGen();g.ulisDomain=domain;g.ulisLevel=(Logico.exercises[domain]?.[level]||[]).length?level:Logico.levels.find(n=>(Logico.exercises[domain]?.[n.id]||[]).length)?.id||level;g.ulisExercises=(Logico.exercises[domain]?.[g.ulisLevel]||[]).map(e=>e.id);g.ulisExercise=g.ulisExercises[0]||'';save();renderLibrary();};
+async function generateFromLibrary(all=false){
+ if(genBusy)return;genBusy=true;$('#libraryError').textContent='';$('#generateCards').disabled=true;$('#generateCards').textContent='Création…';
+ try{await new Promise(resolve=>requestAnimationFrame(resolve));const g={...libraryGen()},cards=[];
+ if(g.mode==='free'&&!all)cards.push(...parseLegacyCards($('#legacyData').value,g.rowCount,$('#legacyTitle').value||'Mes exercices'));
+ else{const tasks=studioTasks(g,all),count=all?tasks.length:batchCount();for(let i=0;i<count;i++){cards.push(studioCard(g,i,tasks));if(i%10===9)await new Promise(resolve=>requestAnimationFrame(resolve));}}
+ cards.forEach(c=>{c.format=state.format;c.fontSize=cardFont({fontSize:g.studioFontSize??state.fontSize})});
+ if(state.cards.length+cards.length>1000)throw Error('Le projet est limité à 1 000 fiches.');const first=state.cards.length;state.cards.push(...cards);state.active=first;libraryGen().seed++;save();renderEditor();$('#studioDialog').close();toast(cards.length+' fiche'+(cards.length>1?'s':'')+' ajoutée'+(cards.length>1?'s':'')+'.');
+ }catch(e){$('#libraryError').textContent=e.message||'La création n’a pas abouti.';}
+ finally{genBusy=false;updateGenerationSummary();}
+}
+function simpleRemove(index){if(!state.cards[index])return;simpleUI.undo=JSON.stringify(state);state.cards.splice(index,1);state.active=Math.max(0,Math.min(state.active,state.cards.length-1));save();renderEditor();}
+function moveControl(selector,destination,closest){const el=$(selector);if(!el)return;$(destination).appendChild(closest?el.closest(closest):el)}
+function initSimple(){
+ moveControl('#saveBtn','#simpleFiles');moveControl('#openBtn','#simpleFiles');$('#saveBtn').textContent='Enregistrer';$('#openBtn').textContent='Ouvrir';
+ moveControl('#titleInput','#simpleTitleSlot','label');moveControl('#rows','#simpleRowsSlot');moveControl('#addRow','#simpleAddRowSlot');moveControl('#orderDetails','#simpleOptionsSlot');moveControl('#cardRowsScope','#simpleOptionsSlot','.question-count-controls');moveControl('#cardRowsHelp','#simpleOptionsSlot');moveControl('#bulkInput','#simpleOptionsSlot','details');moveControl('#fixedPalette','#simpleOptionsSlot','details');moveControl('#fontSize','#simpleOptionsSlot','section');moveControl('#shuffleBtn','#simpleOptionsSlot');
+ moveControl('#sharedPreview','#simplePreviewSlot');moveControl('.library','#studioLibrarySlot');
+ $('#examplesPane')?.remove();$('#generateCatalogue')?.closest('.all-catalogue')?.remove();
+ $('#helpDialog').innerHTML='<h2>Créer vos cartes</h2><p>À gauche, choisissez le nombre de questions et le format. Le studio ajoute des fiches toutes faites. À droite, cliquez sur une fiche pour l’afficher ou sur la croix pour la supprimer.</p><p>Pour imprimer, choisissez toutes les fiches prêtes ou la fiche affichée. Imprimez sur une seule face en A4 à 100 %, coupez si nécessaire, puis pliez verticalement.</p><button id="simpleHelpClose">Fermer</button>';$('#simpleHelpClose').onclick=()=>$('#helpDialog').close();
+ $('#rows').addEventListener('input',e=>{if(e.target.dataset.field==='q'){const index=Number(e.target.closest('.entry').dataset.index);delete current().rows[index].choices;}},true);
+ $('#simpleRows').onchange=e=>{const n=Number(e.target.value);libraryGen().rowCount=n;save();renderLibrary();renderPreview()};$('#simpleFormat').onchange=e=>{state.cards.forEach(c=>c.format=cardFormat(c));state.format=Number(e.target.value);save();renderLibrary()};
+ $('#simpleNew').onclick=()=>{if(state.cards.length>=1000)return;const n=Number($('#simpleRows').value)||10,c=example('blank');c.title='Ma fiche';c.format=state.format;c.fontSize=studioFont();c.rows=Array.from({length:n},(_,i)=>({q:'',a:'',color:COLORS[i]}));c.order=[];state.cards.push(c);state.active=state.cards.length-1;save();renderEditor();$('#simpleEditorDetails').open=true;};
+ $('#openStudio').onclick=()=>{libraryGen().rowCount=Number($('#simpleRows').value)||10;studioUI.index=0;renderLibrary();$('#studioDialog').showModal();renderStudioPreview()};$('#closeStudio').onclick=()=>$('#studioDialog').close();$('#studioDialog').addEventListener('click',e=>{if(e.target!==$('#studioDialog'))return;const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()});
+ $('#genCopies').onchange=e=>{libraryGen().studioCount=Math.max(1,Math.min(200,Math.floor(Number(e.target.value)||1)));save();renderLibrary()};
+ $('#simpleCardList').onclick=e=>{const select=e.target.closest('[data-simple-select]'),remove=e.target.closest('[data-simple-delete]');if(remove){simpleRemove(Number(remove.dataset.simpleDelete));return}if(select){state.active=Number(select.dataset.simpleSelect);save();renderEditor()}};
+ $('#simpleUndo').onclick=()=>{if(!simpleUI.undo)return;state=validate(JSON.parse(simpleUI.undo));simpleUI.undo=null;save();renderEditor()};$('#simplePrintScope').onchange=e=>{simpleUI.printScope=e.target.value;renderPreview()};$('#simplePrint').onclick=()=>{simpleUI.printScope=$('#simplePrintScope').value;if(!simplePrintIndices().length){toast('Complétez ou créez d’abord une fiche.');return}printProject()};
+ $('#currencyReferenceGrid').innerHTML=Logico.denoms.map(d=>'<div>'+moneyHTML({type:'money',values:[d.value]})+'<small>'+escapeHTML(d.label)+'</small></div>').join('');
+ $('#previewStage').closest('.preview-panel').querySelector('.preview-toolbar strong').textContent='Aperçu';const label=$('#titleInput').closest('label');if(label.firstChild?.nodeType===3)label.firstChild.nodeValue='Nom de la fiche affichée';
+ initStudioPreview();renderEditor();
+}
+
+const studioUI={index:0,timer:null};
+function cardFont(card){return Math.max(10,Math.min(28,Number(card?.fontSize??state.fontSize)||14))}
+function studioFont(){return cardFont({fontSize:libraryGen().studioFontSize??state.fontSize})}
+const originalPartHTML=partHTML;partHTML=function(card,index){const markup=originalPartHTML(card,index);return card?markup.replace('<section class="part">',`<section class="part" style="--text-size:${cardFont(card)}pt">`):markup;};
+function studioTasks(g,all=false){
+ const tasks=[];if(all){for(const d of Logico.domains)for(const level of Logico.levels)for(const exercise of Logico.exercises[d.id]?.[level.id]||[])tasks.push({domain:d.id,level,exercise});return tasks;}
+ if(g.mode!=='ulis')return tasks;
+ const level=Logico.levels.find(n=>n.id===g.ulisLevel);
+ for(const exercise of Logico.exercises[g.ulisDomain]?.[g.ulisLevel]||[])if(g.ulisExercises.includes(exercise.id))tasks.push({domain:g.ulisDomain,level,exercise});
+ if(!tasks.length)throw Error('Choisissez au moins un exercice pour voir l’aperçu.');
+ return Logico.shuffleWithRandom(tasks,Logico.seededRandom(g.seed));
+}
+function studioCard(g,index,tasks=studioTasks(g)){
+ let page,level;if(tasks.length){const task=tasks[index%tasks.length];level=task.level;page=Logico.makeBundle({...g,mode:'ulis',ulisDomain:task.domain,ulisLevel:level.id,ulisExercises:[task.exercise.id],ulisCopiesPerExercise:1,seed:g.seed+index*7919})[0];}
+ else page=Logico.makeBundle({...g,sheetCount:1,seed:g.seed+index*7919})[0];
+ const card=generatedCard({...page,...(level?{level}:{})},page.exercise?.label||titleForMode(g));
+ card.format=state.format;card.fontSize=cardFont({fontSize:g.studioFontSize??state.fontSize});card.order=Logico.shuffleWithRandom(answers(card),Logico.seededRandom(g.seed+index*7919+31));return card;
+}
+function renderStudioControls(){
+ const g=libraryGen();$('#studioRowsChoices').innerHTML=Array.from({length:10},(_,i)=>`<button type="button" data-studio-rows="${i+1}" class="${g.rowCount===i+1?'active':''}" aria-pressed="${g.rowCount===i+1}">${i+1}</button>`).join('');
+ $('#studioFont').value=studioFont();$('#studioFontOutput').textContent=studioFont()+' pt';$('#studioFontLess').disabled=studioFont()<=10;$('#studioFontMore').disabled=studioFont()>=28;
+}
+function requestStudioPreview(){if(!$('#studioDialog').open)return;clearTimeout(studioUI.timer);studioUI.timer=setTimeout(renderStudioPreview,50)}
+function scaleStudioPreview(){const stage=$('#studioPreviewStage'),paper=stage.querySelector('.paper'),wrap=stage.querySelector('.scaled-wrap');if(!paper||!wrap)return;const width=paper.offsetWidth||113*96/25.4,height=paper.offsetHeight||(paper.classList.contains('two')?156.5:297)*96/25.4,scale=Math.max(.1,Math.min(1,((stage.clientWidth||330)-24)/width));paper.style.transform=`scale(${scale})`;wrap.style.width=width*scale+'px';wrap.style.height=height*scale+'px';}
+function renderStudioPreview(){
+ if(!$('#studioDialog').open)return;renderStudioControls();const stage=$('#studioPreviewStage');
+ try{const g={...libraryGen()},free=g.mode==='free'?parseLegacyCards($('#legacyData').value,g.rowCount,$('#legacyTitle').value||'Mes exercices'):null,total=free?free.length:batchCount();studioUI.index=Math.max(0,Math.min(studioUI.index,total-1));const card=free?{...free[studioUI.index],fontSize:studioFont(),format:state.format}:studioCard(g,studioUI.index);retainAnswerChoices(card);
+ stage.innerHTML=`<div class="scaled-wrap"><div class="paper front-only ${cardFormat(card)===2?'two':''}" style="--text-size:${cardFont(card)}pt">${partHTML(card,state.cards.length+studioUI.index)}</div></div>`;
+ scaleStudioPreview();fitCards(stage);$('#studioPreviewIssue').textContent=overflowIssues(stage)?'Le texte dépasse. Réduisez la police ou le nombre de questions.':'';
+ $('#studioPreviewCount').textContent='Fiche '+(studioUI.index+1)+' / '+total;$('#studioPrev').disabled=studioUI.index===0;$('#studioNext').disabled=studioUI.index>=total-1;
+ }catch(e){stage.innerHTML='<p class="studio-preview-empty">'+escapeHTML(e.message||'Choisissez un exercice.')+'</p>';$('#studioPreviewIssue').textContent='';$('#studioPreviewCount').textContent='Aperçu';$('#studioPrev').disabled=true;$('#studioNext').disabled=true;}
+}
+function changeStudioFont(value){libraryGen().studioFontSize=cardFont({fontSize:value});save();updateGenerationSummary();renderStudioControls();renderStudioPreview()}
+function initStudioPreview(){
+ $('#studioRowsChoices').onclick=e=>{const b=e.target.closest('[data-studio-rows]');if(!b)return;libraryGen().rowCount=Number(b.dataset.studioRows);$('#simpleRows').value=libraryGen().rowCount;studioUI.index=0;save();renderLibrary();renderStudioPreview()};
+ $('#studioFont').oninput=e=>changeStudioFont(Number(e.target.value));$('#studioFontLess').onclick=()=>changeStudioFont(studioFont()-1);$('#studioFontMore').onclick=()=>changeStudioFont(studioFont()+1);
+ $('#studioPrev').onclick=()=>{studioUI.index--;renderStudioPreview()};$('#studioNext').onclick=()=>{studioUI.index++;renderStudioPreview()};
+ $('#studioLibrarySlot').addEventListener('change',()=>{studioUI.index=0;requestStudioPreview()});$('#studioLibrarySlot').addEventListener('input',requestStudioPreview);
+ window.addEventListener('resize',()=>{if($('#studioDialog').open)scaleStudioPreview()});
+ $('#fontSize').min=10;$('#fontSize').max=28;$('#fontSize').oninput=e=>{if(!state.cards.length)return;current().fontSize=cardFont({fontSize:e.target.value});$('#fontOutput').value=current().fontSize+' pt';save();renderPreview()};
+ renderStudioControls();
+}
+
+renderEditor();initLibrary();initCountPalette();initSimple();if(stored)$('#saveState').textContent='✓ Votre dernier projet a été retrouvé.';
+</script>
+</body></html>
